@@ -1,0 +1,68 @@
+// general css
+
+.logo {
+    width: 230px;
+    margin-bottom: 100px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        width: 170px;
+    }
+}
+
+.big-title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 62px;
+    font-family: "made4-dxb";
+    color: #ffffff;
+
+    @media (max-width: 600px) {
+        
+    }
+}
+
+.sub-title {
+    font-family: "made4-tr";
+    font-size: 24px;
+    line-height: 40px;
+    color: #ffffff;
+    letter-spacing: 0.28px;
+
+    @media (max-width: 600px) {
+        
+    }
+}
+
+.description-title {
+    font-size: 18px;
+    font-family: "made4-dxb";
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: 0.45px;
+}
+
+.description-text {
+    font-size: 18px;
+    font-family: "made4-dr";
+    color: #ffffff;
+    line-height: 22px;
+    letter-spacing: 0.19px;
+}
+
+.strip-white,
+.box-white {
+    background-color: #ffffff;
+}
+
+.strip-f6faff {
+    background-color: #f6faff;
+}
+
+.box-f9f9f9 {
+    background-color: #f9f9f9;
+}

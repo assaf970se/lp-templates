@@ -1,0 +1,63 @@
+// general css
+
+.logo {
+    width: 230px;
+    margin-bottom: 100px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        width: 170px;
+    }
+}
+
+.big-title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 62px;
+    font-family: "made4-dxb";
+
+    @media (max-width: 600px) {
+        
+    }
+}
+
+.sub-title {
+    font-family: "made4-dr";
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.26px;
+
+    @media (max-width: 600px) {
+        
+    }
+}
+
+.description-title {
+    font-size: 26px;
+    font-family: "made4-db";
+    font-weight: bold;
+    line-height: 39px;
+    letter-spacing: 0.4px;
+}
+
+.description-text {
+    font-size: 18px;
+    font-family: "made4-dr";
+    line-height: 29px;
+    letter-spacing: 0.19px;
+}
+
+.cta-btn {
+    cursor: pointer;
+    width: 185px;
+    height: 48px;
+    border-radius: 23px;
+    background-color: #1f77ff;
+    border: 0px solid #1f77ff;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "made4-tr";
+}
