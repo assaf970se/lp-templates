@@ -7,7 +7,7 @@
     padding-bottom: 250px;
 
     .header-container {
-        max-width: 1280px;
+        max-width: 850px;
         margin: 0 auto;
 
         .header-title {
@@ -21,22 +21,22 @@
 
     .video-container {
         margin: 0 auto;
-        transform: translateY(-25%);
-        max-width: 1280px;
-        height: 720px;
+        transform: translateY(-30%);
+        max-width: 854px;
+        height: 480px;
         background-color: #ccc;
     }
 
     .description-container {
-        transform: translateY(-15%);
-        max-width: 1280px;
+        transform: translateY(-10%);
+        max-width: 854px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .description-content {
-            max-width: 530px;
+            max-width: 450px;
             color: #20303c;
 
             & .description-title {
@@ -69,7 +69,7 @@
         }
 
         .description-asset {
-            max-width: 450px;
+            max-width: 350px;
         }
     }
 }
