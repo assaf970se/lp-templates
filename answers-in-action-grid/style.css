@@ -142,9 +142,16 @@ body {
     padding-top: 70px;
     padding-left: 30px;
     padding-right: 30px;
+    grid-row-gap: 40px;
     grid-template-columns: 100%;
-    grid-template-rows: 80px 140px 120px 700px 300px;
+    grid-template-rows: 80px auto auto auto auto;
     grid-template-areas: "logo" "title" "subtitle" "form" "description";
+  }
+}
+@media (max-width: 330px) {
+  .main-section {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .main-section .title-container {
@@ -163,6 +170,7 @@ body {
 @media (max-width: 600px) {
   .main-section .description-container {
     align-self: center;
+    margin-bottom: 40px;
   }
 }
 .main-section .form-container {
