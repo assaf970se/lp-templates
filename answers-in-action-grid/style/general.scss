@@ -1,0 +1,81 @@
+// general css
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 600px) {
+        height: unset;
+    }
+}
+
+.logo {
+    grid-area: logo;
+    width: 230px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        width: 170px;
+    }
+}
+
+.big-title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 62px;
+    font-family: "made4-dxb";
+    color: #ffffff;
+
+    @media (max-width: 600px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+.sub-title {
+    font-family: "made4-tr";
+    font-size: 24px;
+    line-height: 40px;
+    color: #ffffff;
+    letter-spacing: 0.28px;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        letter-spacing: 0.17px;
+        line-height: 26px;
+    }
+}
+
+.description-title {
+    font-size: 18px;
+    font-family: "made4-dxb";
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: 0.45px;
+
+    @media (max-width: 600px) {
+        font-size: 22px;
+        letter-spacing: 0.24px;
+        line-height: 29px;
+    }
+}
+
+.description-text {
+    font-size: 18px;
+    font-family: "made4-dr";
+    color: #ffffff;
+    line-height: 30px;
+    letter-spacing: 0.30px;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        letter-spacing: 0.17px;
+        line-height: 26px;
+    }
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Wix Answers in Action</title>
+    <style>
+        @font-face {
+            font-family: "made4-db";
+            src: url("../../fonts/WixMadeforDisplay_W_Bd.woff2") format("woff2");
+        }
+
+        @font-face {
+            font-family: "made4-dr";
+            src: url("../../fonts/WixMadeforDisplay_W_Rg.woff2") format("woff2");
+        }
+
+        @font-face {
+            font-family: "made4-tr";
+            src: url("../fonts/WixMadeforText_W_Rg.woff2") format("woff2");
+        }
+
+        @font-face {
+            font-family: "made4-tb";
+            src: url("../../fonts/WixMadeforText_W_Bd.woff2") format("woff2");
+        }
+
+        @font-face {
+            font-family: "made4-dxb";
+            src: url("../../fonts/WixMadeforDisplay_W_XBd.woff2") format("woff2");
+        }
+        @media (min-width: 601px) {
+            html {
+                background: #102A63 url("./images/hero-image-bg.png") no-repeat center center fixed;
+                background-size: cover;
+            }
+        }
+
+        @media (max-width: 600px) {
+            html {
+                background: #102A63 url("./images/background-mob.png") no-repeat;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="logo">
+            <img src="./images/wix-answers-logo-black.png" alt="">
+        </div>
+        <div class="title-container big-title">All support channels working together in one platform
+        </div>
+        <div class="subtitle-container sub-title">Watch how Answers connects ticketing, knowledge base, call center
+            and live chat – in just 3 minutes.
+        </div>
+        <div class="description-container">
+            <div class="description-title">In this video, you’ll see how:</div>
+            <div class="description-text">
+                <ul>
+                    <li>All support channels work together as one</li>
+                    <li>Built-in tools boost agent efficiency and key metrics</li>
+                    <li>Insights drive data-driven business decisions</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="form-container">
+            <div class="form-title description-title">See Answers in action</div>
+            <div class="form-item">
+                <form id="mktoForm_1406"></form>
+            </div>
+            <div class="assets">
+                <div class="assets-row">
+                    <div class="asset gettyimages">
+                        <img src="./images/gettyimageslogo.png" alt="">
+                    </div>
+                    <div class="asset viber">
+                        <img src="./images/viber-logo.png" alt="">
+                    </div>
+                    <div class="asset fiverr">
+                        <img src="./images/fiverr-copy-2.png" alt="">
+                    </div>
+                </div>
+                <div class="assets-row row-2">
+                    <div class="asset yotpo">
+                        <img src="./images/yotpo-2-x-copy.png" alt="">
+                    </div>
+                    <div class="asset guesty">
+                        <img src="./images/guesty.png" alt="">
+                    </div>
+                    <div class="asset gifted">
+                        <img src="./images/gifted.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
+    <script>
+        MktoForms2.loadForm("//app-nld101.marketo.com", "314-AVR-999", 1406, function (form) {
+            form.onSuccess(function (values, followUpUrl) {
+                form.getFormElem().hide();
+            });
+        });</script>
+</body>
+
+</html>
