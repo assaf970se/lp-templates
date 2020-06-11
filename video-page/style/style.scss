@@ -1,10 +1,20 @@
 @import "./reset.scss";
 @import "./general.scss";
 
+
+
 .header-section {
     width: 100%;
     padding-top: 120px;
     padding-bottom: 250px;
+
+    @media (max-width: 600px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
 
     .header-container {
         max-width: 1280px;
@@ -13,23 +23,52 @@
         .header-title {
             color: #ffffff;
         }
+
+        @media (max-width: 600px) {
+            max-width: 100%;
+        }
+
     }
+
 }
 
 .main-section {
+    width: 100%;
     padding-bottom: 70px;
+    
+    @media (max-width: 600px) {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;       
+    }
 
     .video-container {
         margin: 0 auto;
         transform: translateY(-30%);
-        max-width: 959px;
+        max-width: 960px;
         height: 540px;
         background-color: #ccc;
         position: relative;
         border-radius: 10px;
+
+        @media (max-width: 600px) {
+            transform: translateY(-35%);
+            max-width: 320px;
+            height: 180px;
+        }
+        @media (max-width: 400px) {
+            transform: translateY(-45%);
+            max-width: 240px;
+            height: 135px;
+        }
         
         .video-item {
+            position: absolute;
             border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
         }
 
         .play-btn {
@@ -50,6 +89,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
+        @media (max-width: 600px) {
+            transform: translateY(-5%);
+        }
 
         .description-content {
             max-width: 580px;
@@ -86,8 +129,18 @@
             }
         }
 
+        .cta-btn-container {
+            @media (max-width: 600px) {
+                text-align: center;
+            }
+        }
+
         .description-asset {
             max-width: 470px;
+
+            @media (max-width: 600px) {
+                display: none;
+            }
         }
     }
 }
