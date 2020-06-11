@@ -106,7 +106,6 @@ img {
   color: #ffffff;
   font-size: 18px;
   font-family: "made4-tr";
-  outline: none;
 }
 
 .header-section {
@@ -176,7 +175,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 100%;
-  outline: none;
 }
 .main-section .video-container .play-btn {
   cursor: pointer;
