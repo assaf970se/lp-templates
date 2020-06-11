@@ -49,9 +49,20 @@
         grid-area: description;
         max-width: 500px;
         align-self: end;
+        
         @media (max-width: 600px) {
             align-self: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+        }
+
+        & .description-title {
+            margin-bottom: 25px;
+        }
+
+        .description-text {
+            & ul {
+                padding-left: 20px;
+            }
         }
     }
 

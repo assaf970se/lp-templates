@@ -23,6 +23,8 @@ ol,
 ul {
   font-family: "made4-tr";
   font-weight: normal;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -170,8 +172,14 @@ body {
 @media (max-width: 600px) {
   .main-section .description-container {
     align-self: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
+}
+.main-section .description-container .description-title {
+  margin-bottom: 25px;
+}
+.main-section .description-container .description-text ul {
+  padding-left: 20px;
 }
 .main-section .form-container {
   grid-area: form;
