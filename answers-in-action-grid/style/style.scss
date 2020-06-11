@@ -19,9 +19,9 @@
         padding-top: 70px;
         padding-left: 30px;
         padding-right: 30px;
-        grid-row-gap: 40px;
+        grid-row-gap: 30px;
         grid-template-columns: 100%;
-        grid-template-rows: 80px auto auto auto auto;
+        grid-template-rows: 50px auto auto auto auto;
         grid-template-areas:
             "logo"
             "title"
@@ -43,6 +43,7 @@
     .subtitle-container {
         grid-area: subtitle;
         max-width: 670px;
+        margin-bottom: 10px;
     }
 
     .description-container {
@@ -52,7 +53,7 @@
         
         @media (max-width: 600px) {
             align-self: center;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
         & .description-title {
@@ -61,7 +62,23 @@
 
         .description-text {
             & ul {
-                padding-left: 20px;
+                margin-bottom: 50px;
+            }
+
+            & ul li {
+                margin-bottom: 20px;
+                list-style: none;
+                position: relative;
+
+                &::before {
+                    color: #4dddb1;
+                    content: "\2022";
+                    display: inline-block;
+                    font-size: 30px;
+                    left: -1.1225em;
+                    position: absolute;
+                    top: -2px;
+                }
             }
         }
     }
@@ -77,6 +94,7 @@
 
         @media (max-width: 600px) {
             width: 100%;
+            margin-bottom: 15px;
         }
 
         .form-title {

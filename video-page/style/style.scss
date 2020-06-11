@@ -22,29 +22,47 @@
     .video-container {
         margin: 0 auto;
         transform: translateY(-30%);
-        max-width: 854px;
-        height: 480px;
+        max-width: 959px;
+        height: 540px;
         background-color: #ccc;
+        position: relative;
+        border-radius: 10px;
+        
+        .video-item {
+            border-radius: 10px;
+        }
+
+        .play-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     .description-container {
         transform: translateY(-10%);
         max-width: 1280px;
         margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .description-content {
-            max-width: 550px;
+            max-width: 580px;
             color: #20303c;
 
             & .description-title {
-                margin-bottom: 50px;
+                margin-bottom: 20px;
+                max-width: 500px;
             }
 
             & .description-text div {
                 margin-bottom: 50px;
+                max-width: 550px;
             }
 
             & .description-text ul {
@@ -63,7 +81,7 @@
                     font-size: 30px;
                     left: -1.1225em;
                     position: absolute;
-                    bottom: 3px;
+                    top: -2px;
                 }
             }
         }

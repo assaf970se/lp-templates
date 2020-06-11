@@ -48,20 +48,25 @@
             <div class="big-title header-title">
                 Watch the full
                 <br>
-                customer-agent journey
+                customer-agent journey.
             </div>
         </div>
     </section>
     <section class="main-section">
         <div class="video-container">
-            <iframe width="854" height="480" src="https://www.youtube.com/embed/4nf6QUqOij4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video class="video-item" width="960" height="540">
+                <source src="./images/Travelberry-sm.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img class="play-btn" src="./images/play-btn.png">
         </div>
         <div class="description-container">
             <div class="description-content">
                 <div class="description-title">See how your daily support flow will work in Answers</div>
                 <div class="description-text">
                     <div>
-                        Get a 1-on-1 with an expert to see how a truly unified platform can transform the way you do support. 
+                        Get a 1-on-1 with an expert to see how a truly unified platform can transform the way you do
+                        support.
                     </div>
                     <ul>
                         <li>One single view to look at, no matter the channel.</li>
@@ -77,6 +82,14 @@
         </div>
 
     </section>
+
+    <script>
+        document.querySelector('.play-btn').addEventListener('click', () => {
+            document.querySelector('.video-item').setAttribute('controls', '');
+            document.querySelector('.video-item').play();
+            document.querySelector('.play-btn').style.display = "none";
+        })
+    </script>
 </body>
 
 </html>

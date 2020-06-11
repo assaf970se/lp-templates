@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -23,8 +24,6 @@ ol,
 ul {
   font-family: "made4-tr";
   font-weight: normal;
-  padding: 0;
-  margin: 0;
 }
 
 h1,
@@ -88,7 +87,7 @@ body {
 .sub-title {
   font-family: "made4-tr";
   font-size: 24px;
-  line-height: 40px;
+  line-height: 36px;
   color: #ffffff;
   letter-spacing: 0.28px;
 }
@@ -144,9 +143,9 @@ body {
     padding-top: 70px;
     padding-left: 30px;
     padding-right: 30px;
-    grid-row-gap: 40px;
+    grid-row-gap: 30px;
     grid-template-columns: 100%;
-    grid-template-rows: 80px auto auto auto auto;
+    grid-template-rows: 50px auto auto auto auto;
     grid-template-areas: "logo" "title" "subtitle" "form" "description";
   }
 }
@@ -163,6 +162,7 @@ body {
 .main-section .subtitle-container {
   grid-area: subtitle;
   max-width: 670px;
+  margin-bottom: 10px;
 }
 .main-section .description-container {
   grid-area: description;
@@ -172,14 +172,28 @@ body {
 @media (max-width: 600px) {
   .main-section .description-container {
     align-self: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 .main-section .description-container .description-title {
   margin-bottom: 25px;
 }
 .main-section .description-container .description-text ul {
-  padding-left: 20px;
+  margin-bottom: 50px;
+}
+.main-section .description-container .description-text ul li {
+  margin-bottom: 20px;
+  list-style: none;
+  position: relative;
+}
+.main-section .description-container .description-text ul li::before {
+  color: #4dddb1;
+  content: "•";
+  display: inline-block;
+  font-size: 30px;
+  left: -1.1225em;
+  position: absolute;
+  top: -2px;
 }
 .main-section .form-container {
   grid-area: form;
@@ -193,6 +207,7 @@ body {
 @media (max-width: 600px) {
   .main-section .form-container {
     width: 100%;
+    margin-bottom: 15px;
   }
 }
 .main-section .form-container .form-title {

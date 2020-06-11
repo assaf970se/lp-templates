@@ -80,7 +80,7 @@ img {
   font-size: 18px;
   font-family: "made4-dr";
   line-height: 29px;
-  letter-spacing: 0.19px;
+  letter-spacing: 0.6px;
 }
 
 .cta-btn {
@@ -114,27 +114,43 @@ img {
 .main-section .video-container {
   margin: 0 auto;
   transform: translateY(-30%);
-  max-width: 854px;
-  height: 480px;
+  max-width: 959px;
+  height: 540px;
   background-color: #ccc;
+  position: relative;
+  border-radius: 10px;
+}
+.main-section .video-container .video-item {
+  border-radius: 10px;
+}
+.main-section .video-container .play-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .main-section .description-container {
   transform: translateY(-10%);
   max-width: 1280px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .main-section .description-container .description-content {
-  max-width: 550px;
+  max-width: 580px;
   color: #20303c;
 }
 .main-section .description-container .description-content .description-title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  max-width: 500px;
 }
 .main-section .description-container .description-content .description-text div {
   margin-bottom: 50px;
+  max-width: 550px;
 }
 .main-section .description-container .description-content .description-text ul {
   margin-bottom: 50px;
@@ -151,7 +167,7 @@ img {
   font-size: 30px;
   left: -1.1225em;
   position: absolute;
-  bottom: 3px;
+  top: -2px;
 }
 .main-section .description-container .description-asset {
   max-width: 470px;
