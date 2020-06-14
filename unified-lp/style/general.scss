@@ -83,7 +83,7 @@
     letter-spacing: 0.3px;
 
     @media (max-width: 600px) {
-        font-size: 15px;
+        font-size: 14px;
         letter-spacing: 0.3px;
         line-height: 23px;
     }
@@ -93,8 +93,13 @@
     color: #20303c;
     font-family: "made4-tr";
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     letter-spacing: 0.3px;
+    
+    @media (max-width: 600px) {
+        font-size: 12px;
+
+    }
 
     .quote-sign-text-bold{
         font-family: "made4-tb";
