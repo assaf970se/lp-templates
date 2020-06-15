@@ -154,7 +154,7 @@
                             VP Customer Relations
                         </div>
                         <div class="company-logo">
-                            <img src="./images/my-heritage.svg" alt="">
+                            <img src="./images/my-heritage-1.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                 if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
                     const topValue = window.innerHeight - 882;
                     console.log('bottom fold');
-                    document.querySelector('.form-container').style = `top: ${topValue}px;`;
+                    document.querySelector('.form-container').style = 'top: '+topValue+'px;';
                 }
                 else if (!window.pageYOffset) {
                     document.querySelector('.form-container').style = 'top: 60px;';
@@ -193,7 +193,7 @@
                 else {
                     const topValue = (window.innerHeight - 703) / 2;
                     console.log('mid fold');
-                    document.querySelector('.form-container').style = `top: ${topValue}px;`;
+                    document.querySelector('.form-container').style = 'top: '+topValue+'px;';
                 }
             }
         };

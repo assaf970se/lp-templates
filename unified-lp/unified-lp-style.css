@@ -348,7 +348,7 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translate(50%, 50%);
+  transform: translate(19%, 50%);
 }
 @media (max-width: 600px) {
   .main-section .quote-container .right-asset {
