@@ -39,6 +39,7 @@
         }
 
         @media (max-width: 600px) {
+
             /* .header-section {
                 background: none;
             }
@@ -70,7 +71,9 @@
         </div>
 
         <div class="form-container">
-            <div class="form-title description-title">Request a live demo</div>
+            <div class="form-title description-text">
+                <span class="description-text-bold">Request a live demo</span>
+            </div>
             <div class="form-item">
                 <form id="mktoForm_1406"></form>
             </div>
@@ -113,15 +116,18 @@
                     <li><span class="description-text-bold">
                             Put an end to jumping between support channels.
                         </span>
+                        <br>
                         Use only one place to manage all customer interactions.</li>
                     <li><span class="description-text-bold">
                             Eliminate redundant work for agents.
                         </span>
+                        <br>
                         Use automation and AI to streamline your support processes
                         instead of doing repetitive, manual tasks.</li>
                     <li><span class="description-text-bold">
                             Say goodbye to data silos.
                         </span>
+                        <br>
                         Use real-time insights to better understand what’s bothering your
                         customers, identify product gaps and track agent performance.</li>
                 </ul>
@@ -171,6 +177,27 @@
         </div>
 
     </section>
+
+    <script>
+        window.onscroll = function (ev) {
+            if (window.innerWidth > 600) {
+                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                    const topValue = window.innerHeight - 882;
+                    console.log('bottom fold');
+                    document.querySelector('.form-container').style = `top: ${topValue}px;`;
+                }
+                else if (!window.pageYOffset) {
+                    document.querySelector('.form-container').style = 'top: 60px;';
+                    console.log('top fold');
+                }
+                else {
+                    const topValue = (window.innerHeight - 703) / 2;
+                    console.log('mid fold');
+                    document.querySelector('.form-container').style = `top: ${topValue}px;`;
+                }
+            }
+        };
+    </script>
 
     <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
     <script>
