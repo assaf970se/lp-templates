@@ -206,10 +206,10 @@ img {
 .header-section .title-container {
   max-width: 620px;
   margin-right: 100px;
-  text-align: center;
 }
 @media (max-width: 600px) {
   .header-section .title-container {
+    text-align: center;
     width: 100%;
   }
 }

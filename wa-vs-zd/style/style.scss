@@ -18,9 +18,9 @@
     .title-container {
         max-width: 620px;
         margin-right: 100px;
-        text-align: center;
-
+        
         @media (max-width: 600px) {
+            text-align: center;
             width: 100%;
         }
 
