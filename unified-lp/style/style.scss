@@ -33,7 +33,7 @@
         color: #ffffff;
 
         @media (max-width: 600px) {
-            margin-bottom: 0;
+            margin-bottom: 50px;
         }
     }
 
@@ -131,7 +131,7 @@
     width: 100%;
     padding-top: 50px;
     padding-left: 18%;
-    padding-bottom: 180px;
+    padding-bottom: 100px;
 
     @media (max-width: 1600px) {
         padding-left: 10%;
@@ -145,6 +145,7 @@
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 70px;
+        padding-top: 0;
     }
 
     .description-container {

@@ -39,18 +39,14 @@
         }
 
         @media (max-width: 600px) {
-
-            /* .header-section {
+            .header-section {
                 background: none;
             }
             body {
-                background: #102A63 url("./images/unified-bg-mob.png") no-repeat;
+                background: url("./images/unified-bg-mob.jpg") no-repeat;
                 background-size: contain;
-            } */
-            .header-section {
-                background: #102A63 url("./images/unified-bg-mob.png") no-repeat center;
-                background-size: cover;
             }
+            
         }
     </style>
     <link rel="stylesheet" href="./unified-lp-style.css">
@@ -75,7 +71,7 @@
                 <span class="description-text-bold">Request a live demo</span>
             </div>
             <div class="form-item">
-                <form id="mktoForm_1406"></form>
+                <form id="mktoForm_1401"></form>
             </div>
             <div class="assets">
                 <div class="assets-row">
@@ -182,7 +178,7 @@
         window.onscroll = function (ev) {
             if (window.innerWidth > 600) {
                 if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                    const topValue = window.innerHeight - 882;
+                    const topValue = window.innerHeight - 802;
                     console.log('bottom fold');
                     document.querySelector('.form-container').style = 'top: '+topValue+'px;';
                 }
@@ -201,7 +197,7 @@
 
     <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
     <script>
-        MktoForms2.loadForm("//app-nld101.marketo.com", "314-AVR-999", 1406, function (form) {
+        MktoForms2.loadForm("//app-nld101.marketo.com", "314-AVR-999", 1401, function (form) {
             form.onSuccess(function (values, followUpUrl) {
                 form.getFormElem().hide();
             });

@@ -173,7 +173,7 @@ img {
 }
 @media (max-width: 600px) {
   .header-section .title-container {
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
 }
 .header-section .form-container {
@@ -264,7 +264,7 @@ img {
   width: 100%;
   padding-top: 50px;
   padding-left: 18%;
-  padding-bottom: 180px;
+  padding-bottom: 100px;
 }
 @media (max-width: 1600px) {
   .main-section {
@@ -281,6 +281,7 @@ img {
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 70px;
+    padding-top: 0;
   }
 }
 .main-section .description-container {
