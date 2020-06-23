@@ -1,0 +1,104 @@
+// general css
+
+.logo {
+    grid-area: logo;
+    width: 230px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        width: 170px;
+    }
+}
+
+.big-title {
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 69px;
+    font-family: "made4-dxb";
+
+    @media (max-width: 600px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+.disclaimer-text {
+    font-family: "made4-tb";
+    font-size: 14px;
+    line-height: 24px;
+    color: #20303c;
+    letter-spacing: 0.17px;
+
+    @media (max-width: 600px) {}
+}
+
+.description-title {
+    font-size: 24px;
+    font-family: "made4-dxb";
+    font-weight: bold;
+    line-height: 38px;
+    letter-spacing: 0.26px;
+    color: #20303c;
+
+    @media (max-width: 600px) {
+        font-size: 22px;
+        letter-spacing: 0.24px;
+        line-height: 29px;
+    }
+}
+
+.description-text {
+    color: #20303c;
+    font-size: 20px;
+    font-family: "made4-dr";
+    line-height: 32px;
+    letter-spacing: 0.22px;
+
+    .description-text-bold {
+        font-family: "made4-db";
+        font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        letter-spacing: 0.17px;
+        line-height: 26px;
+    }
+}
+
+
+.quote-text {
+    color: #20303c;
+    font-family: "made4-tr";
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.3px;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        line-height: 23px;
+    }
+}
+
+.quote-sign-text {
+    color: #20303c;
+    font-family: "made4-tr";
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    
+    @media (max-width: 600px) {
+        font-size: 12px;
+
+    }
+
+    .quote-sign-text-bold{
+        font-family: "made4-tb";
+    }
+
+}
