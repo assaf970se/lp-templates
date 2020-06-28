@@ -1,0 +1,107 @@
+@import "./reset.scss";
+@import "./general.scss";
+
+.header-section {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 140px;
+    @media (max-width: 600px) {
+        padding-bottom: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .logo {
+        margin: 0 auto 50px auto;
+
+        @media (max-width: 600px) {
+        }
+    }
+
+    .big-title {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .sub-title {
+        margin-bottom: 60px;
+        text-align: center;
+
+        @media (max-width: 600px) {
+        }
+    }
+
+    .description-title {
+        text-align: center;
+    }
+}
+
+.main-section {
+    width: 100%;
+
+    @media (max-width: 600px) {
+        padding-bottom: 70px;
+    }
+
+    .cards-container {
+        transform: translateY(-90px);
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            transform: unset;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .card {
+        margin-right: 17px;
+        margin-left: 17px;
+        padding: 15px;
+        background-color: #ffffff;
+        max-width: 240px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4.8px;
+        box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.11);
+
+        @media (max-width: 600px) {
+            margin-bottom: 30px;
+        }
+
+        .card-img {
+            align-self: center;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            margin-bottom: 45px;
+            max-width: 90%;
+        }
+
+        .card-cta {
+            color: #116dff;
+        }
+    }
+
+    .main-cta {
+        transform: translateY(-90px);
+        text-align: center;
+
+        @media (max-width: 600px) {
+            transform: unset;
+        }
+
+        a {
+            text-decoration: none;
+            color: #116dff;
+        }
+    }
+}

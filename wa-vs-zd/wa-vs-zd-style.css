@@ -160,6 +160,7 @@ img {
 }
 
 .banner-button {
+  cursor: pointer;
   font-family: "made4-tr";
   font-size: 18px;
   background-color: #fff;

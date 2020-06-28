@@ -1,0 +1,81 @@
+// general css
+
+.logo {
+    width: 145px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+    }
+}
+
+.big-title {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 45px;
+    letter-spacing: 0.48px;
+    font-family: "made4-tb";
+    color: #ffffff;
+
+    @media (max-width: 600px) {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: normal;
+    }
+}
+
+.sub-title {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "made4-tr";
+    color: #ffffff;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: normal;
+    }
+}
+
+.description-title {
+    font-size: 18px;
+    font-family: "made4-tb";
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.68px;
+    color: #ffffff;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: normal;
+    }
+}
+
+
+.card-title {
+    font-family: "made4-tb";
+    font-size: 16px;
+    line-height: 20px;
+    color: #20303c;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.card-text {
+    font-family: "made4-tr";
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
