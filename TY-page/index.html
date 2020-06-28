@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../wixanswers-favicon.png" />
+    <link rel="icon" type="image/png" href="../wixanswers-favicon.png" />
     <title>Wix Answers | Thank You</title>
     <style>
         @font-face {
@@ -110,7 +112,13 @@
             <a href="https://www.wixanswers.com/cx-library">Explore our CX library »</a>
         </div>
     </section>
-
+    <script>
+        window.addEventListener('load', (event) => {
+            Munchkin.munchkinFunction('visitWebPage', {
+                'url': '/thank-you-demo'
+            });
+        });
+    </script>
 </body>
 
 </html>
