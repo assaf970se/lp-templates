@@ -231,6 +231,8 @@ img {
     width: 100%;
     right: unset;
     top: unset;
+    padding-right: 5px;
+    padding-left: 5px;
   }
   .header-section .form-container .stick-bottom {
     top: unset;
