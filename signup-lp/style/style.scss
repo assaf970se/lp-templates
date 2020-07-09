@@ -6,6 +6,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 18%;
+    position: relative;
 
     @media (max-width: 1600px) {
         padding-left: 10%;
@@ -130,7 +131,7 @@
 }
 
 .main-section {
-    background: #ffffff;
+    background: linear-gradient(#ffffff, #e7effe);
     width: 100%;
     padding-top: 50px;
     padding-left: 18%;
@@ -147,7 +148,7 @@
     @media (max-width: 600px) {
         padding-left: 25px;
         padding-right: 25px;
-        padding-bottom: 70px;
+        padding-bottom: 30px;
         padding-top: 0;
     }
 
@@ -166,7 +167,7 @@
             margin-bottom: 30px;
 
             & ul {
-                margin-bottom: 140px;
+                margin-bottom: 100px;
                 padding-left: 30px;
 
                 @media (max-width: 600px) {
@@ -192,44 +193,68 @@
         }
     }
 
-    .quote-container {
-        position: relative;
+    .icons-container {
         max-width: 600px;
-        margin-bottom: 120px;
+        margin-bottom: 150px;
+        
+        @media (max-width: 600px) {
+            margin-bottom: 40px;
+
+        }
+
+        .description-title {
+            margin-bottom: 10px;
+        }
+
+        .description-text-bold {
+            margin-bottom: 50px;
+        }
+
+        .icons-description-items {
+            display: flex;
+            flex-direction: column;
+
+            .icons-description-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+
+                .icon {
+                    width: 80px;
+                    margin-right: 30px;
+                }
+
+                .description-text {
+                }
+            }
+        }
+    }
+
+    .quote-container {
+        width: 100%;
+        padding-right: 22%;
+
+        @media (max-width: 1600px) {
+            padding-right: 11%;
+        }
+
+        @media (max-width: 1366px) {
+            padding-right: 5%;
+        }
 
         @media (max-width: 600px) {
             width: 100%;
-            margin-bottom: 70px;
-        }
-
-        .left-asset {
-            z-index: 1;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translate(-40%, -18%);
-
-            @media (max-width: 600px) {
-                display: none;
-            }
-        }
-
-        .right-asset {
-            z-index: 1;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            transform: translate(19%, 50%);
-
-            @media (max-width: 600px) {
-                display: none;
-            }
+            margin-bottom: 30px;
+            padding-right: unset;
+            
         }
 
         .quote-item {
-            position: relative;
-            z-index: 100;
-            max-width: 600px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 2px 12px 9px rgba(0, 0, 0, 0.04);
@@ -237,13 +262,20 @@
 
             @media (max-width: 600px) {
                 padding: 25px;
+                flex-direction: column;
+                margin-bottom: 40px;
             }
 
             .quote-text {
-                margin-bottom: 30px;
+                max-width: 520px;
+
+                @media (max-width: 600px) {
+                    margin-bottom: 40px;
+                }
             }
 
             .quote-signature {
+                margin-right: 50px;
                 display: flex;
 
                 .person-img {
@@ -276,14 +308,6 @@
                     }
                 }
             }
-        }
-    }
-
-    .about-conatiner {
-        max-width: 600px;
-
-        .description-title {
-            margin-bottom: 25px;
         }
     }
 }

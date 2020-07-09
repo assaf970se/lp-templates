@@ -68,7 +68,7 @@
             one platform.
         </div>
 
-        <div class="form-container">
+        <div class="form-container notransition">
             <div class="form-title description-text">
                 <span class="description-text-bold">Create your free account</span>
             </div>
@@ -143,6 +143,44 @@
                 </ul>
             </div>
         </div>
+
+        <div class="icons-container">
+            <div class="description-title">
+                Try it for free, as if you already have it.
+            </div>
+            <div class="description-text description-text-bold">
+                Start your 14-day trial to:
+            </div>
+            <div class="icons-description-items">
+                <div class="icons-description-item">
+                    <div class="icon">
+                        <img src="./images/icon-create-2-copy-2.svg" alt="">
+                    </div>
+                    <div class="description-text pl15">
+                        Create support articles, customize workflows, and connect your email to receive and resolve
+                        tickets.
+                    </div>
+                </div>
+                <div class="icons-description-item">
+                    <div class="icon">
+                        <img src="./images/group-20.svg" alt="">
+                    </div>
+                    <div class="description-text">
+                        Connect Slack, Jira, Salesforce, HubSpot and more integrations.
+                    </div>
+                </div>
+                <div class="icons-description-item">
+                    <div class="icon">
+                        <img src="./images/noun-webhooks-186514.svg" alt="">
+                    </div>
+                    <div class="description-text">
+                        Configure webhooks & API keys to connect the apps you work with daily.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="quote-container">
             <div class="quote-item">
                 <div class="quote-text">
@@ -170,38 +208,21 @@
                 </div>
             </div>
         </div>
-        <div class="about-conatiner">
-            <div class="description-title">About Wix Answers</div>
-            <div class="description-text">
-                “By switching from our legacy system to Answers, we are now able to automate time-sensitive processes.
-                However, the biggest win for us was eliminating the need for multiple vendors—everything is now in one
-                place and easy to use, allowing our agents to work more efficiently, without having to jump back and
-                forth between systems.”
-            </div>
-
-        </div>
 
     </section>
 
     <script>
-        // window.onscroll = function (ev) {
-        //     if (window.innerWidth > 600) {
-        //         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        //             const topValue = window.innerHeight - 802;
-        //             console.log('bottom fold');
-        //             document.querySelector('.form-container').style = 'top: '+topValue+'px;';
-        //         }
-        //         else if (!window.pageYOffset) {
-        //             document.querySelector('.form-container').style = 'top: 60px;';
-        //             console.log('top fold');
-        //         }
-        //         else {
-        //             const topValue = (window.innerHeight - 703) / 2;
-        //             console.log('mid fold');
-        //             document.querySelector('.form-container').style = 'top: '+topValue+'px;';
-        //         }
-        //     }
-        // };
+        if (window.innerWidth > 600) {
+            window.onscroll = function (ev) {
+                if (window.scrollY - 450 >= 150) {
+                    const topValue = window.innerHeight - 450;
+                    document.querySelector('.form-container').style = 'position: absolute; top: 662px';
+                }
+                else {
+                    document.querySelector('.form-container').style = 'position: fixed; top: 60px;';
+                }
+            }
+        };
     </script>
 
     <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>

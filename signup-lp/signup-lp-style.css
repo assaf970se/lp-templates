@@ -98,10 +98,14 @@ img {
   color: #20303c;
   font-size: 20px;
   font-family: "made4-dr";
-  line-height: 32px;
+  line-height: 28px;
   letter-spacing: 0.22px;
 }
 .description-text .description-text-bold {
+  font-family: "made4-db";
+  font-weight: bold;
+}
+.description-text.description-text-bold {
   font-family: "made4-db";
   font-weight: bold;
 }
@@ -144,11 +148,24 @@ img {
   font-family: "made4-tb";
 }
 
+.pl15 {
+  padding-left: 15px;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
 .header-section {
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 18%;
+  position: relative;
 }
 @media (max-width: 1600px) {
   .header-section {
@@ -267,7 +284,7 @@ img {
 }
 
 .main-section {
-  background: #ffffff;
+  background: linear-gradient(#ffffff, #e7effe);
   width: 100%;
   padding-top: 50px;
   padding-left: 18%;
@@ -287,7 +304,7 @@ img {
   .main-section {
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     padding-top: 0;
   }
 }
@@ -306,7 +323,7 @@ img {
   margin-bottom: 30px;
 }
 .main-section .description-container .description-text ul {
-  margin-bottom: 140px;
+  margin-bottom: 100px;
   padding-left: 30px;
 }
 @media (max-width: 600px) {
@@ -328,45 +345,61 @@ img {
   position: absolute;
   top: -2px;
 }
-.main-section .quote-container {
-  position: relative;
+.main-section .icons-container {
   max-width: 600px;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
+}
+@media (max-width: 600px) {
+  .main-section .icons-container {
+    margin-bottom: 40px;
+  }
+}
+.main-section .icons-container .description-title {
+  margin-bottom: 10px;
+}
+.main-section .icons-container .description-text-bold {
+  margin-bottom: 50px;
+}
+.main-section .icons-container .icons-description-items {
+  display: flex;
+  flex-direction: column;
+}
+.main-section .icons-container .icons-description-items .icons-description-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.main-section .icons-container .icons-description-items .icons-description-item .icon {
+  width: 80px;
+  margin-right: 30px;
+}
+.main-section .quote-container {
+  width: 100%;
+  padding-right: 22%;
+}
+@media (max-width: 1600px) {
+  .main-section .quote-container {
+    padding-right: 11%;
+  }
+}
+@media (max-width: 1366px) {
+  .main-section .quote-container {
+    padding-right: 5%;
+  }
 }
 @media (max-width: 600px) {
   .main-section .quote-container {
     width: 100%;
-    margin-bottom: 70px;
-  }
-}
-.main-section .quote-container .left-asset {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-40%, -18%);
-}
-@media (max-width: 600px) {
-  .main-section .quote-container .left-asset {
-    display: none;
-  }
-}
-.main-section .quote-container .right-asset {
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translate(19%, 50%);
-}
-@media (max-width: 600px) {
-  .main-section .quote-container .right-asset {
-    display: none;
+    margin-bottom: 30px;
+    padding-right: unset;
   }
 }
 .main-section .quote-container .quote-item {
-  position: relative;
-  z-index: 100;
-  max-width: 600px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 12px 9px rgba(0, 0, 0, 0.04);
@@ -375,12 +408,20 @@ img {
 @media (max-width: 600px) {
   .main-section .quote-container .quote-item {
     padding: 25px;
+    flex-direction: column;
+    margin-bottom: 40px;
   }
 }
 .main-section .quote-container .quote-item .quote-text {
-  margin-bottom: 30px;
+  max-width: 520px;
+}
+@media (max-width: 600px) {
+  .main-section .quote-container .quote-item .quote-text {
+    margin-bottom: 40px;
+  }
 }
 .main-section .quote-container .quote-item .quote-signature {
+  margin-right: 50px;
   display: flex;
 }
 .main-section .quote-container .quote-item .quote-signature .person-img {
@@ -412,12 +453,6 @@ img {
   .main-section .quote-container .quote-item .quote-signature .title-logo .company-logo {
     width: 80px;
   }
-}
-.main-section .about-conatiner {
-  max-width: 600px;
-}
-.main-section .about-conatiner .description-title {
-  margin-bottom: 25px;
 }
 
 /*# sourceMappingURL=signup-lp-style.css.map */

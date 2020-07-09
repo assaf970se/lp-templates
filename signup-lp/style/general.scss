@@ -55,10 +55,15 @@
     color: #20303c;
     font-size: 20px;
     font-family: "made4-dr";
-    line-height: 32px;
+    line-height: 28px;
     letter-spacing: 0.22px;
 
     .description-text-bold {
+        font-family: "made4-db";
+        font-weight: bold;
+    }
+
+    &.description-text-bold {
         font-family: "made4-db";
         font-weight: bold;
     }
@@ -102,3 +107,15 @@
     }
 
 }
+
+.pl15 {
+    padding-left: 15px;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+  }
