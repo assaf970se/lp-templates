@@ -66,7 +66,7 @@ img {
 }
 @media (max-width: 600px) {
   .big-title {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 38px;
   }
 }
@@ -88,7 +88,7 @@ img {
 }
 @media (max-width: 600px) {
   .description-title {
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 0.24px;
     line-height: 29px;
   }
@@ -179,8 +179,8 @@ img {
 }
 @media (max-width: 600px) {
   .header-section {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .header-section .logo {
@@ -302,8 +302,8 @@ img {
 }
 @media (max-width: 600px) {
   .main-section {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 30px;
     padding-top: 0;
   }
