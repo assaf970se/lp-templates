@@ -227,11 +227,66 @@
 
     <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
     <script>
-        MktoForms2.loadForm("//app-nld101.marketo.com", "314-AVR-999", 1401, function (form) {
-            form.onSuccess(function (values, followUpUrl) {
-                form.getFormElem().hide();
+        (function () {
+            MktoForms2.loadForm("//app-nld101.marketo.com", "314-AVR-999", 1401, function (form) {
+                form.onSuccess(function (values, followUpUrl) {
+                    var formVals = form.getValues();
+                    var fullname = encodeURI(`${formVals.FirstName} ${formVals.LastName}`);
+                    var email = formVals.Email;
+                    var organization = formVals.Company;
+                    var redirectUrl = 'http://app.wixanswers.com/signup?fullname=' + fullname + '&email=' + email + '&organization=' + organization;
+                    location.href = redirectUrl;
+
+                    return false;
+                });
             });
-        });</script>
+            // Please include the email domains you would like to block in this list
+            var invalidDomains = ["gmail", "yahoo", "hotmail", "live", "aol", "outlook", "icloud", "me", "comcast", "msn", "example", "mail", "yandex"];
+
+            MktoForms2.whenReady(function (form) {
+                form.onValidate(function () {
+                    var email = form.vals().Email;
+                    var phoneNumber = form.vals().Phone;
+                    if (email && phoneNumber) {
+                        if (!isEmailGood(email)) {
+                            form.submitable(false);
+                            var emailElem = form.getFormElem().find("#Email");
+                            form.showErrorMessage("Must be Business email.", emailElem);
+                        }
+
+                        else if (!isPhoneNumGood(phoneNumber)) {
+                            form.submitable(false);
+                            var phoneElem = form.getFormElem().find("#Phone");
+                            form.showErrorMessage("must be valid phone number", phoneElem);
+                        }
+
+                        else {
+                            form.submitable(true);
+                        }
+                    }
+                });
+            });
+
+            function isEmailGood(email) {
+                var lowerCaseEmail = email.toLowerCase();
+                var res = invalidDomains.find(function (str) {
+                    return lowerCaseEmail.includes(str);
+                });
+                return !res;
+            }
+
+            function isPhoneNumGood(number) {
+                if (number.length < 7) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+
+        })();
+    </script>
+
 </body>
 
 </html>
