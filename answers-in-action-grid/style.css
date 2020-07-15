@@ -46,15 +46,7 @@ img {
 }
 
 body {
-  height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-}
-@media (max-width: 600px) {
-  body {
-    height: unset;
-  }
 }
 
 .logo {
@@ -131,6 +123,8 @@ body {
 }
 
 .main-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 750px 1fr 400px 1fr;
@@ -238,10 +232,6 @@ body {
 .main-section .form-container .assets .assets-row .asset.yotpo {
   padding-left: 25px;
   padding-right: 25px;
-}
-.main-section .form-container .assets .assets-row .asset.gifted {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .main-section .form-container .assets .assets-row .asset.fiverr {
   padding-left: 10px;
