@@ -1,0 +1,149 @@
+// general css
+
+.logo {
+    grid-area: logo;
+    width: 245px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        width: 170px;
+    }
+}
+
+.big-title {
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 54px;
+    letter-spacing: 0.48px;
+    font-family: "made4-dxb";
+    color: #20303c;
+
+    @media (max-width: 600px) {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: normal;
+    }
+}
+
+.sub-title {
+    font-size: 26px;
+    line-height: 38px;
+    font-family: "made4-tr";
+    color: #20303c;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: normal;
+    }
+}
+
+.description-title {
+    font-size: 40px;
+    font-family: "made4-dxb";
+    font-weight: bold;
+    line-height: 53px;
+    letter-spacing: 0.43px;
+    color: #20303c;
+
+    @media (max-width: 600px) {
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: normal;
+    }
+}
+
+.description-text {
+    color: #20303c;
+    font-size: 16px;
+    font-family: "made4-tr";
+    line-height: 27px;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.quote-title {
+    font-family: "made4-txb";
+    font-size: 22px;
+    line-height: 30px;
+    color: #20303c;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.quote-text {
+    font-family: "made4-tr";
+    font-size: 18px;
+    line-height: 30px;
+    color: #e02020;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.form-title {
+    font-family: "made4-txb";
+    font-size: 20px;
+    line-height: 24px;
+    color: #20303c;
+
+    @media (max-width: 600px) {
+        font-size: 17px;
+        line-height: 24px;
+    }
+}
+
+.banner-button {
+    cursor: pointer;
+    font-family: "made4-tr";
+    font-size: 18px;
+    background-color: #fff;
+    color: #20303c;
+    width: 185px;
+    height: 48px;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+}
+
+.title-dash {
+    width: 99px;
+    height: 13px;
+    background-color: #87f5d3;
+    position: absolute;
+    z-index: -1;
+    top: 35px;
+    left: -20px;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.rect-gray {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.rect-blue {
+    background-color: #2288f9;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.col-reverse {
+    flex-direction: row-reverse;
+}
