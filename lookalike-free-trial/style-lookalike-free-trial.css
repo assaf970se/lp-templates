@@ -357,8 +357,12 @@ img {
 .main-section .quote-container .sign-container {
   display: flex;
 }
+.main-section .quote-container .sign-container div:first-child {
+  margin-right: 15px;
+  width: 40px;
+}
 .main-section .quote-container .sign-container div img {
-  margin-right: 10px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style-lookalike-free-trial.css.map */

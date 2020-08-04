@@ -148,26 +148,7 @@
 
     </section>
 
-    <script>
-        // window.onscroll = function (ev) {
-        //     if (window.innerWidth > 600) {
-        //         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        //             const topValue = window.innerHeight - 802;
-        //             console.log('bottom fold');
-        //             document.querySelector('.form-container').style = 'top: '+topValue+'px;';
-        //         }
-        //         else if (!window.pageYOffset) {
-        //             document.querySelector('.form-container').style = 'top: 60px;';
-        //             console.log('top fold');
-        //         }
-        //         else {
-        //             const topValue = (window.innerHeight - 703) / 2;
-        //             console.log('mid fold');
-        //             document.querySelector('.form-container').style = 'top: '+topValue+'px;';
-        //         }
-        //     }
-        // };
-    </script>
+
 
     <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
     <script>
@@ -175,7 +156,8 @@
             form.onSuccess(function (values, followUpUrl) {
                 form.getFormElem().hide();
             });
-        });</script>
+        });
+    </script>
 </body>
 
 </html>
