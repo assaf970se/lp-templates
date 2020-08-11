@@ -183,7 +183,7 @@ img {
   .top-page .header-section {
     padding-left: 25px;
     padding-right: 25px;
-    margin-bottom: 20px;
+    padding-bottom: 60px;
   }
 }
 .top-page .header-section .logo {
@@ -238,6 +238,7 @@ img {
     width: 100%;
     right: unset;
     top: unset;
+    margin-bottom: 60px;
   }
   .top-page .header-section .form-container .stick-bottom {
     top: unset;
@@ -278,7 +279,6 @@ img {
   .top-page .main-section {
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 70px;
     padding-top: 0;
   }
 }
@@ -298,11 +298,6 @@ img {
 }
 .top-page .main-section .description-container .description-text ul {
   padding-left: 30px;
-}
-@media (max-width: 600px) {
-  .top-page .main-section .description-container .description-text ul {
-    margin-bottom: 70px;
-  }
 }
 .top-page .main-section .description-container .description-text ul li {
   margin-bottom: 15px;
@@ -340,9 +335,7 @@ img {
 }
 @media (max-width: 600px) {
   .bottom-page {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 20px;
+    padding: 25px;
   }
 }
 .bottom-page .footer-container {
@@ -370,6 +363,11 @@ img {
 .bottom-page .icons-container .icon-text .icon {
   width: 32px;
   margin-right: 13px;
+}
+@media (max-width: 600px) {
+  .bottom-page .icons-container .icon-text .icon {
+    margin-bottom: 15px;
+  }
 }
 
 .footer-strip {
