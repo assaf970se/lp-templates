@@ -65,7 +65,7 @@ img {
   letter-spacing: 0.43px;
   font-family: "made4-dxb";
 }
-@media (max-width: 600px) {
+@media (max-width: 1060px) {
   .big-title {
     font-size: 28px;
     line-height: 38px;
@@ -78,7 +78,7 @@ img {
   line-height: 30px;
   color: #20303c;
 }
-@media (max-width: 600px) {
+@media (max-width: 1060px) {
   .sub-title {
     font-size: 18px;
     letter-spacing: 0.19px;
@@ -199,6 +199,16 @@ img {
   color: #ffffff;
   margin-bottom: 40px;
 }
+@media (max-width: 1070px) {
+  .top-page .header-section .title-container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .top-page .header-section .title-container {
+    max-width: 300px;
+  }
+}
 @media (max-width: 600px) {
   .top-page .header-section .title-container {
     margin-bottom: 50px;
@@ -232,6 +242,11 @@ img {
     right: 5%;
   }
 }
+@media (max-width: 1070px) {
+  .top-page .header-section .form-container {
+    width: 320px;
+  }
+}
 @media (max-width: 600px) {
   .top-page .header-section .form-container {
     position: relative;
@@ -254,6 +269,16 @@ img {
 }
 .top-page .header-section .main-img-container {
   max-width: 600px;
+}
+@media (max-width: 1070px) {
+  .top-page .header-section .main-img-container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .top-page .header-section .main-img-container {
+    max-width: 300px;
+  }
 }
 .top-page .header-section .main-img-container img {
   box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.11);
@@ -284,6 +309,16 @@ img {
 }
 .top-page .main-section .description-container {
   max-width: 600px;
+}
+@media (max-width: 1070px) {
+  .top-page .main-section .description-container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .top-page .main-section .description-container {
+    max-width: 300px;
+  }
 }
 @media (max-width: 600px) {
   .top-page .main-section .description-container {
@@ -359,6 +394,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 1070px) {
+  .bottom-page .icons-container .icon-text .text.description-text {
+    font-size: 11px;
+  }
 }
 .bottom-page .icons-container .icon-text .icon {
   width: 32px;
