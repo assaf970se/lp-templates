@@ -1,0 +1,108 @@
+@import "./reset.scss";
+@import "./general.scss";
+
+.header-section {
+    padding-top: 70px;
+    padding-bottom: 200px;
+
+    @media (max-width: 600px) {
+    }
+
+    .logo {
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    .mini-title {
+        font-size: 30px;
+    }
+
+    .big-title {
+        color: #13004d;
+        font-size: 60px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .text-title {
+        color: #10014A;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .info-banner {
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 10px 50px;
+        color: #fff;
+        background-color: #10014A;
+        margin-bottom: 50px;
+    }
+
+    .form-container {
+        @media (max-width: 600px) {
+        }
+    }
+}
+
+.big-banner-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    .big-banner {
+        max-width: 960px;
+        margin: 0 auto;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        box-shadow: 3.35px 3.72px 18px 3px rgba(0, 0, 0, 0.08);
+
+        .big-title {
+            text-align: center;
+            color: #0C2660;
+            margin-bottom: 30px;
+        }
+
+        .text-title {
+            text-align: center;
+            color: #0C2660;
+            margin-bottom: 40px;
+        }
+
+        .logo-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0C2660;
+
+            & > * {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            .telus-logo {
+                width: 150px;
+            }
+
+            .f-logo {
+                width: 50px;
+            }
+
+            .survey-logo {
+                width: 120px;
+                height: 21px;
+            }
+
+        }
+    }
+}
+
+.participants-section {
+    background: #10014A;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+
+}
+
+.footer-section {
+}

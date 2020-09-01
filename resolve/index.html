@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="../wixanswers-favicon.png" />
+        <title>Wix Answers | Don't settle for Zendesk</title>
+        <style>
+            @font-face {
+                font-family: "made4-db";
+                src: url("../fonts/WixMadeforDisplay_W_Bd.woff2")
+                    format("woff2");
+            }
+
+            @font-face {
+                font-family: "made4-dr";
+                src: url("../fonts/WixMadeforDisplay_W_Rg.woff2")
+                    format("woff2");
+            }
+
+            @font-face {
+                font-family: "made4-tr";
+                src: url("../fonts/WixMadeforText_W_Rg.woff2") format("woff2");
+            }
+
+            @font-face {
+                font-family: "made4-txb";
+                src: url("../fonts/WixMadeforText_W_XBd.woff2") format("woff2");
+            }
+
+            @font-face {
+                font-family: "made4-dxb";
+                src: url("../fonts/WixMadeforDisplay_W_XBd.woff2")
+                    format("woff2");
+            }
+
+            @media (min-width: 601px) {
+                .header-section {
+                    background: #102a63 url("./images/resolve-bg.png") no-repeat
+                        center;
+                    background-size: cover;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .header-section {
+                    background: #102a63 url("./images/resolve-bg.png") no-repeat
+                        center;
+                    background-size: cover;
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="./resolve-style.css" />
+    </head>
+
+    <body>
+        <section class="header-section">
+            <div class="logo">
+                <img src="./images/resolve-Wix-Answers-logo.svg" alt="" />
+            </div>
+            <div class="title-container">
+                <div class="big-title">
+                    <span class="mini-title">THIS IS</span>
+                    <br />
+                    RESLOVE
+                </div>
+                <div class="text-title">
+                    Discover new ideas, insights and future strategies around
+                    customer
+                    <br />
+                    experience from leading innovators and influencers.
+                </div>
+            </div>
+            <div class="info-banner info-text">
+                On-demand • Watch anywhere, anytime
+            </div>
+            <div class="form-container">
+                <div class="form-item">
+                    <form id="mktoForm_1466"></form>
+                </div>
+            </div>
+        </section>
+
+        <section class="big-banner-section">
+            <div class="big-banner">
+                <div class="big-title">
+                    The place to be for the
+                    <br>
+                    customer-obsessed
+                </div>
+                <div class="text-title">
+                    As the CX industry continues to rapidly evolve, companies are continuously
+                    <br>
+                    challenged with optimizing and scaling their support strategies.
+                    <br>
+                    RESOLVE brings together the CX-obsessed for a roundup of the latest support
+                    <br>
+                    innovations and trends.
+                </div>
+                <div class="logo-items">
+                    <div class="description-title" >In partnership with:</div>
+                    <img class="telus-logo" src="./images/part-logo-1.png" alt="">
+                    <img class="f-logo" src="./images/part-logo-2.png" alt="">
+                    <img class="survey-logo" src="./images/part-logo-3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="participants-section">
+            <div class="section-title-round bg-white tx-bluish">
+                <div class="big-title">
+                    Keynote
+                </div>
+            </div>
+            <div class="speaker">
+                <div class="speaker-img"></div>
+                <div class="speaker-details">
+                    <div class="speaker-name"></div>
+                    <div class="speaker-link"></div>
+                </div>
+                <div class="speaker-work">
+                    <div class="speaker-title"></div>
+                    <div class="speaker-company"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-section"></section>
+
+        <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
+        <script>
+            MktoForms2.loadForm(
+                "//app-nld101.marketo.com",
+                "314-AVR-999",
+                1466,
+                function (form) {
+                    form.onSuccess(function (values, followUpUrl) {
+                        form.getFormElem().hide();
+                    });
+                }
+            );
+        </script>
+
+        <script>
+            document
+                .querySelector(".banner-button")
+                .addEventListener("click", () => {
+                    window.scrollTo(0, 0);
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,308 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "made4-tr";
+  font-weight: normal;
+}
+
+ol,
+ul {
+  font-family: "made4-tr";
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 190px;
+}
+.logo img {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 170px;
+  }
+}
+
+.section-title-round {
+  width: 30%;
+  max-width: 500px;
+  min-width: 300px;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+  padding: 20px 0;
+  padding-right: 60px;
+  text-align: end;
+}
+
+.big-title {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  font-family: "made4-dxb";
+  line-height: 55px;
+}
+@media (max-width: 600px) {
+  .big-title {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: normal;
+  }
+}
+
+.text-title {
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.4px;
+  font-family: "made4-tr";
+}
+@media (max-width: 600px) {
+  .text-title {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: normal;
+  }
+}
+
+.info-text {
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  font-family: "made4-tr";
+}
+@media (max-width: 600px) {
+  .info-text {
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: normal;
+  }
+}
+
+.description-title {
+  font-size: 20px;
+  font-family: "made4-db";
+  font-weight: bold;
+  line-height: 41px;
+  letter-spacing: 0.32px;
+}
+@media (max-width: 600px) {
+  .description-title {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: normal;
+  }
+}
+
+.description-text {
+  color: #20303c;
+  font-size: 16px;
+  font-family: "made4-tr";
+  line-height: 27px;
+}
+@media (max-width: 600px) {
+  .description-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.quote-title {
+  font-family: "made4-txb";
+  font-size: 22px;
+  line-height: 30px;
+  color: #e02020;
+}
+@media (max-width: 600px) {
+  .quote-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.quote-text {
+  font-family: "made4-tr";
+  font-size: 18px;
+  line-height: 30px;
+  color: #e02020;
+}
+@media (max-width: 600px) {
+  .quote-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.banner-button {
+  cursor: pointer;
+  font-family: "made4-tr";
+  font-size: 18px;
+  background-color: #fff;
+  color: #20303c;
+  width: 185px;
+  height: 48px;
+  border-radius: 23px;
+  border: none;
+  outline: none;
+}
+
+.title-dash {
+  width: 99px;
+  height: 13px;
+  background-color: #87f5d3;
+  position: absolute;
+  z-index: -1;
+  top: 35px;
+  left: -20px;
+}
+@media (max-width: 600px) {
+  .title-dash {
+    display: none;
+  }
+}
+
+.rect-gray {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.rect-blue {
+  background-color: #2288f9;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.col-reverse {
+  flex-direction: row-reverse;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.tx-white {
+  color: #fff;
+}
+
+.bg-bluish {
+  background-color: #3C0DBC;
+}
+
+.tx-bluish {
+  color: #3C0DBC;
+}
+
+.header-section {
+  padding-top: 70px;
+  padding-bottom: 200px;
+}
+.header-section .logo {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.header-section .mini-title {
+  font-size: 30px;
+}
+.header-section .big-title {
+  color: #13004d;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header-section .text-title {
+  color: #10014A;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header-section .info-banner {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 10px 50px;
+  color: #fff;
+  background-color: #10014A;
+  margin-bottom: 50px;
+}
+.big-banner-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.big-banner-section .big-banner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  box-shadow: 3.35px 3.72px 18px 3px rgba(0, 0, 0, 0.08);
+}
+.big-banner-section .big-banner .big-title {
+  text-align: center;
+  color: #0C2660;
+  margin-bottom: 30px;
+}
+.big-banner-section .big-banner .text-title {
+  text-align: center;
+  color: #0C2660;
+  margin-bottom: 40px;
+}
+.big-banner-section .big-banner .logo-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0C2660;
+}
+.big-banner-section .big-banner .logo-items > * {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.big-banner-section .big-banner .logo-items .telus-logo {
+  width: 150px;
+}
+.big-banner-section .big-banner .logo-items .f-logo {
+  width: 50px;
+}
+.big-banner-section .big-banner .logo-items .survey-logo {
+  width: 120px;
+  height: 21px;
+}
+
+.participants-section {
+  background: #10014A;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/*# sourceMappingURL=resolve-style.css.map */
