@@ -25,7 +25,7 @@
     }
 
     .text-title {
-        color: #10014A;
+        color: #10014a;
         text-align: center;
         margin-bottom: 50px;
     }
@@ -35,7 +35,7 @@
         margin: 0 auto;
         padding: 10px 50px;
         color: #fff;
-        background-color: #10014A;
+        background-color: #10014a;
         margin-bottom: 50px;
     }
 
@@ -58,13 +58,13 @@
 
         .big-title {
             text-align: center;
-            color: #0C2660;
+            color: #0c2660;
             margin-bottom: 30px;
         }
 
         .text-title {
             text-align: center;
-            color: #0C2660;
+            color: #0c2660;
             margin-bottom: 40px;
         }
 
@@ -72,7 +72,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #0C2660;
+            color: #0c2660;
 
             & > * {
                 margin-right: 10px;
@@ -91,17 +91,73 @@
                 width: 120px;
                 height: 21px;
             }
-
         }
     }
 }
 
-.participants-section {
-    background: #10014A;
+.keynote-section,
+.speakers-section,
+.agenda-section {
     padding-top: 100px;
-    padding-bottom: 100px;
+}
 
+.keynote,
+.speakers {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+}
 
+.speaker {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.speaker-img {
+    max-width: 200px;
+    margin-bottom: 15px;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.speaker-details {
+    display: flex;
+    justify-content: center;
+}
+
+.speaker-name {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 5px;
+    font-family: "made4-db";
+}
+
+.speaker-link {
+    padding: 5px;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.speaker-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker-title {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 5px;
+    font-family: "made4-tr";
 }
 
 .footer-section {

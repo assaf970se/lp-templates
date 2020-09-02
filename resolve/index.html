@@ -53,7 +53,7 @@
         <link rel="stylesheet" href="./resolve-style.css" />
     </head>
 
-    <body>
+    <body >
         <section class="header-section">
             <div class="logo">
                 <img src="./images/resolve-Wix-Answers-logo.svg" alt="" />
@@ -106,24 +106,31 @@
             </div>
         </section>
 
-        <section class="participants-section">
-            <div class="section-title-round bg-white tx-bluish">
+        <section class="keynote-section" style="background: #10014a;">
+            <div class="section-title-round" style="background-color: #fff; color: #3C0DBC;">
                 <div class="big-title">
                     Keynote
                 </div>
             </div>
-            <div class="speaker">
-                <div class="speaker-img"></div>
-                <div class="speaker-details">
-                    <div class="speaker-name"></div>
-                    <div class="speaker-link"></div>
-                </div>
-                <div class="speaker-work">
-                    <div class="speaker-title"></div>
-                    <div class="speaker-company"></div>
+            <div class="keynote"></div>
+        </section>
+        <section class="speakers-section" style="background: #10014a;">
+            <div class="section-title-round" style="background-color: #fff; color: #3C0DBC;">
+                <div class="big-title">
+                    Speakers
                 </div>
             </div>
+            <div class="speakers"></div>
         </section>
+        <section class="agenda-section" style="background: #fff;">
+            <div class="section-title-round" style="background-color: #3C0DBC; color: #fff;">
+                <div class="big-title">
+                    Agenda
+                </div>
+            </div>
+            <div class="agenda"></div>
+        </section>
+        
 
         <section class="footer-section"></section>
 
@@ -141,12 +148,7 @@
             );
         </script>
 
-        <script>
-            document
-                .querySelector(".banner-button")
-                .addEventListener("click", () => {
-                    window.scrollTo(0, 0);
-                });
-        </script>
+        
+        <script src="./js/app.js"></script>
     </body>
 </html>
