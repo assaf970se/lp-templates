@@ -303,6 +303,7 @@ img {
 .speakers-section,
 .agenda-section {
   padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .keynote,
@@ -416,6 +417,17 @@ img {
   font-size: 14px;
   color: #002764;
   line-height: 28px;
+}
+
+.footer-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-section .big-title {
+  font-size: 60px;
+  text-align: center;
+  color: #13004D;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=resolve-style.css.map */

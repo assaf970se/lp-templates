@@ -13,7 +13,7 @@
     }
 }
 
-.big-title {
+.big-title, .big-title > *, .big-title > * > * {
     color: #20303c;
     font-size: 40px;
     font-weight: bold;
@@ -22,8 +22,8 @@
     font-family: "made4-dxb";
 
     @media (max-width: 1060px) {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 28px !important;
+        line-height: 36px !important;
     }
 }
 
@@ -86,3 +86,11 @@
         line-height: 29px;
     }
 }
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+  }

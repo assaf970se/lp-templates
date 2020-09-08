@@ -99,6 +99,7 @@
 .speakers-section,
 .agenda-section {
     padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 .keynote,
@@ -213,4 +214,13 @@
 
 
 .footer-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .big-title {
+        font-size: 60px;
+        text-align: center;
+        color: #13004D;
+        margin-bottom: 50px;
+    }
 }
