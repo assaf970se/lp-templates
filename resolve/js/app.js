@@ -32,14 +32,13 @@
         return `
         <div class="speaker">
         <div class="speaker-img">
-            <img src=${prettifyImgUrl(speakerImage)} alt="">
+            <img src=${prettifyImgUrl(speakerImage) || ''} alt="">
         </div>
         <div class="speaker-details">
-            <div class="speaker-name">${speakerName}</div>
+            <div class="speaker-name">${speakerName || ''}</div>
             <div class="speaker-link">
-                <a href=${speakerSocialLink}>
-                    <!-- img src= alt="" -->
-                linkedin
+                <a href=${speakerSocialLink || ''}>
+                    <img src="https://static.wixstatic.com/media/3cac9b_c2b6138b6ed94063b7c0e1648255c096~mv2.png/v1/crop/x_92,y_92,w_2032,h_2032/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01/3cac9b_c2b6138b6ed94063b7c0e1648255c096~mv2.webp" alt="">
                 </a>
             </div>
         </div>
@@ -60,7 +59,13 @@
         } = agendaData;
 
         return `
-            
+            <div class="event">
+                <div class="event-date-time">${dateTime || ''}</div>
+                <div class="event-type">${eventType || ''}</div>
+                <div class="event-title">${eventTitle || ''}</div>
+                <div class="participants">${participants.join('<br />') || ''}</div>
+                <div class="event-description">${eventDescription || ''}</div>
+            </div>
         `;
     }
 
@@ -82,12 +87,21 @@
         document.querySelector(".speakers").innerHTML = speakersHtml;
     }
 
+    function renderAgenda() {
+        const agendaHtml = results[1]
+            .sort((a,b) => a.eventNumber - b.eventNumber)
+            .map(renderAgendaHtml)
+            .join("");
+        document.querySelector(".agenda").innerHTML = agendaHtml;
+    }
+
     async function render() {
         results = await Promise.all([getSpeakerData(), getAgendaData()]);
         if (results[0].find((item) => item.event === "keynote"))
             renderKeynote();
         if (results[0].find((item) => item.event === "speakers"))
             renderSpeakers();
+        if (results[1].length) renderAgenda();
         console.log("render:", results);
     }
 

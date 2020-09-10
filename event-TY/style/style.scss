@@ -1,0 +1,52 @@
+@import "./reset.scss";
+@import "./general.scss";
+
+.main-section {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    height: 100vh;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .logo {
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    
+    .text-title{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .big-title {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+
+    .add-to-calendar{
+        cursor: pointer;
+        padding: 20px;
+        font-family: made4-dxb, sans-serif !important;
+        width: 300px;
+        height: 70px;
+        font-size: 22px;
+        border-radius: 50px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        
+        @media (max-width: 600px) {
+            width: 250px;
+            height: 50px;
+            font-size: 16px;
+        }
+
+    }
+    
+    
+}
