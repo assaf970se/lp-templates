@@ -1,0 +1,106 @@
+// general css
+
+.logo {
+    grid-area: logo;
+    width: 230px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        width: 170px;
+    }
+}
+
+.big-title,
+.big-title > *,
+.big-title > * > * {
+    color: #20303c;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 46px;
+    letter-spacing: 0.43px;
+    font-family: "made4-dxb";
+
+    @media (max-width: 1060px) {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+}
+
+.sub-title,
+.sub-title > *,
+.sub-title > * > * {
+    font-family: "made4-dr";
+    font-size: 18px;
+    line-height: 30px;
+    color: #20303c;
+
+    @media (max-width: 1060px) {
+        font-size: 18px !important;
+        letter-spacing: 0.19px !important;
+        line-height: 26px !important;
+    }
+}
+
+.description-title,
+.description-title > *,
+.description-title > * > * {
+    font-size: 15px;
+    font-family: "made4-db";
+    font-weight: bold;
+    line-height: 24px;
+    color: #20303c;
+
+    @media (max-width: 600px) {
+        font-size: 22px !important;
+        letter-spacing: 0.24px !important;
+        line-height: 29px !important;
+    }
+}
+
+.description-text,
+.description-text > *,
+.description-text > * > * {
+    color: #20303c;
+    font-size: 15px;
+    font-family: "made4-tr";
+    line-height: 24px;
+
+    .description-text-bold {
+        font-family: "made4-db";
+        font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 15px !important;
+        letter-spacing: 0.16px !important;
+        line-height: 22px !important;
+    }
+}
+
+.form-title,
+.form-title > *,
+.form-title > * > * {
+    font-size: 20px;
+    font-family: "made4-tb";
+    font-weight: bold;
+    line-height: 24px;
+    color: #20303c;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        font-size: 22px !important;
+        letter-spacing: 0.24px !important;
+        line-height: 29px !important;
+    }
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}

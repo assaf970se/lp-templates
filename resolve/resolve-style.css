@@ -70,7 +70,9 @@ img {
   text-align: end;
 }
 
-.big-title {
+.big-title,
+.big-title > *,
+.big-title > * > * {
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 1.6px;
@@ -78,41 +80,53 @@ img {
   line-height: 55px;
 }
 @media (max-width: 600px) {
-  .big-title {
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: normal;
+  .big-title,
+.big-title > *,
+.big-title > * > * {
+    font-size: 20px !important;
+    line-height: 25px !important;
+    letter-spacing: normal !important;
   }
 }
 
-.text-title {
+.text-title,
+.text-title > *,
+.text-title > * > * {
   font-size: 20px;
   line-height: 36px;
   letter-spacing: 0.4px;
   font-family: "made4-tr";
 }
 @media (max-width: 600px) {
-  .text-title {
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: normal;
+  .text-title,
+.text-title > *,
+.text-title > * > * {
+    font-size: 14px !important;
+    line-height: 21px !important;
+    letter-spacing: normal !important;
   }
 }
 
-.info-text {
+.info-text,
+.info-text > *,
+.info-text > * > * {
   font-size: 15px;
   letter-spacing: 0.4px;
   font-family: "made4-tr";
 }
 @media (max-width: 600px) {
-  .info-text {
-    font-size: 22px;
-    line-height: 27px;
-    letter-spacing: normal;
+  .info-text,
+.info-text > *,
+.info-text > * > * {
+    font-size: 22px !important;
+    line-height: 27px !important;
+    letter-spacing: normal !important;
   }
 }
 
-.description-title {
+.description-title,
+.description-title > *,
+.description-title > * > * {
   font-size: 20px;
   font-family: "made4-db";
   font-weight: bold;
@@ -120,49 +134,63 @@ img {
   letter-spacing: 0.32px;
 }
 @media (max-width: 600px) {
-  .description-title {
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: normal;
+  .description-title,
+.description-title > *,
+.description-title > * > * {
+    font-size: 20px !important;
+    line-height: 27px !important;
+    letter-spacing: normal !important;
   }
 }
 
-.description-text {
+.description-text,
+.description-text > *,
+.description-text > * > * {
   color: #20303c;
   font-size: 16px;
   font-family: "made4-tr";
   line-height: 27px;
 }
 @media (max-width: 600px) {
-  .description-text {
-    font-size: 14px;
-    line-height: 22px;
+  .description-text,
+.description-text > *,
+.description-text > * > * {
+    font-size: 14px !important;
+    line-height: 22px !important;
   }
 }
 
-.quote-title {
+.quote-title,
+.quote-title > *,
+.quote-title > * > * {
   font-family: "made4-txb";
   font-size: 22px;
   line-height: 30px;
   color: #e02020;
 }
 @media (max-width: 600px) {
-  .quote-title {
-    font-size: 16px;
-    line-height: 24px;
+  .quote-title,
+.quote-title > *,
+.quote-title > * > * {
+    font-size: 16px !important;
+    line-height: 24px !important;
   }
 }
 
-.quote-text {
+.quote-text,
+.quote-text > *,
+.quote-text > * > * {
   font-family: "made4-tr";
   font-size: 18px;
   line-height: 30px;
   color: #e02020;
 }
 @media (max-width: 600px) {
-  .quote-text {
-    font-size: 14px;
-    line-height: 22px;
+  .quote-text,
+.quote-text > *,
+.quote-text > * > * {
+    font-size: 14px !important;
+    line-height: 22px !important;
   }
 }
 
@@ -220,11 +248,11 @@ img {
 }
 
 .bg-bluish {
-  background-color: #3C0DBC;
+  background-color: #3c0dbc;
 }
 
 .tx-bluish {
-  color: #3C0DBC;
+  color: #3c0dbc;
 }
 
 .header-section {

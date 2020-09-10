@@ -57,7 +57,9 @@ img {
   }
 }
 
-.big-title, .big-title > *, .big-title > * > * {
+.big-title,
+.big-title > *,
+.big-title > * > * {
   color: #20303c;
   font-size: 40px;
   font-weight: bold;
@@ -66,27 +68,35 @@ img {
   font-family: "made4-dxb";
 }
 @media (max-width: 1060px) {
-  .big-title, .big-title > *, .big-title > * > * {
+  .big-title,
+.big-title > *,
+.big-title > * > * {
     font-size: 28px !important;
     line-height: 36px !important;
   }
 }
 
-.sub-title {
+.sub-title,
+.sub-title > *,
+.sub-title > * > * {
   font-family: "made4-dr";
   font-size: 18px;
   line-height: 30px;
   color: #20303c;
 }
 @media (max-width: 1060px) {
-  .sub-title {
-    font-size: 18px;
-    letter-spacing: 0.19px;
-    line-height: 26px;
+  .sub-title,
+.sub-title > *,
+.sub-title > * > * {
+    font-size: 18px !important;
+    letter-spacing: 0.19px !important;
+    line-height: 26px !important;
   }
 }
 
-.description-title {
+.description-title,
+.description-title > *,
+.description-title > * > * {
   font-size: 15px;
   font-family: "made4-db";
   font-weight: bold;
@@ -94,32 +104,42 @@ img {
   color: #20303c;
 }
 @media (max-width: 600px) {
-  .description-title {
-    font-size: 22px;
-    letter-spacing: 0.24px;
-    line-height: 29px;
+  .description-title,
+.description-title > *,
+.description-title > * > * {
+    font-size: 22px !important;
+    letter-spacing: 0.24px !important;
+    line-height: 29px !important;
   }
 }
 
-.description-text {
+.description-text,
+.description-text > *,
+.description-text > * > * {
   color: #20303c;
   font-size: 15px;
   font-family: "made4-tr";
   line-height: 24px;
 }
-.description-text .description-text-bold {
+.description-text .description-text-bold,
+.description-text > * .description-text-bold,
+.description-text > * > * .description-text-bold {
   font-family: "made4-db";
   font-weight: bold;
 }
 @media (max-width: 600px) {
-  .description-text {
-    font-size: 15px;
-    letter-spacing: 0.16px;
-    line-height: 22px;
+  .description-text,
+.description-text > *,
+.description-text > * > * {
+    font-size: 15px !important;
+    letter-spacing: 0.16px !important;
+    line-height: 22px !important;
   }
 }
 
-.form-title {
+.form-title,
+.form-title > *,
+.form-title > * > * {
   font-size: 20px;
   font-family: "made4-tb";
   font-weight: bold;
@@ -128,10 +148,12 @@ img {
   text-align: center;
 }
 @media (max-width: 600px) {
-  .form-title {
-    font-size: 22px;
-    letter-spacing: 0.24px;
-    line-height: 29px;
+  .form-title,
+.form-title > *,
+.form-title > * > * {
+    font-size: 22px !important;
+    letter-spacing: 0.24px !important;
+    line-height: 29px !important;
   }
 }
 
@@ -466,4 +488,4 @@ img {
   width: 120px;
 }
 
-/*# sourceMappingURL=style-demo-v2.css.map */
+/*# sourceMappingURL=style-account-creation.css.map */
