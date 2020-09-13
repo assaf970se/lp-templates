@@ -74,6 +74,7 @@
     function renderKeynote() {
         const keynoteHtml = results[0]
             .filter((item) => item.event === "keynote")
+            .sort((a,b) => a.speakerNumber - b.speakerNumber)
             .map(renderSpeakerHtml)
             .join("");
         document.querySelector(".keynote").innerHTML = keynoteHtml;
@@ -82,6 +83,7 @@
     function renderSpeakers() {
         const speakersHtml = results[0]
             .filter((item) => item.event === "speakers")
+            .sort((a,b) => a.speakerNumber - b.speakerNumber)
             .map(renderSpeakerHtml)
             .join("");
         document.querySelector(".speakers").innerHTML = speakersHtml;
