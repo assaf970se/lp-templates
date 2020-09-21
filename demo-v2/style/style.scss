@@ -59,13 +59,13 @@
         .title-container {
             max-width: 600px;
             color: #ffffff;
-            
+
             @media (max-width: 1070px) {
-                max-width: 400px; 
+                max-width: 400px;
             }
 
             @media (max-width: 800px) {
-                max-width: 300px; 
+                max-width: 300px;
             }
 
             @media (max-width: 600px) {
@@ -102,7 +102,7 @@
             }
 
             @media (max-width: 1070px) {
-                width: 320px; 
+                width: 320px;
             }
 
             @media (max-width: 600px) {
@@ -134,19 +134,19 @@
                     align-items: center;
                     margin-right: 20px;
                     margin-left: 20px;
-    
+
                     &:not(:last-child) {
                         margin-bottom: 20px;
                     }
-    
+
                     .asset {
                         width: 80px;
-    
+
                         &.yotpo {
                             padding-left: 25px;
                             padding-right: 25px;
                         }
-    
+
                         &.gettyimages {
                         }
                         &.fiverr {
@@ -195,10 +195,8 @@
             margin-bottom: 30px;
 
             @media (max-width: 1070px) {
-                max-width: 400px; 
+                max-width: 400px;
             }
-
-            
 
             img {
                 box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.11);
@@ -210,11 +208,11 @@
             max-width: 600px;
 
             @media (max-width: 1070px) {
-                max-width: 400px; 
+                max-width: 400px;
             }
 
             @media (max-width: 800px) {
-                max-width: 300px; 
+                max-width: 300px;
             }
 
             @media (max-width: 600px) {

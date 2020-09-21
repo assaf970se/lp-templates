@@ -57,7 +57,7 @@ img {
   }
 }
 
-.big-title {
+.big-title, .big-title > *, .big-title > * > * {
   color: #ffffff;
   font-size: 55px;
   font-weight: bold;
@@ -65,9 +65,9 @@ img {
   font-family: "made4-dxb";
 }
 @media (max-width: 600px) {
-  .big-title {
-    font-size: 26px;
-    line-height: 38px;
+  .big-title, .big-title > *, .big-title > * > * {
+    font-size: 26px !important;
+    line-height: 38px !important;
   }
 }
 
@@ -78,7 +78,7 @@ img {
   color: #20303c;
   letter-spacing: 0.17px;
 }
-.description-title {
+.description-title, .description-title > *, .description-title > * > * {
   font-size: 24px;
   font-family: "made4-dxb";
   font-weight: bold;
@@ -87,37 +87,37 @@ img {
   color: #20303c;
 }
 @media (max-width: 600px) {
-  .description-title {
-    font-size: 18px;
-    letter-spacing: 0.24px;
-    line-height: 29px;
+  .description-title, .description-title > *, .description-title > * > * {
+    font-size: 18px !important;
+    letter-spacing: 0.24px !important;
+    line-height: 29px !important;
   }
 }
 
-.description-text {
+.description-text, .description-text > *, .description-text > * > * {
   color: #20303c;
   font-size: 20px;
   font-family: "made4-dr";
   line-height: 28px;
   letter-spacing: 0.22px;
 }
-.description-text .description-text-bold {
+.description-text .description-text-bold, .description-text > * .description-text-bold, .description-text > * > * .description-text-bold {
   font-family: "made4-db";
   font-weight: bold;
 }
-.description-text.description-text-bold {
+.description-text.description-text-bold, .description-text > *.description-text-bold, .description-text > * > *.description-text-bold {
   font-family: "made4-db";
   font-weight: bold;
 }
 @media (max-width: 600px) {
-  .description-text {
-    font-size: 16px;
-    letter-spacing: 0.17px;
-    line-height: 26px;
+  .description-text, .description-text > *, .description-text > * > * {
+    font-size: 16px !important;
+    letter-spacing: 0.17px !important;
+    line-height: 26px !important;
   }
 }
 
-.quote-text {
+.quote-text, .quote-text > *, .quote-text > * > * {
   color: #20303c;
   font-family: "made4-tr";
   font-size: 15px;
@@ -125,14 +125,14 @@ img {
   letter-spacing: 0.3px;
 }
 @media (max-width: 600px) {
-  .quote-text {
-    font-size: 14px;
-    letter-spacing: 0.3px;
-    line-height: 23px;
+  .quote-text, .quote-text > *, .quote-text > * > * {
+    font-size: 14px !important;
+    letter-spacing: 0.3px !important;
+    line-height: 23px !important;
   }
 }
 
-.quote-sign-text {
+.quote-sign-text, .quote-sign-text > *, .quote-sign-text > * > * {
   color: #20303c;
   font-family: "made4-tr";
   font-size: 16px;
@@ -140,11 +140,11 @@ img {
   letter-spacing: 0.3px;
 }
 @media (max-width: 600px) {
-  .quote-sign-text {
-    font-size: 12px;
+  .quote-sign-text, .quote-sign-text > *, .quote-sign-text > * > * {
+    font-size: 12px !important;
   }
 }
-.quote-sign-text .quote-sign-text-bold {
+.quote-sign-text .quote-sign-text-bold, .quote-sign-text > * .quote-sign-text-bold, .quote-sign-text > * > * .quote-sign-text-bold {
   font-family: "made4-tb";
 }
 
@@ -348,7 +348,7 @@ img {
   top: -2px;
 }
 .main-section .icons-container {
-  max-width: 600px;
+  max-width: 550px;
   margin-bottom: 150px;
 }
 @media (max-width: 600px) {
@@ -372,7 +372,7 @@ img {
   margin-bottom: 40px;
 }
 .main-section .icons-container .icons-description-items .icons-description-item .icon {
-  width: 80px;
+  width: 45px;
   margin-right: 30px;
 }
 .main-section .quote-container {

@@ -13,7 +13,7 @@
     }
 }
 
-.big-title {
+.big-title, .big-title > *, .big-title > * > * {
     color: #ffffff;
     font-size: 55px;
     font-weight: bold;
@@ -21,8 +21,8 @@
     font-family: "made4-dxb";
 
     @media (max-width: 600px) {
-        font-size: 26px;
-        line-height: 38px;
+        font-size: 26px !important;
+        line-height: 38px !important;
     }
 }
 
@@ -36,7 +36,7 @@
     @media (max-width: 600px) {}
 }
 
-.description-title {
+.description-title, .description-title > *, .description-title > * > * {
     font-size: 24px;
     font-family: "made4-dxb";
     font-weight: bold;
@@ -45,13 +45,13 @@
     color: #20303c;
 
     @media (max-width: 600px) {
-        font-size: 18px;
-        letter-spacing: 0.24px;
-        line-height: 29px;
+        font-size: 18px !important;
+        letter-spacing: 0.24px !important;
+        line-height: 29px !important;
     }
 }
 
-.description-text {
+.description-text, .description-text > *, .description-text > * > * {
     color: #20303c;
     font-size: 20px;
     font-family: "made4-dr";
@@ -69,14 +69,14 @@
     }
 
     @media (max-width: 600px) {
-        font-size: 16px;
-        letter-spacing: 0.17px;
-        line-height: 26px;
+        font-size: 16px !important;
+        letter-spacing: 0.17px !important;
+        line-height: 26px !important;
     }
 }
 
 
-.quote-text {
+.quote-text, .quote-text > *, .quote-text > * > * {
     color: #20303c;
     font-family: "made4-tr";
     font-size: 15px;
@@ -84,13 +84,13 @@
     letter-spacing: 0.3px;
 
     @media (max-width: 600px) {
-        font-size: 14px;
-        letter-spacing: 0.3px;
-        line-height: 23px;
+        font-size: 14px !important;
+        letter-spacing: 0.3px !important;
+        line-height: 23px !important;
     }
 }
 
-.quote-sign-text {
+.quote-sign-text, .quote-sign-text > *, .quote-sign-text > * > * {
     color: #20303c;
     font-family: "made4-tr";
     font-size: 16px;
@@ -98,7 +98,7 @@
     letter-spacing: 0.3px;
     
     @media (max-width: 600px) {
-        font-size: 12px;
+        font-size: 12px !important;
 
     }
 
