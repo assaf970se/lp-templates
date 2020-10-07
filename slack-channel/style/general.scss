@@ -1,0 +1,168 @@
+// general css
+
+.logo {
+    grid-area: logo;
+    width: 245px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        width: 170px;
+    }
+}
+
+
+.main-title {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.43px;
+    font-family: "made4-dxb";
+    color: #20303c;
+
+    @media (max-width: 600px) {
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: normal;
+    }
+}
+
+.general-title {
+    font-size: 38px;
+    font-family: "made4-dxb";
+    font-weight: bold;
+    line-height: 45px;
+    letter-spacing: 0.41px;
+    
+    @media (max-width: 600px) {
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: normal;
+    }
+}
+
+.general-text {
+    font-size: 20px;
+    font-family: "made4-tr";
+    letter-spacing: 0.45px;
+    line-height: 33px;
+
+    @media (max-width: 600px) {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+.info-title {
+    font-size: 21px;
+    font-family: "made4-dxb";
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: 0.23px;
+    
+    @media (max-width: 600px) {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: normal;
+    }
+}
+
+.info-text {
+    font-size: 14px;
+    font-family: "made4-tr";
+    line-height: 22px;
+    letter-spacing: 0.16px;
+
+    @media (max-width: 600px) {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+.link-title {
+    font-size: 20px;
+    font-family: "made4-dxb";
+    font-weight: bold;
+    line-height: 45px;
+    letter-spacing: 0.41px;
+    
+    @media (max-width: 600px) {
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: normal;
+    }
+}
+
+.link-text {
+    font-size: 18px;
+    font-family: "made4-tr";
+    letter-spacing: 0.45px;
+    line-height: 33px;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.styled-button {
+    background-color: #e9a376;
+    color: #001a45;
+    padding: 20px;
+    width: 295px;
+    height: 65px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "made4-tr";
+    letter-spacing: 5.5px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    &:active {
+        transform: scale(0.98);
+    }
+
+    @media (max-width: 700px) {
+        width: 180px;
+        height: 40px;
+        font-size: 9px;
+        letter-spacing: 3.4px;
+        line-height: 10px;
+        padding: 5px;
+    }
+}
+
+
+.m4db {
+    font-family: "made4-db";
+    font-weight: bold;
+}
+.m4dr {
+    font-family: "made4-dr";
+    font-weight: normal;
+}
+.m4tr {
+    font-family: "made4-tr";
+    font-weight: normal;
+}
+.m4txb {
+    font-family: "made4-txb";
+    font-weight: bold;
+}
+.m4dxb {
+    font-family: "made4-dxb";
+    font-weight: bold;
+}
+
+.fff {
+    color: #fff;
+}
+
+.gold {
+    color: #e9a376;
+}
+

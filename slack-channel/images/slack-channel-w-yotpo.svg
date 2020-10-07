@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73" height="75" viewBox="0 0 73 75">
+    <defs>
+        <filter id="vrdbes5tka">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+        <filter id="abz94aqrub" width="144.4%" height="142.9%" x="-22.2%" y="-21.4%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g filter="url(#vrdbes5tka)" transform="translate(-701 -2636) translate(415 2645)">
+                <g fill="#FFF" fill-rule="nonzero" filter="url(#abz94aqrub)" transform="translate(295.815 .46)">
+                    <path d="M27.701 31.776c-1.792 0-2.852 1.396-2.852 3.12 0 1.724 1.06 3.12 2.852 3.12 1.792 0 2.852-1.396 2.852-3.12 0-1.724-1.06-3.12-2.852-3.12M16.702 31.776h-1.059v3.695h1.06c1.303 0 1.792-.738 1.792-1.806s-.49-1.89-1.793-1.89"/>
+                    <path d="M42.04 19.624h-2.852v8.621h-2.933v-8.621h-2.851V17.16h8.636v2.463zm-7.007 21.02c-.815-.082-1.548-.74-1.548-1.642 0-.986.733-1.642 1.548-1.642.815 0 1.548.656 1.548 1.642 0 .985-.733 1.643-1.548 1.643zm-7.332 0c-3.096-.082-5.785-2.381-5.785-5.747 0-3.367 2.689-5.666 5.785-5.666s5.784 2.382 5.784 5.666c0 3.366-2.688 5.748-5.784 5.748zm-10.836-2.628h-1.222v2.381H12.79V29.313h4.074c2.933 0 4.562 1.89 4.562 4.352 0 2.464-1.63 4.351-4.562 4.351zm-1.793-20.855l2.445 4.516 2.362-4.516h3.015l-3.992 7.225v3.86h-2.933v-3.778l-4.074-7.307h3.177zm12.71-.082c3.096 0 5.785 2.38 5.785 5.665 0 3.367-2.689 5.748-5.785 5.748-3.096-.082-5.784-2.381-5.784-5.748 0-3.366 2.688-5.665 5.784-5.665zM26.967 0C12.074 0 0 12.536 0 27.999c0 15.464 12.074 27.999 26.967 27.999 14.894 0 26.968-12.535 26.968-27.999C53.935 12.536 41.86 0 26.967 0z"/>
+                    <path d="M27.701 25.865c1.874 0 2.852-1.396 2.852-3.121 0-1.724-1.06-3.12-2.852-3.12-1.792 0-2.852 1.396-2.852 3.12 0 1.725 1.06 3.12 2.852 3.12"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
