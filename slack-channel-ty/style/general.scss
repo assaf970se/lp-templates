@@ -1,0 +1,103 @@
+// general css
+
+.logo {
+    grid-area: logo;
+    width: 245px;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        width: 170px;
+    }
+}
+
+
+.main-title, .main-title > *, .main-title > * > * {
+    font-size: 55px;
+    letter-spacing: 1.26px;
+    font-family: "made4-dxb";
+    color: #e9a376;
+
+    @media (max-width: 600px) {
+        font-size: 30px !important;
+        letter-spacing: 0.7px !important;
+        letter-spacing: normal !important;
+    }
+}
+
+.sub-title, .sub-title > *, .sub-title > * > * {
+    font-size: 25px;
+    font-family: "made4-dxb";
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    
+    @media (max-width: 600px) {
+        font-size: 16px !important;
+        line-height: 23px !important;
+        letter-spacing: 0.6px !important;
+    }
+}
+
+.general-text, .general-text > *, .general-text > * > * {
+    font-size: 18px;
+    font-family: "made4-tr";
+    letter-spacing: 0.45px;
+    line-height: 33px;
+    color: #ffffff;
+
+    @media (max-width: 600px) {
+        font-size: 13px !important;
+        line-height: 22px !important;
+        letter-spacing: 0.3px !important;
+    }
+}
+
+.info-title, .info-title > *, .info-title > * > * {
+    font-size: 18px;
+    font-family: "made4-dxb";
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: 0.23px;
+    color: #ffffff;
+    
+    @media (max-width: 600px) {
+        font-size: 18px !important;
+        line-height: 28px !important;
+        letter-spacing: normal !important;
+    }
+}
+
+
+.m4db {
+    font-family: "made4-db";
+    font-weight: bold;
+}
+.m4dr {
+    font-family: "made4-dr";
+    font-weight: normal;
+}
+.m4tr {
+    font-family: "made4-tr";
+    font-weight: normal;
+}
+.m4txb {
+    font-family: "made4-txb";
+    font-weight: bold;
+}
+.m4dxb {
+    font-family: "made4-dxb";
+    font-weight: bold;
+}
+
+.fff {
+    color: #fff;
+}
+
+.gold {
+    color: #e9a376;
+}
+

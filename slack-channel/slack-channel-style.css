@@ -60,7 +60,7 @@ img {
   }
 }
 
-.main-title {
+.main-title, .main-title > *, .main-title > * > * {
   font-size: 40px;
   line-height: 52px;
   letter-spacing: 0.43px;
@@ -68,14 +68,14 @@ img {
   color: #20303c;
 }
 @media (max-width: 600px) {
-  .main-title {
-    font-size: 22px;
-    line-height: 27px;
-    letter-spacing: normal;
+  .main-title, .main-title > *, .main-title > * > * {
+    font-size: 22px !important;
+    line-height: 27px !important;
+    letter-spacing: normal !important;
   }
 }
 
-.general-title {
+.general-title, .general-title > *, .general-title > * > * {
   font-size: 38px;
   font-family: "made4-dxb";
   font-weight: bold;
@@ -83,27 +83,27 @@ img {
   letter-spacing: 0.41px;
 }
 @media (max-width: 600px) {
-  .general-title {
-    font-size: 22px;
-    line-height: 27px;
-    letter-spacing: normal;
+  .general-title, .general-title > *, .general-title > * > * {
+    font-size: 22px !important;
+    line-height: 27px !important;
+    letter-spacing: normal !important;
   }
 }
 
-.general-text {
+.general-text, .general-text > *, .general-text > * > * {
   font-size: 18px;
   font-family: "made4-tr";
   letter-spacing: 0.45px;
   line-height: 33px;
 }
 @media (max-width: 600px) {
-  .general-text {
-    font-size: 13px;
-    line-height: 22px;
+  .general-text, .general-text > *, .general-text > * > * {
+    font-size: 13px !important;
+    line-height: 22px !important;
   }
 }
 
-.info-title {
+.info-title, .info-title > *, .info-title > * > * {
   font-size: 18px;
   font-family: "made4-dxb";
   font-weight: bold;
@@ -111,27 +111,27 @@ img {
   letter-spacing: 0.23px;
 }
 @media (max-width: 600px) {
-  .info-title {
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: normal;
+  .info-title, .info-title > *, .info-title > * > * {
+    font-size: 18px !important;
+    line-height: 28px !important;
+    letter-spacing: normal !important;
   }
 }
 
-.info-text {
+.info-text, .info-text > *, .info-text > * > * {
   font-size: 13px;
   font-family: "made4-tr";
   line-height: 22px;
   letter-spacing: 0.16px;
 }
 @media (max-width: 600px) {
-  .info-text {
-    font-size: 13px;
-    line-height: 22px;
+  .info-text, .info-text > *, .info-text > * > * {
+    font-size: 13px !important;
+    line-height: 22px !important;
   }
 }
 
-.link-title {
+.link-title, .link-title > *, .link-title > * > * {
   font-size: 20px;
   font-family: "made4-dxb";
   font-weight: bold;
@@ -139,23 +139,23 @@ img {
   letter-spacing: 0.41px;
 }
 @media (max-width: 600px) {
-  .link-title {
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: normal;
+  .link-title, .link-title > *, .link-title > * > * {
+    font-size: 20px !important;
+    line-height: 27px !important;
+    letter-spacing: normal !important;
   }
 }
 
-.link-text {
+.link-text, .link-text > *, .link-text > * > * {
   font-size: 18px;
   font-family: "made4-tr";
   letter-spacing: 0.45px;
   line-height: 33px;
 }
 @media (max-width: 600px) {
-  .link-text {
-    font-size: 14px;
-    line-height: 22px;
+  .link-text, .link-text > *, .link-text > * > * {
+    font-size: 14px !important;
+    line-height: 22px !important;
   }
 }
 
@@ -661,6 +661,10 @@ img {
   display: flex;
   flex-direction: column;
 }
+.company-links a, .company-links a:active, .company-links a:focus {
+  text-decoration: none;
+  color: inherit;
+}
 
 .contact-links {
   display: flex;
@@ -674,6 +678,10 @@ img {
 .learn-more-links {
   display: flex;
   flex-direction: column;
+}
+.learn-more-links a, .learn-more-links a:active, .learn-more-links a:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=slack-channel-style.css.map */

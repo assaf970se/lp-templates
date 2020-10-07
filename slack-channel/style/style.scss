@@ -421,6 +421,11 @@
 .company-links {
     display: flex;
     flex-direction: column;
+
+    a, a:active, a:focus {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .contact-links {
@@ -436,4 +441,9 @@
 .learn-more-links {
     display: flex;
     flex-direction: column;
+
+    a, a:active, a:focus {
+        text-decoration: none;
+        color: inherit;
+    }
 }
