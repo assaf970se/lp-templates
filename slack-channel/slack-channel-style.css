@@ -243,6 +243,12 @@ img {
     display: block;
     width: 130px;
   }
+  .top-header .top-header-logo p {
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
 }
 .top-header .header-title {
   width: 80%;
