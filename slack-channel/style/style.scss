@@ -426,6 +426,11 @@
 .contact-links {
     display: flex;
     flex-direction: column;
+
+    a, a:active, a:focus {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .learn-more-links {

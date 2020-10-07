@@ -666,6 +666,10 @@ img {
   display: flex;
   flex-direction: column;
 }
+.contact-links a, .contact-links a:active, .contact-links a:focus {
+  text-decoration: none;
+  color: inherit;
+}
 
 .learn-more-links {
   display: flex;
