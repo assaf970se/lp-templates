@@ -394,7 +394,42 @@ img {
 }
 .main-section .main-img-container img {
   box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.11);
-  border-radius: 5px;
+  border-radius: 10px;
+}
+.main-section .video-container {
+  max-width: 570px;
+  height: 320px;
+  background-color: #ccc;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.11);
+}
+@media (max-width: 600px) {
+  .main-section .video-container {
+    margin: 0 auto;
+    height: 180px;
+  }
+}
+@media (max-width: 400px) {
+  .main-section .video-container {
+    height: 135px;
+  }
+}
+.main-section .video-container .video-item {
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  outline: none;
+}
+.main-section .video-container .play-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .description-section {
