@@ -184,7 +184,7 @@
     }
 
     .testimonials-area--title {
-        margin: 0 auto;
+        margin: 0 auto 100px auto;
         text-align: center;
         max-width: 810px;
 
@@ -196,24 +196,24 @@
 }
 
 .participants-container {
-    padding: 100px 0px 100px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 120px;
 
     @media (max-width: 700px) {
         flex-direction: column;
         padding: 0;
         align-items: center;
+        margin-bottom: 0;
     }
 }
 
 .participant {
-    max-width: 200px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
 
     @media (max-width: 700px) {
         margin-bottom: 60px;
@@ -243,6 +243,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .wonderbly {
+        max-width: 100px;
+    }
+
+    .viber {
+        max-width: 160px;
+    }
 
     @media (max-width: 700px) {
         display: none;
