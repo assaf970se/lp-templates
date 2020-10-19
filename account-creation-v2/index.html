@@ -114,7 +114,7 @@
                 <img src="./images/account-creation-v2-main-image.png" alt="" />
             </div>
             <div class="video-container">
-                <video class="video-item" autoplay loop>
+                <video class="video-item" autoplay loop muted>
                     <source src="./images/ticketlist-30sec.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -256,6 +256,14 @@
                 alt=""
             />
         </section>
+
+        <script>
+            document.querySelector('body').addEventListener('load', function() {
+                if(document.querySelector('.video-item')) {
+                    document.querySelector('.video-item').play();
+                }
+            })
+        </script>
 
         <!-- <script>
             document.querySelector('.play-btn').addEventListener('click', () => {
