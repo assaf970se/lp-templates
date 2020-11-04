@@ -37,33 +37,41 @@
 
         form.onSuccess(function (values, followUpUrl) {
             var formVals = form.getValues();
-            clearbit.identify(formVals.Email, {
-                email: formVals.Email,
-                name: formVals.FirstName + " " + formVals.LastName,
-                title: formVals.Title,
-                company: formVals.Company,
-            });
+            try {
+                clearbit.identify(formVals.Email, {
+                    email: formVals.Email,
+                    name: formVals.FirstName + " " + formVals.LastName,
+                    title: formVals.Title,
+                    company: formVals.Company,
+                });
+            } catch (err) {
+                console.log(err);
+            }
         });
 
         form.onValidate(function () {
             var email = form.vals().Email;
             var phoneNumber = form.vals().Phone;
-            if (email && phoneNumber) {
+            if (email) {
                 if (!isEmailGood(email)) {
                     form.submitable(false);
                     var emailElem = form.getFormElem().find("#Email");
                     form.showErrorMessage("Must be Business email.", emailElem);
-                } else if (!isPhoneNumGood(phoneNumber)) {
+                    return;
+                }
+            }
+            if (phoneNumber) {
+                if (!isPhoneNumGood(phoneNumber)) {
                     form.submitable(false);
                     var phoneElem = form.getFormElem().find("#Phone");
                     form.showErrorMessage(
                         "must be valid phone number",
                         phoneElem
                     );
-                } else {
-                    form.submitable(true);
+                    return;
                 }
             }
+            form.submitable(true);
         });
     });
 
