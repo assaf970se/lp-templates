@@ -2,7 +2,7 @@ function getParamData() {
     const strUrl = window.location.href;
     const url = new URL(strUrl);
     const encodedData = url.searchParams.get('ta');
-    const strData = decodeURIComponent(encodedData);
+    const strData = atob(encodedData);
     const data = JSON.parse(strData);
     return data;
 }
