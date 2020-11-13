@@ -1,5 +1,3 @@
-// let answersData;
-
 function getParamData() {
     const strUrl = window.location.href;
     const url = new URL(strUrl);
