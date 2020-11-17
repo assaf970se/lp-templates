@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="../wixanswers-favicon.png" />
+        <title>Wix Answers | Unsubscribe</title>
+        <link rel="stylesheet" href="./unsubscribe-page-style.css" />
+    </head>
+
+    <body>
+        <section class="container">
+            <div class="logo">
+                <img src="./images/unsubscribe-page-logo.svg" alt="logo" />
+            </div>
+            <div class="asset">
+                <img src="./images/unsubscribe-page-asset.svg" alt="asset" />
+            </div>
+            <div class="title">You’ll be missed!</div>
+            <div class="text">
+                To stop receiving emails, please, type your email address here:
+            </div>
+            <div class="unsubscribe-form">
+                <form id="mktoForm_1"></form>
+            </div>
+        </section>
+
+        <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
+        <script>
+            MktoForms2.loadForm(
+                '//app-nld101.marketo.com',
+                '314-AVR-999',
+                1,
+                function (form) {
+                    form.onSuccess(function (values, followUpUrl) {
+                        form.getFormElem().hide();
+                    });
+                }
+            );
+            MktoForms2.whenReady(function () {
+                return (document.querySelector('#Email').placeholder =
+                    'Email address:');
+            });
+        </script>
+    </body>
+</html>

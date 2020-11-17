@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "md4";
+  src: local("md4"), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Rg.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "md4";
+  src: local("md4"), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Bd.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "md4";
+  src: local("md4"), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_XBd.ttf);
+  font-weight: 900;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "md4", sans-serif;
+}
+
+.container {
+  padding-top: 180px;
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 50px 20px;
+  }
+}
+
+.logo {
+  width: 180px;
+  margin: 0px auto 120px auto;
+}
+
+.asset {
+  width: 330px;
+  margin: 0px auto 60px auto;
+}
+
+.title {
+  font-size: 65px;
+  font-weight: 900;
+  color: #002568;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+.text {
+  font-size: 27px;
+  color: #002568;
+  text-align: center;
+  margin-bottom: 80px;
+}
+@media (max-width: 700px) {
+  .text {
+    font-size: 18px;
+  }
+}
+
+.unsubscribe-form #LblEmail,
+.unsubscribe-form .mktoGutter,
+.unsubscribe-form .mktoOffset {
+  display: none !important;
+}
+.unsubscribe-form #mktoForm_1 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.unsubscribe-form #mktoForm_1 > *, .unsubscribe-form #mktoForm_1 > * > * {
+  font-family: "md4", sans-serif !important;
+  margin: 0 !important;
+}
+@media (max-width: 700px) {
+  .unsubscribe-form #mktoForm_1 {
+    flex-direction: column;
+  }
+}
+.unsubscribe-form .mktoFieldWrap {
+  margin-right: 40px !important;
+}
+@media (max-width: 700px) {
+  .unsubscribe-form .mktoFieldWrap {
+    margin-right: 0px !important;
+  }
+}
+.unsubscribe-form #Email {
+  width: 250px !important;
+  padding: 14px 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #002568;
+  color: #002568;
+  font-size: 19.5px;
+}
+.unsubscribe-form #Email::placeholder {
+  color: #002568;
+  font-size: 19.5px;
+}
+@media (max-width: 700px) {
+  .unsubscribe-form #Email {
+    margin-bottom: 40px;
+  }
+}
+.unsubscribe-form .mktoButton {
+  width: 200px !important;
+  height: 52px !important;
+  padding: 12px 42px 15px 43px !important;
+  border-radius: 24.9px !important;
+  background: #116dff !important;
+  font-size: 19.5px !important;
+  color: #ffffff !important;
+  border: none !important;
+  line-height: 28px !important;
+}
+@media (max-width: 700px) {
+  .unsubscribe-form .mktoButton {
+    text-align: center;
+  }
+}

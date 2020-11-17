@@ -24,13 +24,19 @@
 
         form.onSuccess(function (values, followUpUrl) {
             var formVals = form.getValues();
+            var userObj = {
+                email: formVals.Email,
+                name: (formVals.FirstName || formVals.LastName) ? formVals.FirstName + ' ' + formVals.LastName : "",
+                title: formVals.Title || '',
+                company: formVals.Company || '',
+            }
+            for (prop in userObj) {
+                if(!userObj[prop]){
+                    delete userObj[prop];
+                }
+            }
             try {
-                clearbit.identify(formVals.Email, {
-                    email: formVals.Email,
-                    name: formVals.FirstName + " " + formVals.LastName,
-                    title: formVals.Title,
-                    company: formVals.Company,
-                });
+                clearbit.identify(formVals.Email, userObj);
             } catch (err) {
                 console.log(err);
             }

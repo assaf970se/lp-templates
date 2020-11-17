@@ -7,12 +7,20 @@ function getParamData() {
     return data;
 }
 
-async function getAnswersData() {
-    const res = await fetch(
-        'https://customerexperiencefestival.com/_functions/getAnswers'
-    );
-    const data = await res.json();
-    return data.answers;
+async function getAnswersData(retry = true) {
+    try {
+        const res = await fetch(
+            'https://customerexperiencefestival.com/_functions/getAnswers'
+        );
+        const data = await res.json();
+        return data.answers;
+    } catch (err) {
+        if (retry) {
+            getAnswersData(false);
+        } else {
+            alert('something is wrong. please try again later');
+        }
+    }
 }
 
 function mapUsersAnswers(usersAnswers, allAnswers) {
