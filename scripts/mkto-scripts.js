@@ -42,8 +42,14 @@
                 name: (formVals.FirstName || formVals.LastName) ? formVals.FirstName + ' ' + formVals.LastName : "",
                 title: formVals.Title || '',
                 company: formVals.Company || '',
+                UTM_Campaign_ID: formVals.UTM_Campaign_ID || '',
+                UTM_Campaign: formVals.UTM_Campaign__c || '',
+                UTM_Content: formVals.UTM_Content__c || '',
+                UTM_Medium: formVals.UTM_Medium__c || '',
+                UTM_Source: formVals.UTM_Source__c || '',
+                UTM_Term: formVals.UTM_Term__c || ''
             }
-            for (prop in userObj) {
+            for (const prop in userObj) {
                 if(!userObj[prop]){
                     delete userObj[prop];
                 }
