@@ -1,0 +1,28 @@
+@import "./reset.scss";
+@import "./general.scss";
+
+@font-face {
+    font-family: 'md4';
+    src: local('md4'), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Rg.ttf);
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'md4';
+    src: local('md4'), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Bd.ttf);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'md4';
+    src: local('md4'), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_XBd.ttf);
+    font-weight: 900;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'md4';
+    margin: 0;
+    padding: 0;
+}
