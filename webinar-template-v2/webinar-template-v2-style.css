@@ -18,13 +18,13 @@ body,
 p {
   margin: 0;
   padding: 0;
-  font-family: "made4-tr";
+  font-family: "md4";
   font-weight: normal;
 }
 
 ol,
-ul {
-  font-family: "made4-tr";
+ul, li {
+  font-family: "md4";
   font-weight: normal;
 }
 
@@ -45,6 +45,17 @@ h6 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.big-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.sub-title {
+  font-size: 23px;
+  line-height: 30px;
 }
 
 @font-face {
@@ -70,4 +81,162 @@ body {
   font-family: "md4";
   margin: 0;
   padding: 0;
+}
+
+.contained {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.bg-grn {
+  background-color: #959393;
+}
+
+.header-section {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 110px;
+  padding-bottom: 210px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header-logo {
+  margin-bottom: 90px;
+  width: 240px;
+}
+.header-logo img {
+  width: 100%;
+}
+
+.small-header-subject {
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.header-title-container {
+  max-width: 900px;
+}
+.header-title-container .big-title {
+  max-width: 800px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.header-title-container .sub-title {
+  max-width: 650px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.header-title-container .event-date-time-info {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  max-width: 425px;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 360px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-radius: 5px;
+}
+
+.details-section {
+  display: flex;
+}
+
+.participants-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.participant {
+  width: 100%;
+  background-size: cover;
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: flex-end;
+  padding-left: 20px;
+  padding-bottom: 75px;
+}
+
+.participant-name {
+  width: 50%;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.participant-title {
+  width: 60%;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.participant-logo {
+  width: 125px;
+}
+
+.description-container {
+  width: 70%;
+  padding: 100px 100px 100px 150px;
+}
+
+.description-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.description-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.description-list-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.description-list-text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.footer-title {
+  text-align: center;
+  color: #fff;
+}
+.footer-title.big-title {
+  margin-bottom: 50px;
+}
+.footer-title .footer-form-container {
+  margin: 0 auto;
 }
