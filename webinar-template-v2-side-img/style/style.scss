@@ -1,0 +1,283 @@
+@import './reset.scss';
+@import './general.scss';
+
+@font-face {
+    font-family: 'md4';
+    src: local('md4'),
+        url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Rg.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'md4';
+    src: local('md4'),
+        url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Bd.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'md4';
+    src: local('md4'),
+        url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_XBd.ttf);
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'md4';
+    margin: 0;
+    padding: 0;
+}
+
+.contained {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.bg-grn {
+    background-color: #959393;
+}
+.bg-grn-top {
+    background-color: #959393;
+
+    @media screen and (max-width: 800px) {
+        background-image: linear-gradient(to bottom, #959393 65%, #ffffff 35%);
+    }
+}
+
+.bg-grey {
+    background-color: #e9e7e7;
+
+    @media screen and (max-width: 800px) {
+        background-color: unset;
+    }
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    @media screen and (max-width: 800px) {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 70px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.header-logo {
+    margin-bottom: 90px;
+    width: 240px;
+    @media screen and (max-width: 800px) {
+        width: 155px;
+        margin-bottom: 50px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.small-header-subject {
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 16px;
+    }
+}
+
+.header-title-container {
+    max-width: 900px;
+
+    @media screen and (max-width: 800px) {
+    }
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .big-title {
+        max-width: 800px;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    .sub-title {
+        max-width: 650px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .event-date-time-info {
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #fff;
+        color: #000;
+        max-width: 425px;
+
+        @media screen and (max-width: 800px) {
+            font-size: 16px;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+
+.form-container {
+    background-color: #fff;
+    width: 360px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-radius: 5px;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+
+    @media screen and (max-width: 800px) {
+        box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.5);
+        width: 100%;
+    }
+}
+
+.details-section {
+    padding-top: 90px;
+    display: flex;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        padding-top: 0;
+    }
+}
+
+.participants-container {
+    width: 40%;
+    padding-right: 15px;
+    padding-left: 25px;
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    @media screen and (max-width: 800px) {
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 0;
+        width: 100%;
+    }
+}
+
+.participant {
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 800px) {
+        margin-right: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+.participant-img {
+    max-width: 165px;
+    @media screen and (max-width: 800px) {
+        max-width: 100px;
+    }
+}
+
+.participant-details {
+    max-width: 450px;
+    padding-left: 30px;
+}
+.participant-name {
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 5px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 14px;
+    }
+}
+.participant-title {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 800px) {
+        font-size: 14px;
+    }
+}
+.participant-logo {
+    width: 125px;
+    @media screen and (max-width: 800px) {
+        width: 100px;
+    }
+}
+.description-container {
+    max-width: 750px;
+    width: 60%;
+    padding: 0px 25px 200px 100px;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        padding: 50px 25px;
+    }
+
+    .description-title {
+        max-width: 500px;
+        margin-bottom: 25px;
+    }
+    .description-text {
+        margin-bottom: 40px;
+    }
+    .description-list-title {
+        margin-bottom: 25px;
+    }
+    .description-list-text {
+        padding-left: 25px;
+
+        li:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.footer-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.footer-title {
+    text-align: center;
+    color: #fff;
+
+    &.big-title {
+        margin-bottom: 50px;
+    }
+
+    .footer-form-container {
+        margin: 0 auto;
+    }
+}

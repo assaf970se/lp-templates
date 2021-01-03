@@ -1,0 +1,409 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "md4";
+  font-weight: normal;
+}
+
+ol,
+ul, li {
+  font-family: "md4";
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.big-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+@media screen and (max-width: 800px) {
+  .big-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.sub-title {
+  font-size: 23px;
+  line-height: 30px;
+}
+@media screen and (max-width: 800px) {
+  .sub-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.description-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+}
+@media screen and (max-width: 800px) {
+  .description-title {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
+.description-text {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.16px;
+}
+@media screen and (max-width: 800px) {
+  .description-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.description-list-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+}
+@media screen and (max-width: 800px) {
+  .description-list-title {
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
+
+.description-list-text {
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.16px;
+}
+@media screen and (max-width: 800px) {
+  .description-list-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@font-face {
+  font-family: "md4";
+  src: local("md4"), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Rg.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "md4";
+  src: local("md4"), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Bd.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "md4";
+  src: local("md4"), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_XBd.ttf);
+  font-weight: 900;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "md4";
+  margin: 0;
+  padding: 0;
+}
+
+.contained {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.bg-grn {
+  background-color: #959393;
+}
+
+.bg-grn-top {
+  background-color: #959393;
+}
+@media screen and (max-width: 800px) {
+  .bg-grn-top {
+    background-image: linear-gradient(to bottom, #959393 65%, #ffffff 35%);
+  }
+}
+
+.bg-grey {
+  background-color: #e9e7e7;
+}
+@media screen and (max-width: 800px) {
+  .bg-grey {
+    background-color: unset;
+  }
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+@media screen and (max-width: 800px) {
+  .header-section {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.header-logo {
+  margin-bottom: 90px;
+  width: 240px;
+}
+@media screen and (max-width: 800px) {
+  .header-logo {
+    width: 155px;
+    margin-bottom: 50px;
+  }
+}
+.header-logo img {
+  width: 100%;
+}
+
+.small-header-subject {
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 800px) {
+  .small-header-subject {
+    font-size: 16px;
+  }
+}
+
+.header-title-container {
+  max-width: 900px;
+}
+@media screen and (max-width: 800px) {
+  .header-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+.header-title-container .big-title {
+  max-width: 800px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.header-title-container .sub-title {
+  max-width: 650px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.header-title-container .event-date-time-info {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  max-width: 425px;
+}
+@media screen and (max-width: 800px) {
+  .header-title-container .event-date-time-info {
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.form-container {
+  background-color: #fff;
+  width: 360px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-radius: 5px;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 800px) {
+  .form-container {
+    box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.5);
+    width: 100%;
+  }
+}
+
+.details-section {
+  padding-top: 90px;
+  display: flex;
+}
+@media screen and (max-width: 800px) {
+  .details-section {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
+
+.participants-container {
+  width: 40%;
+  padding-right: 15px;
+  padding-left: 25px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  .participants-container {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+}
+
+.participant {
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 800px) {
+  .participant {
+    margin-right: 0;
+  }
+  .participant:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.participant-img {
+  max-width: 165px;
+}
+@media screen and (max-width: 800px) {
+  .participant-img {
+    max-width: 100px;
+  }
+}
+
+.participant-details {
+  max-width: 450px;
+  padding-left: 30px;
+}
+
+.participant-name {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 800px) {
+  .participant-name {
+    font-size: 14px;
+  }
+}
+
+.participant-title {
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 800px) {
+  .participant-title {
+    font-size: 14px;
+  }
+}
+
+.participant-logo {
+  width: 125px;
+}
+@media screen and (max-width: 800px) {
+  .participant-logo {
+    width: 100px;
+  }
+}
+
+.description-container {
+  max-width: 750px;
+  width: 60%;
+  padding: 0px 25px 200px 100px;
+}
+@media screen and (max-width: 800px) {
+  .description-container {
+    width: 100%;
+    padding: 50px 25px;
+  }
+}
+.description-container .description-title {
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+.description-container .description-text {
+  margin-bottom: 40px;
+}
+.description-container .description-list-title {
+  margin-bottom: 25px;
+}
+.description-container .description-list-text {
+  padding-left: 25px;
+}
+.description-container .description-list-text li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.footer-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.footer-title {
+  text-align: center;
+  color: #fff;
+}
+.footer-title.big-title {
+  margin-bottom: 50px;
+}
+.footer-title .footer-form-container {
+  margin: 0 auto;
+}

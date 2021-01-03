@@ -32,26 +32,46 @@ body {
 
 .contained {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1300px;
 }
 
 .bg-grn {
     background-color: #959393;
 }
+.bg-grn-top {
+    background-color: #959393;
+
+    @media screen and (max-width: 800px) {
+        background-image: linear-gradient(to bottom, #959393 65%, #ffffff 35%);
+    }
+}
 
 .header-section {
-    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     padding-top: 110px;
     padding-bottom: 210px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    @media screen and (max-width: 800px) {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 70px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 }
 
 .header-logo {
     margin-bottom: 90px;
     width: 240px;
+    @media screen and (max-width: 800px) {
+        width: 155px;
+        margin-bottom: 50px;
+    }
 
     img {
         width: 100%;
@@ -64,10 +84,24 @@ body {
     line-height: 40px;
     color: #fff;
     margin-bottom: 15px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 16px;
+    }
 }
 
 .header-title-container {
     max-width: 900px;
+
+    @media screen and (max-width: 800px) {
+    }
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        text-align: center;
+    }
 
     .big-title {
         max-width: 800px;
@@ -88,6 +122,12 @@ body {
         background-color: #fff;
         color: #000;
         max-width: 425px;
+
+        @media screen and (max-width: 800px) {
+            font-size: 16px;
+            width: 100%;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -97,16 +137,31 @@ body {
     padding-top: 45px;
     padding-bottom: 45px;
     border-radius: 5px;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+    
+    @media screen and (max-width: 800px) {
+        box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.5);
+        width: 100%;
+    }
 }
 
 .details-section {
     display: flex;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .participants-container {
     width: 30%;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
 }
 
 .participant {
@@ -121,6 +176,12 @@ body {
     justify-content: flex-end;
     padding-left: 20px;
     padding-bottom: 75px;
+
+    @media screen and (max-width: 800px) {
+        height: 370px;
+        justify-content: flex-start;
+        padding-top: 25px;
+    }
 }
 .participant-name {
     width: 50%;
@@ -142,28 +203,30 @@ body {
 }
 .description-container {
     width: 70%;
-    padding: 100px 100px 100px 150px;
-}
-.description-title {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 40px;
-    margin-bottom: 25px;
-}
-.description-text {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 40px;
-}
-.description-list-title {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 40px;
-    margin-bottom: 25px;
-}
-.description-list-text {
-    font-size: 20px;
-    line-height: 30px;
+    padding: 100px 50px 100px 150px;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        padding: 50px 25px;
+    }
+
+    .description-title {
+        max-width: 500px;
+        margin-bottom: 25px;
+    }
+    .description-text {
+        margin-bottom: 40px;
+    }
+    .description-list-title {
+        margin-bottom: 25px;
+    }
+    .description-list-text {
+        padding-left: 25px;
+
+        li:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
 }
 
 .footer-section {
