@@ -27,7 +27,11 @@
         <section class="container">
             <div class="small-text">December 9th • Live from your home</div>
             <div class="big-text">See you there!</div>
-            <div title="Add to Calendar" class="addeventatc btn">
+            <div
+                style="display: none"
+                title="Add to Calendar"
+                class="addeventatc"
+            >
                 Add to Calendar
                 <span class="start">11/17/2021 08:00 AM</span>
                 <span class="end">11/17/2021 10:00 AM</span>
@@ -38,6 +42,10 @@
             </div>
         </section>
 
-        <script src="./webinar-template-v2-TY-app.js"></script>
+        <script>
+            setTimeout(() => {
+                document.querySelector('.addeventatc').style.display = 'block';
+            }, 200);
+        </script>
     </body>
 </html>
