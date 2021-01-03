@@ -321,7 +321,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .participant-img {
-    max-width: 100px;
+    width: 100px;
   }
 }
 
