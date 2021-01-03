@@ -171,7 +171,6 @@ body {
 
     display: flex;
     flex-direction: column;
-    
 
     @media screen and (max-width: 800px) {
         padding-top: 10px;
@@ -194,7 +193,6 @@ body {
         &:last-child {
             margin-bottom: 0;
         }
-
     }
 }
 
@@ -227,7 +225,8 @@ body {
     line-height: 20px;
     margin-bottom: 10px;
     @media screen and (max-width: 800px) {
-        font-size: 14px;
+        font-size: 13px;
+        width: 150px;
     }
 }
 .participant-logo {

@@ -340,7 +340,8 @@ body {
 }
 @media screen and (max-width: 800px) {
   .participant-title {
-    font-size: 15px;
+    font-size: 13px;
+    width: 150px;
   }
 }
 

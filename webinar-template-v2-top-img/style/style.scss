@@ -188,7 +188,6 @@ body {
         &:last-child {
             margin-bottom: 0;
         }
-
     }
 }
 
@@ -220,7 +219,8 @@ body {
     line-height: 20px;
     margin-bottom: 10px;
     @media screen and (max-width: 800px) {
-        font-size: 15px;
+        font-size: 13px;
+        width: 150px;
     }
 }
 .participant-logo {
