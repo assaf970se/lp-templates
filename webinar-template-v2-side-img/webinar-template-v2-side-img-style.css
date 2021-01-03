@@ -329,6 +329,11 @@ body {
   max-width: 450px;
   padding-left: 30px;
 }
+@media screen and (max-width: 800px) {
+  .participant-details {
+    max-width: unset;
+  }
+}
 
 .participant-name {
   font-size: 17px;

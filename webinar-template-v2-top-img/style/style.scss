@@ -201,6 +201,9 @@ body {
 .participant-details {
     max-width: 300px;
     padding-left: 20px;
+    @media screen and (max-width: 800px) {
+        max-width: unset;
+    }
 }
 .participant-name {
     font-size: 17px;
