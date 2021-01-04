@@ -150,6 +150,10 @@ body {
   max-width: 1300px;
 }
 
+.contained-50 {
+  max-width: 700px;
+}
+
 .bg-grn {
   background-color: #959393;
 }
@@ -258,12 +262,32 @@ body {
 }
 
 .form-container {
+  position: fixed;
+  top: 45px;
+  right: 17%;
   background-color: #fff;
   width: 360px;
   padding-top: 45px;
   padding-bottom: 45px;
   border-radius: 5px;
   box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 1600px) {
+  .form-container {
+    right: 10%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .form-container {
+    right: 25px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .form-container {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
 }
 @media screen and (max-width: 800px) {
   .form-container {
@@ -290,10 +314,10 @@ body {
 }
 
 .participant {
-  max-width: 400px;
+  max-width: 300px;
   display: flex;
   align-items: center;
-  margin-right: 70px;
+  margin-right: 30px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 800px) {
@@ -305,6 +329,9 @@ body {
   }
 }
 
+.participant-img {
+  width: 150px;
+}
 @media screen and (max-width: 800px) {
   .participant-img {
     width: 100px;
@@ -312,7 +339,7 @@ body {
 }
 
 .participant-details {
-  max-width: 300px;
+  max-width: 150px;
   padding-left: 20px;
 }
 @media screen and (max-width: 800px) {
