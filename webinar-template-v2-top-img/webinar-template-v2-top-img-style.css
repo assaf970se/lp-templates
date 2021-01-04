@@ -110,7 +110,7 @@ img {
 
 .description-list-text {
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
   letter-spacing: 0.16px;
 }
 @media screen and (max-width: 800px) {
@@ -151,7 +151,7 @@ body {
 }
 
 .contained-50 {
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .bg-grn {
@@ -180,7 +180,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 110px;
-  padding-bottom: 110px;
+  padding-bottom: 225px;
   padding-right: 25px;
   padding-left: 25px;
 }
@@ -263,7 +263,7 @@ body {
 
 .form-container {
   position: fixed;
-  top: 45px;
+  top: 110px;
   right: 17%;
   background-color: #fff;
   width: 360px;
@@ -314,10 +314,9 @@ body {
 }
 
 .participant {
-  max-width: 300px;
+  width: 400px;
   display: flex;
   align-items: center;
-  margin-right: 30px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 800px) {
@@ -330,7 +329,7 @@ body {
 }
 
 .participant-img {
-  width: 150px;
+  width: 140px;
 }
 @media screen and (max-width: 800px) {
   .participant-img {
@@ -339,7 +338,7 @@ body {
 }
 
 .participant-details {
-  max-width: 150px;
+  max-width: 230px;
   padding-left: 20px;
 }
 @media screen and (max-width: 800px) {
@@ -349,10 +348,10 @@ body {
 }
 
 .participant-name {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 800;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 800px) {
   .participant-name {
@@ -361,9 +360,9 @@ body {
 }
 
 .participant-title {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 800px) {
   .participant-title {
@@ -382,7 +381,7 @@ body {
 }
 
 .description-container {
-  max-width: 750px;
+  max-width: 650px;
   padding: 60px 25px 200px 25px;
 }
 @media screen and (max-width: 800px) {
@@ -405,7 +404,7 @@ body {
   padding-left: 25px;
 }
 .description-container .description-list-text li:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .footer-section {
