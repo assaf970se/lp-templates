@@ -47,76 +47,100 @@ img {
   height: auto;
 }
 
-.big-title {
+.big-title,
+.big-title > *,
+.big-title > * > * {
   font-size: 50px;
   font-weight: 800;
   line-height: 60px;
 }
 @media screen and (max-width: 800px) {
-  .big-title {
-    font-size: 30px;
-    line-height: 36px;
+  .big-title,
+.big-title > *,
+.big-title > * > * {
+    font-size: 30px !important;
+    line-height: 36px !important;
   }
 }
 
-.sub-title {
+.sub-title,
+.sub-title > *,
+.sub-title > * > * {
   font-size: 23px;
   line-height: 30px;
 }
 @media screen and (max-width: 800px) {
-  .sub-title {
-    font-size: 16px;
-    line-height: 20px;
+  .sub-title,
+.sub-title > *,
+.sub-title > * > * {
+    font-size: 16px !important;
+    line-height: 20px !important;
   }
 }
 
-.description-title {
+.description-title,
+.description-title > *,
+.description-title > * > * {
   font-size: 32px;
   font-weight: 800;
   line-height: 40px;
   letter-spacing: 0.25px;
 }
 @media screen and (max-width: 800px) {
-  .description-title {
-    font-size: 22px;
-    line-height: 29px;
+  .description-title,
+.description-title > *,
+.description-title > * > * {
+    font-size: 22px !important;
+    line-height: 29px !important;
   }
 }
 
-.description-text {
+.description-text,
+.description-text > *,
+.description-text > * > * {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.16px;
 }
 @media screen and (max-width: 800px) {
-  .description-text {
-    font-size: 15px;
-    line-height: 22px;
+  .description-text,
+.description-text > *,
+.description-text > * > * {
+    font-size: 15px !important;
+    line-height: 22px !important;
   }
 }
 
-.description-list-title {
+.description-list-title,
+.description-list-title > *,
+.description-list-title > * > * {
   font-size: 32px;
   font-weight: 800;
   line-height: 40px;
   letter-spacing: 0.25px;
 }
 @media screen and (max-width: 800px) {
-  .description-list-title {
-    font-size: 22px;
-    line-height: 29px;
+  .description-list-title,
+.description-list-title > *,
+.description-list-title > * > * {
+    font-size: 22px !important;
+    line-height: 29px !important;
   }
 }
 
-.description-list-text {
+.description-list-text,
+.description-list-text > *,
+.description-list-text > * > * {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.16px;
 }
 @media screen and (max-width: 800px) {
-  .description-list-text {
-    font-size: 15px;
-    line-height: 22px;
+  .description-list-text,
+.description-list-text > *,
+.description-list-text > * > * {
+    font-size: 15px !important;
+    line-height: 22px !important;
   }
 }
 

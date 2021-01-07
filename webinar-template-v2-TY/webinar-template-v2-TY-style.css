@@ -72,17 +72,19 @@ body {
 
 .container {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 350px);
 }
 
 .logo {
   padding-top: 100px;
   max-width: 205px;
-  margin: 0 auto;
+  margin: 20px auto 120px auto;
+  width: 200px;
+}
+@media screen and (max-width: 800px) {
+  .logo {
+    margin: 20px auto 60px auto;
+    width: 150px;
+  }
 }
 .logo img {
   width: 100%;
@@ -96,7 +98,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .big-text {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
@@ -113,7 +115,22 @@ body {
   }
 }
 
+.video-container {
+  margin: 0 auto;
+  max-width: 854px;
+  height: 480px;
+  width: 90%;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 800px) {
+  .video-container {
+    height: unset;
+  }
+}
+
 #addeventatc1 {
+  margin: 0 auto;
   cursor: pointer !important;
   font-size: 22px !important;
   line-height: 65px !important;

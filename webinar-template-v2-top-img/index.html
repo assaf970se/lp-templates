@@ -170,8 +170,8 @@
                 </div>
             </div>
         </section>
-
         <script src="./webinar-template-v2-top-img-app.js"></script>
+
         <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
         <script>
             MktoForms2.loadForm(
@@ -180,5 +180,24 @@
                 1405
             );
         </script>
+        <!-- <script>
+            fetch('./webinar.json')
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log('webinarData: ', data);
+                    if (data.length) {
+                        const participantContainer = document.querySelector(
+                            '.participants-container'
+                        );
+                        data.forEach((item) => {
+                            const participant = createParticipant(item);
+                            participantContainer.appendChild(participant);
+                        });
+                    } else {
+                        console.log('no items');
+                    }
+                })
+                .catch((err) => console.log(err));
+        </script> -->
     </body>
 </html>

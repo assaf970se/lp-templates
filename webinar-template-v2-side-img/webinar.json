@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name 1",
+        "title": "title 1",
+        "img": "https://picsum.photos/300/300",
+        "logo": "https://picsum.photos/100/30"
+    },
+    {
+        "name": "name 2",
+        "title": "title 2",
+        "img": "https://picsum.photos/300/300",
+        "logo": "https://picsum.photos/100/30"
+    }
+]

@@ -1,0 +1,179 @@
+@import './reset.scss';
+
+@font-face {
+    font-family: 'md4';
+    src: local('md4'),
+        url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Rg.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'md4';
+    src: local('md4'),
+        url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Bd.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'md4';
+    src: local('md4'),
+        url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_XBd.ttf);
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #959393 url('') no-repeat center;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 600px auto 720px 1fr;
+    grid-template-rows: 0.6fr 30px 85px auto auto auto auto 1fr;
+    grid-template-areas:
+        '. . . . .'
+        '. logo . . .'
+        '. . . . .'
+        '. small-title . video-section .'
+        '. big-text . video-section .'
+        '. small-text . video-section .'
+        '. btn . video-section .'
+        '. . . . .';
+
+    @media screen and (max-width: 1300px) {
+        grid-template-columns: 1fr 500px auto 640px 1fr;
+    }
+
+    @media screen and (max-width: 1000px) {
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 90px;
+
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            'logo'
+            'small-title'
+            'big-text'
+            'video-section '
+            'small-text'
+            'btn';
+    }
+}
+
+.logo {
+    grid-area: logo;
+    max-width: 205px;
+    width: 200px;
+
+    @media screen and (max-width: 1000px) {
+        margin-bottom: 30px;
+        width: 155px;
+        justify-self: center;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.small-title,
+.small-title > *,
+.small-title > * > * {
+    grid-area: small-title;
+    font-size: 23px;
+    line-height: 60px;
+    color: #ffffff;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 1000px) {
+        margin-bottom: 20px !important;
+        font-size: 15px !important;
+        justify-self: center !important;
+    }
+}
+
+.big-text,
+.big-text > *,
+.big-text > * > * {
+    grid-area: big-text;
+    max-width: 600px;
+    font-size: 45px;
+    line-height: 57px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1300px) {
+        font-size: 35px !important;
+        line-height: 45px !important;
+    }
+    @media screen and (max-width: 1000px) {
+        font-size: 26px !important;
+        line-height: 35px !important;
+        justify-self: center !important;
+        text-align: center !important;
+    }
+}
+
+.small-text,
+.small-text > *,
+.small-text > * > * {
+    grid-area: small-text;
+    max-width: 470px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1300px) {
+        font-size: 20px !important;
+    }
+
+    @media screen and (max-width: 1000px) {
+        font-size: 15px !important;
+        line-height: 22px !important;
+        text-align: center !important;
+        justify-self: center !important;
+    }
+}
+
+.btn {
+    grid-area: btn;
+    width: 220px;
+    height: 57px;
+    border-radius: 30px;
+    background: #ffffff;
+    font-size: 18px;
+    color: #20303c;
+    border: none;
+    outline: none;
+
+    @media screen and (max-width: 1000px) {
+        justify-self: center;
+    }
+}
+
+.video-container {
+    grid-area: video-section;
+    margin: 0 auto;
+    max-width: 720px;
+    height: 405px;
+    width: 90%;
+    border: none;
+    outline: none;
+
+    @media screen and (max-width: 1300px) {
+        max-width: 640px;
+        height: 360px;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        height: unset;
+        margin-bottom: 50px;
+    }
+}
