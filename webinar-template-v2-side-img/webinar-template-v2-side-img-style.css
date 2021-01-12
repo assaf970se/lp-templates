@@ -110,7 +110,7 @@ img {
 
 .description-list-text {
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
   letter-spacing: 0.16px;
 }
 @media screen and (max-width: 800px) {
@@ -239,15 +239,21 @@ body {
 .header-title-container .sub-title {
   max-width: 650px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 800px) {
+  .header-title-container .sub-title {
+    margin-bottom: 30px;
+  }
 }
 .header-title-container .event-date-time-info {
   font-size: 20px;
-  line-height: 40px;
+  line-height: 24px;
   text-align: center;
   background-color: #fff;
   color: #000;
   max-width: 425px;
+  padding: 10px;
 }
 @media screen and (max-width: 800px) {
   .header-title-container .event-date-time-info {
@@ -257,29 +263,34 @@ body {
   }
 }
 
-.form-container {
+.header-form-container {
   background-color: #fff;
   width: 360px;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding: 35px 20px;
   border-radius: 5px;
   box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
 }
+.header-form-container .form-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
 @media screen and (max-width: 800px) {
-  .form-container {
+  .header-form-container {
     box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.5);
     width: 100%;
   }
 }
 
 .details-section {
-  padding-top: 90px;
+  padding-top: 140px;
   display: flex;
 }
 @media screen and (max-width: 800px) {
   .details-section {
     flex-direction: column;
-    padding-top: 0;
+    padding-top: 30px;
   }
 }
 
@@ -339,7 +350,7 @@ body {
   font-size: 17px;
   font-weight: 800;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 800px) {
   .participant-name {
@@ -350,7 +361,7 @@ body {
 .participant-title {
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 800px) {
   .participant-title {
@@ -360,11 +371,11 @@ body {
 }
 
 .participant-logo {
-  width: 125px;
+  width: 150px;
 }
 @media screen and (max-width: 800px) {
   .participant-logo {
-    width: 100px;
+    width: 120px;
   }
 }
 
@@ -384,16 +395,16 @@ body {
   margin-bottom: 25px;
 }
 .description-container .description-text {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .description-container .description-list-title {
   margin-bottom: 25px;
 }
-.description-container .description-list-text {
+.description-container .description-list-text ul {
   padding-left: 25px;
 }
-.description-container .description-list-text li:not(:last-child) {
-  margin-bottom: 5px;
+.description-container .description-list-text ul li:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .footer-section {
@@ -408,8 +419,31 @@ body {
   color: #fff;
 }
 .footer-title.big-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-.footer-title .footer-form-container {
+
+.footer-form-container {
   margin: 0 auto;
+  background-color: transparent;
+}
+.footer-form-container .form-title {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .footer-form-container .form-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer-form-container {
+    background-color: #fff;
+    box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.5);
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 5px;
+  }
 }

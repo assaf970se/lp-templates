@@ -129,11 +129,12 @@ body {
 
     .event-date-time-info {
         font-size: 20px;
-        line-height: 40px;
+        line-height: 24px;
         text-align: center;
         background-color: #fff;
         color: #000;
         max-width: 425px;
+        padding: 10px;
 
         @media screen and (max-width: 800px) {
             font-size: 16px;
@@ -149,10 +150,16 @@ body {
     right: 17%;
     background-color: #fff;
     width: 360px;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding: 45px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+
+    .form-title {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
 
     @media screen and (max-width: 1600px) {
         right: 10%;
@@ -267,10 +274,12 @@ body {
         margin-bottom: 25px;
     }
     .description-list-text {
-        padding-left: 25px;
+        ul {
+            padding-left: 25px;
 
-        li:not(:last-child) {
-            margin-bottom: 10px;
+            li:not(:last-child) {
+                margin-bottom: 5px;
+            }
         }
     }
 }
