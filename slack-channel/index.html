@@ -8,36 +8,36 @@
 
         <style>
             @font-face {
-                font-family: "made4-db";
-                src: url("../fonts/WixMadeforDisplay_W_Bd.woff2")
-                    format("woff2");
+                font-family: 'made4-db';
+                src: url('../fonts/WixMadeforDisplay_W_Bd.woff2')
+                    format('woff2');
             }
 
             @font-face {
-                font-family: "made4-dr";
-                src: url("../fonts/WixMadeforDisplay_W_Rg.woff2")
-                    format("woff2");
+                font-family: 'made4-dr';
+                src: url('../fonts/WixMadeforDisplay_W_Rg.woff2')
+                    format('woff2');
             }
 
             @font-face {
-                font-family: "made4-tr";
-                src: url("../fonts/WixMadeforText_W_Rg.woff2") format("woff2");
+                font-family: 'made4-tr';
+                src: url('../fonts/WixMadeforText_W_Rg.woff2') format('woff2');
             }
 
             @font-face {
-                font-family: "made4-txb";
-                src: url("../fonts/WixMadeforText_W_XBd.woff2") format("woff2");
+                font-family: 'made4-txb';
+                src: url('../fonts/WixMadeforText_W_XBd.woff2') format('woff2');
             }
 
             @font-face {
-                font-family: "made4-dxb";
-                src: url("../fonts/WixMadeforDisplay_W_XBd.woff2")
-                    format("woff2");
+                font-family: 'made4-dxb';
+                src: url('../fonts/WixMadeforDisplay_W_XBd.woff2')
+                    format('woff2');
             }
 
             @media (min-width: 601px) {
                 .header-section {
-                    background: #102a63 url("./images//slack-channel-bg.png")
+                    background: #102a63 url('./images//slack-channel-bg.png')
                         no-repeat center;
                     background-size: cover;
                 }
@@ -45,7 +45,7 @@
 
             @media (max-width: 600px) {
                 .header-section {
-                    background: #0d0e1e url("./images/slack-channel-bg-mob.png")
+                    background: #0d0e1e url('./images/slack-channel-bg-mob.png')
                         no-repeat;
                     background-size: cover;
                 }
@@ -55,13 +55,46 @@
     </head>
 
     <body>
-        <div class="top-header">
+        <nav class="anchor-nav">
+            <ul class="anchor-nav-list">
+                <li
+                    onclick="navTo(1)"
+                    class="anchor-nav-item anchor-nav-item-1 selected"
+                >
+                    <a href="#headerSection"></a>
+                </li>
+                <li
+                    onclick="navTo(2)"
+                    class="anchor-nav-item anchor-nav-item-2"
+                >
+                    <a href="#descriptionArea"></a>
+                </li>
+                <li
+                    onclick="navTo(3)"
+                    class="anchor-nav-item anchor-nav-item-3"
+                >
+                    <a href="#testimonialsArea"></a>
+                </li>
+                <li
+                    onclick="navTo(4)"
+                    class="anchor-nav-item anchor-nav-item-4"
+                >
+                    <a href="#infoArea"></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="top-header" id="headerSection">
             <div class="top-header-logo">
-                <p>Conversations Ignited by</p>
-                <img
-                    src="./images/slack-channel-wix-answers-logo-white.svg"
-                    alt=""
-                />
+                <a
+                    href="https://www.wixanswers.com"
+                    style="color: unset; text-decoration: none"
+                >
+                    <p>Conversations Ignited by</p>
+                    <img
+                        src="./images/slack-channel-wix-answers-logo-white.svg"
+                        alt=""
+                    />
+                </a>
             </div>
             <div class="header-title m4dxb">resolve</div>
             <div class="request-invite m4txb">
@@ -86,10 +119,15 @@
                 </a>
             </div>
             <div class="wa-header-logo">
-                <img src="./images/slack-channel-wa-top-logo.png" alt="" />
+                <a
+                    href="https://www.wixanswers.com"
+                    style="color: unset; text-decoration: none"
+                >
+                    <img src="./images/slack-channel-wa-top-logo.png" alt="" />
+                </a>
             </div>
         </section>
-
+        <div id="descriptionArea"></div>
         <section class="main-section" style="background-color: #070819">
             <div class="description-area fff">
                 <div class="description-area--text general-text m4tr">
@@ -119,7 +157,7 @@
                     similar passions and challenges.
                 </div>
             </div>
-            <div class="testimonials-area">
+            <div class="testimonials-area" id="testimonialsArea">
                 <div class="testimonials-area--title general-title m4txb gold">
                     Some of the CX leaders in Resolve’s private network
                 </div>
@@ -247,7 +285,11 @@
             <img src="./images/slack-channel-star-icon.png" alt="" />
         </div>
 
-        <section class="info-area" style="background-color: #070819">
+        <section
+            class="info-area"
+            id="infoArea"
+            style="background-color: #070819"
+        >
             <div class="info-area--title general-title m4txb">
                 What’s in it for you?
             </div>
@@ -303,26 +345,25 @@
                 <button class="styled-button m4txb">Request an Invite</button>
             </a>
         </section>
-        <div class="star-icon-spacer" style="background-color: #070819">
-            <img src="./images/slack-channel-star-icon.png" alt="" />
-        </div>
-        <section class="form-section" style="background-color: #070819">
-            <div class="form-section--title general-title m4txb">
-                Request your private invitation
-            </div>
-            <div class="form-item">
-                <form id="mktoForm_1512"></form>
-            </div>
-        </section>
-        <section class="footer-section" style="background-color: #feb484">
+
+        <section
+            class="footer-section"
+            id="footerSection"
+            style="background-color: #feb484"
+        >
             <div class="logo-area">
-                <div class="footer-logo-text">Conversations Ignited by</div>
-                <div class="footer-logo">
-                    <img
-                        src="./images/slack-channel-wix-answers-logo-black.svg"
-                        alt=""
-                    />
-                </div>
+                <a
+                    href="https://www.wixanswers.com"
+                    style="color: unset; text-decoration: none"
+                >
+                    <div class="footer-logo-text">Conversations Ignited by</div>
+                    <div class="footer-logo">
+                        <img
+                            src="./images/slack-channel-wix-answers-logo-black.svg"
+                            alt=""
+                        />
+                    </div>
+                </a>
             </div>
             <div class="links-area link-text">
                 <ul class="company-links">
@@ -355,11 +396,56 @@
             </div>
         </section>
 
+        <script>
+            let scrollSection = 1;
+            function navTo(anchor) {
+                if (anchor === 1) window.scrollTo(0, 0);
+                if (anchor === 2) window.scrollTo(0, 846);
+                if (anchor === 3) window.scrollTo(0, 1772);
+                if (anchor === 4) window.scrollTo(0, 2970);
+            }
+
+            function navIndicator(anchor) {
+                document
+                    .querySelectorAll('.anchor-nav-item')
+                    .forEach((el) => el.classList.remove('selected'));
+                document
+                    .querySelector(`.anchor-nav-item-${anchor}`)
+                    .classList.add('selected');
+            }
+
+            window.addEventListener('scroll', () => {
+                if (scrollSection !== 1 && window.pageYOffset < 500) {
+                    scrollSection = 1;
+                    navIndicator(1);
+                }
+                if (
+                    scrollSection !== 2 &&
+                    window.pageYOffset >= 500 &&
+                    window.pageYOffset < 1594
+                ) {
+                    scrollSection = 2;
+                    navIndicator(2);
+                }
+                if (
+                    scrollSection !== 3 &&
+                    window.pageYOffset >= 1594 &&
+                    window.pageYOffset < 2700
+                ) {
+                    scrollSection = 3;
+                    navIndicator(3);
+                }
+                if (scrollSection !== 4 && window.pageYOffset > 2700) {
+                    scrollSection = 4;
+                    navIndicator(4);
+                }
+            });
+        </script>
         <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
         <script>
             MktoForms2.loadForm(
-                "//app-nld101.marketo.com",
-                "314-AVR-999",
+                '//app-nld101.marketo.com',
+                '314-AVR-999',
                 1512,
                 function (form) {
                     form.onSuccess(function (values, followUpUrl) {

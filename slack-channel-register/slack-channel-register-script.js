@@ -24,24 +24,21 @@
 
         form.onSuccess(function (values, followUpUrl) {
             var formVals = form.getValues();
-            var fullname =
-                formVals.FirstName && formVals.LastName
-                    ? btoa(formVals.FirstName + " " + formVals.LastName)
-                    : "";
-            var email = formVals.Email ? btoa(formVals.Email) : "";
-            var organization = formVals.Company ? btoa(formVals.Company) : "";
-            var phonenumber = formVals.Phone ? btoa(formVals.Phone) : "";
-            // var redirectUrl = 'http://app.wixanswers.com/mk-signup?fn=' + fullname + '&em=' + email + '&or=' + organization + '&pn=' + phonenumber;
-            var redirectUrl = "http://app.wixanswers.com/mk-signup?em=" + email;
-            location.href = redirectUrl;
-
-            return false;
+            try {
+                clearbit.identify(formVals.Email, {
+                    email: formVals.Email,
+                    name: formVals.FirstName + " " + formVals.LastName,
+                    title: formVals.Title,
+                    company: formVals.Company,
+                });
+            } catch (err) {
+                console.log(err);
+            }
         });
 
         form.onValidate(function () {
             var email = form.vals().Email;
             var phoneNumber = form.vals().Phone;
-    
             if (email) {
                 if (!isEmailGood(email)) {
                     form.submitable(false);
@@ -62,7 +59,6 @@
                 }
             }
             form.submitable(true);
-
         });
     });
 
@@ -82,3 +78,18 @@
         }
     }
 })();
+
+
+(function (a, b, c, d, e, m) {
+    a['OktopostTrackerObject'] = d;
+    a[d] = a[d] || function () {
+      (a[d].q = a[d].q || []).push(arguments);
+    };
+    e = b.createElement('script');
+    m = b.getElementsByTagName('script')[0];
+    e.async = 1;
+    e.src = c;
+    m.parentNode.insertBefore(e, m);
+  })(window, document, 'https://static.oktopost.com/oktrk.js', '_oktrk');
+
+  _oktrk('create', '0014t9etf9hlpo6');

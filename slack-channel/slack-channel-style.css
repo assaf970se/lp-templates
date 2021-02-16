@@ -222,6 +222,51 @@ img {
   color: #e9a376;
 }
 
+.anchor-nav {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 2000;
+  height: 300px;
+  display: flex;
+  padding: 10px 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+}
+@media (max-width: 1000px) {
+  .anchor-nav {
+    display: none;
+  }
+}
+.anchor-nav .anchor-nav-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.anchor-nav .anchor-nav-item {
+  position: relative;
+  display: block;
+  margin: 10px 5px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.anchor-nav .anchor-nav-item:hover {
+  background-color: #f7dece;
+}
+.anchor-nav .anchor-nav-item.selected {
+  background-color: #e9a376;
+}
+
 .top-header {
   position: sticky;
   top: 0;
@@ -377,7 +422,7 @@ img {
   max-width: 810px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 290px;
+  margin-bottom: 140px;
 }
 @media (max-width: 700px) {
   .description-area {
@@ -403,10 +448,12 @@ img {
 .testimonials-area {
   max-width: 1100px;
   margin: 0 auto;
+  padding-top: 150px;
   padding-bottom: 200px;
 }
 @media (max-width: 700px) {
   .testimonials-area {
+    padding-top: 0;
     padding-bottom: 0;
   }
 }
@@ -667,7 +714,9 @@ img {
   display: flex;
   flex-direction: column;
 }
-.company-links a, .company-links a:active, .company-links a:focus {
+.company-links a,
+.company-links a:active,
+.company-links a:focus {
   text-decoration: none;
   color: inherit;
 }
@@ -676,7 +725,9 @@ img {
   display: flex;
   flex-direction: column;
 }
-.contact-links a, .contact-links a:active, .contact-links a:focus {
+.contact-links a,
+.contact-links a:active,
+.contact-links a:focus {
   text-decoration: none;
   color: inherit;
 }
@@ -685,9 +736,9 @@ img {
   display: flex;
   flex-direction: column;
 }
-.learn-more-links a, .learn-more-links a:active, .learn-more-links a:focus {
+.learn-more-links a,
+.learn-more-links a:active,
+.learn-more-links a:focus {
   text-decoration: none;
   color: inherit;
 }
-
-/*# sourceMappingURL=slack-channel-style.css.map */

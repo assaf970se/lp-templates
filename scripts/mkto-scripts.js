@@ -35,32 +35,6 @@
             form.setValues({ most_Recent_Referral_Domain: domainName || '' });
         }
 
-        form.onSuccess(function (values, followUpUrl) {
-            var formVals = form.getValues();
-            var userObj = {
-                email: formVals.Email,
-                name: (formVals.FirstName || formVals.LastName) ? formVals.FirstName + ' ' + formVals.LastName : "",
-                title: formVals.Title || '',
-                company: formVals.Company || '',
-                UTM_Campaign_ID: formVals.UTM_Campaign_ID || '',
-                UTM_Campaign: formVals.UTM_Campaign__c || '',
-                UTM_Content: formVals.UTM_Content__c || '',
-                UTM_Medium: formVals.UTM_Medium__c || '',
-                UTM_Source: formVals.UTM_Source__c || '',
-                UTM_Term: formVals.UTM_Term__c || ''
-            }
-            for (const prop in userObj) {
-                if(!userObj[prop]){
-                    delete userObj[prop];
-                }
-            }
-            try {
-                clearbit.identify(formVals.Email, userObj);
-            } catch (err) {
-                console.log(err);
-            }
-        });
-
         form.onValidate(function () {
             var email = form.vals().Email;
             var phoneNumber = form.vals().Phone;

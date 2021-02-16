@@ -1,7 +1,7 @@
 (function () {
     async function getSpeakerData() {
         const res = await fetch(
-            "https://www.customerexperiencefestival.com/_functions/speakers/ResolveTest"
+            "https://www.customerexperiencefestival.com/_functions/speakers/B2BSummitSpeakers"
         );
         const data = await res.json();
         console.log(data);
@@ -10,7 +10,7 @@
 
     async function getAgendaData() {
         const res = await fetch(
-            "https://www.customerexperiencefestival.com/_functions/agenda/ResolveAgendaTest"
+            "https://www.customerexperiencefestival.com/_functions/agenda/B2BSummitAgenda"
         );
         const data = await res.json();
         console.log(data);

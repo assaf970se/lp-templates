@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="../wixanswers-favicon.png" />
+        <title>Resolve</title>
+
+        <style>
+            @media (min-width: 601px) {
+                .header-section {
+                    background: #102a63 url('./images//slack-channel-bg.png')
+                        no-repeat center;
+                    background-size: cover;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .header-section {
+                    background: #0d0e1e url('./images/slack-channel-bg-mob.png')
+                        no-repeat;
+                    background-size: cover;
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="./slack-channel-register-style.css" />
+    </head>
+
+    <body>
+        <div class="top-header">
+            <div class="top-header-logo">
+                <a
+                    href="https://www.wixanswers.com"
+                    style="color: unset; text-decoration: none"
+                >
+                    <p>Conversations Ignited by</p>
+                    <img
+                        src="./images/slack-channel-wix-answers-logo-white.svg"
+                        alt=""
+                    />
+                </a>
+            </div>
+            <div class="header-title">resolve</div>
+            <div class="request-invite">Request An Invite</div>
+        </div>
+
+        <section class="header-section">
+            <div class="form-section--title general-title">
+                Request your private invitation
+            </div>
+            <div style="width: 200px; height: 40px; margin: 0 auto">
+                <script
+                    src="https://www.linkedin.com/autofill/js/autofill.js"
+                    type="text/javascript"
+                    async
+                ></script>
+                <script
+                    type="IN/Form2"
+                    data-form="mktoForm_1512"
+                    data-field-firstname="FirstName"
+                    data-field-lastname="LastName"
+                    data-field-phone="Phone"
+                    data-field-email="Email"
+                    data-field-company="Company"
+                    data-field-title="Title"
+                ></script>
+            </div>
+            <div class="form-item">
+                <form id="mktoForm_1512"></form>
+            </div>
+            <div class="wa-header-logo">
+                <a
+                    href="https://www.wixanswers.com"
+                    style="color: unset; text-decoration: none"
+                >
+                    <img src="./images/slack-channel-wa-top-logo.png" alt="" />
+                </a>
+            </div>
+        </section>
+
+        <script src="//app-nld101.marketo.com/js/forms2/js/forms2.min.js"></script>
+        <script>
+            MktoForms2.loadForm(
+                '//app-nld101.marketo.com',
+                '314-AVR-999',
+                1512,
+                function (form) {
+                    form.onSuccess(function (values, followUpUrl) {
+                        form.getFormElem().hide();
+                    });
+                }
+            );
+        </script>
+    </body>
+</html>
