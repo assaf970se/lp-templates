@@ -66,13 +66,13 @@ img {
   border-top-right-radius: 120px;
   border-bottom-right-radius: 120px;
   padding: 20px 0;
-  padding-right: 50px;
-  text-align: end;
+  padding-left: 70px;
 }
 @media (max-width: 600px) {
   .section-title-round {
     width: 250px;
     min-width: unset;
+    padding-left: 20px;
   }
 }
 
@@ -89,7 +89,26 @@ img {
   .big-title,
 .big-title > *,
 .big-title > * > * {
-    font-size: 30px !important;
+    font-size: 40px !important;
+    line-height: 45px !important;
+    letter-spacing: normal !important;
+  }
+}
+
+.banner-big-title,
+.banner-big-title > *,
+.banner-big-title > * > * {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  font-family: "made4-dxb";
+  line-height: 55px;
+}
+@media (max-width: 600px) {
+  .banner-big-title,
+.banner-big-title > *,
+.banner-big-title > * > * {
+    font-size: 28px !important;
     line-height: 35px !important;
     letter-spacing: normal !important;
   }
@@ -125,7 +144,7 @@ img {
   .info-text,
 .info-text > *,
 .info-text > * > * {
-    font-size: 15px !important;
+    font-size: 14px !important;
     line-height: 20px !important;
     letter-spacing: normal !important;
   }
@@ -270,14 +289,24 @@ img {
   .header-section {
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 50px;
   }
 }
 .header-section .logo {
   margin: 0 auto;
   margin-bottom: 60px;
 }
-.header-section .mini-title {
+.header-section .mini-title,
+.header-section .mini-title > *,
+.header-section .mini-title > * > * {
   font-size: 30px;
+}
+@media (max-width: 600px) {
+  .header-section .mini-title,
+.header-section .mini-title > *,
+.header-section .mini-title > * > * {
+    font-size: 35px !important;
+  }
 }
 .header-section .big-title {
   color: #13004d;
@@ -290,6 +319,11 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
+@media (max-width: 600px) {
+  .header-section .text-title {
+    margin-bottom: 30px;
+  }
+}
 .header-section .info-banner {
   max-width: 420px;
   margin: 0 auto;
@@ -298,9 +332,20 @@ img {
   background-color: #10014a;
   margin-bottom: 50px;
 }
+@media (max-width: 600px) {
+  .header-section .info-banner {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+}
 .big-banner-section {
   padding-top: 150px;
   padding-bottom: 150px;
+}
+.big-banner-section .banner-big-title {
+  color: #13004d;
+  text-align: center;
+  margin-bottom: 30px;
 }
 @media (max-width: 600px) {
   .big-banner-section {
@@ -338,9 +383,20 @@ img {
   align-items: center;
   color: #0c2660;
 }
+@media (max-width: 600px) {
+  .big-banner-section .big-banner .logo-items {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .big-banner-section .big-banner .logo-items > * {
   margin-right: 10px;
   margin-left: 10px;
+}
+@media (max-width: 600px) {
+  .big-banner-section .big-banner .logo-items > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 .big-banner-section .big-banner .logo-items .telus-logo {
   width: 150px;
@@ -376,6 +432,13 @@ img {
 .agenda-section {
   padding-top: 100px;
   padding-bottom: 60px;
+}
+@media (max-width: 600px) {
+  .keynote-section,
+.speakers-section,
+.agenda-section {
+    padding-bottom: 0;
+  }
 }
 
 .keynote,
@@ -438,7 +501,7 @@ img {
 }
 
 .agenda {
-  padding: 100px 20px 0 8%;
+  padding: 50px 20px 0 8%;
   display: grid;
   grid-gap: 50px;
   grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
@@ -502,11 +565,14 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+@media (max-width: 600px) {
+  .footer-section {
+    padding: 70px 20px;
+  }
+}
 .footer-section .big-title {
   font-size: 60px;
   text-align: center;
   color: #13004d;
   margin-bottom: 50px;
 }
-
-/*# sourceMappingURL=resolve-style.css.map */

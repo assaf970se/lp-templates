@@ -1,5 +1,5 @@
-@import "./reset.scss";
-@import "./general.scss";
+@import './reset.scss';
+@import './general.scss';
 
 .header-section {
     padding-top: 70px;
@@ -8,6 +8,7 @@
     @media (max-width: 600px) {
         padding-right: 20px;
         padding-left: 20px;
+        padding-bottom: 50px;
     }
 
     .logo {
@@ -15,8 +16,14 @@
         margin-bottom: 60px;
     }
 
-    .mini-title {
+    .mini-title,
+    .mini-title > *,
+    .mini-title > * > * {
         font-size: 30px;
+
+        @media (max-width: 600px) {
+            font-size: 35px !important;
+        }
     }
 
     .big-title {
@@ -30,6 +37,9 @@
         color: #10014a;
         text-align: center;
         margin-bottom: 50px;
+        @media (max-width: 600px) {
+            margin-bottom: 30px;
+        }
     }
 
     .info-banner {
@@ -39,6 +49,11 @@
         color: #fff;
         background-color: #10014a;
         margin-bottom: 50px;
+
+        @media (max-width: 600px) {
+            padding: 10px;
+            margin-bottom: 30px;
+        }
     }
 
     .form-container {
@@ -50,6 +65,12 @@
 .big-banner-section {
     padding-top: 150px;
     padding-bottom: 150px;
+
+    .banner-big-title {
+        color: #13004d;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
     @media (max-width: 600px) {
         padding-top: 50px;
@@ -87,9 +108,20 @@
             align-items: center;
             color: #0c2660;
 
+            @media (max-width: 600px) {
+                flex-direction: column;
+                justify-content: center;
+            }
+
             & > * {
                 margin-right: 10px;
                 margin-left: 10px;
+
+                @media (max-width: 600px) {
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
             }
 
             .telus-logo {
@@ -114,7 +146,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-
     @media (max-width: 600px) {
         flex-direction: column;
     }
@@ -132,6 +163,10 @@
 .agenda-section {
     padding-top: 100px;
     padding-bottom: 60px;
+
+    @media (max-width: 600px) {
+        padding-bottom: 0;
+    }
 }
 
 .keynote,
@@ -172,7 +207,7 @@
     font-size: 22px;
     font-weight: bold;
     margin-right: 5px;
-    font-family: "made4-db";
+    font-family: 'made4-db';
     max-width: 300px;
 }
 
@@ -194,13 +229,13 @@
     color: #fff;
     font-size: 15px;
     margin-right: 5px;
-    font-family: "made4-tr";
+    font-family: 'made4-tr';
     text-align: center;
     max-width: 200px;
 }
 
 .agenda {
-    padding: 100px 20px 0 8%;
+    padding: 50px 20px 0 8%;
     display: grid;
     grid-gap: 50px;
     grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
@@ -256,6 +291,10 @@
 .footer-section {
     padding-top: 100px;
     padding-bottom: 100px;
+
+    @media (max-width: 600px) {
+        padding: 70px 20px;
+    }
 
     .big-title {
         font-size: 60px;

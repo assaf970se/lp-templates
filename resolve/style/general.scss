@@ -19,12 +19,12 @@
     border-top-right-radius: 120px;
     border-bottom-right-radius: 120px;
     padding: 20px 0;
-    padding-right: 50px;
-    text-align: end;
+    padding-left: 70px;
 
     @media (max-width: 600px) {
         width: 250px;
         min-width: unset;
+        padding-left: 20px;
     }
 }
 
@@ -34,11 +34,27 @@
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 1.6px;
-    font-family: "made4-dxb";
+    font-family: 'made4-dxb';
     line-height: 55px;
 
     @media (max-width: 600px) {
-        font-size: 30px !important;
+        font-size: 40px !important;
+        line-height: 45px !important;
+        letter-spacing: normal !important;
+    }
+}
+
+.banner-big-title,
+.banner-big-title > *,
+.banner-big-title > * > * {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    font-family: 'made4-dxb';
+    line-height: 55px;
+
+    @media (max-width: 600px) {
+        font-size: 28px !important;
         line-height: 35px !important;
         letter-spacing: normal !important;
     }
@@ -50,7 +66,7 @@
     font-size: 20px;
     line-height: 36px;
     letter-spacing: 0.4px;
-    font-family: "made4-tr";
+    font-family: 'made4-tr';
 
     @media (max-width: 600px) {
         font-size: 14px !important;
@@ -64,11 +80,11 @@
 .info-text > * > * {
     font-size: 15px;
     letter-spacing: 0.4px;
-    font-family: "made4-tr";
+    font-family: 'made4-tr';
     text-align: center;
 
     @media (max-width: 600px) {
-        font-size: 15px !important;
+        font-size: 14px !important;
         line-height: 20px !important;
         letter-spacing: normal !important;
     }
@@ -78,7 +94,7 @@
 .description-title > *,
 .description-title > * > * {
     font-size: 20px;
-    font-family: "made4-db";
+    font-family: 'made4-db';
     font-weight: bold;
     line-height: 41px;
     letter-spacing: 0.32px;
@@ -95,7 +111,7 @@
 .description-text > * > * {
     color: #20303c;
     font-size: 16px;
-    font-family: "made4-tr";
+    font-family: 'made4-tr';
     line-height: 27px;
 
     @media (max-width: 600px) {
@@ -107,7 +123,7 @@
 .quote-title,
 .quote-title > *,
 .quote-title > * > * {
-    font-family: "made4-txb";
+    font-family: 'made4-txb';
     font-size: 22px;
     line-height: 30px;
     color: #e02020;
@@ -121,7 +137,7 @@
 .quote-text,
 .quote-text > *,
 .quote-text > * > * {
-    font-family: "made4-tr";
+    font-family: 'made4-tr';
     font-size: 18px;
     line-height: 30px;
     color: #e02020;
@@ -134,7 +150,7 @@
 
 .banner-button {
     cursor: pointer;
-    font-family: "made4-tr";
+    font-family: 'made4-tr';
     font-size: 18px;
     background-color: #fff;
     color: #20303c;
