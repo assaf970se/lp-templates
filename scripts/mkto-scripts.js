@@ -16,6 +16,12 @@
     ];
 
     MktoForms2.whenReady(function (form) {
+        let fullPageUrl = document.location.href;
+        try {
+            form.setValues({ Conversion_Page_URL__c: fullPageUrl || '' });
+        } catch(e) {
+            console.log(e);
+        }
         let params = new URLSearchParams(document.location.search.substring(1));
         let email = params.get('email');
         if (email) form.setValues({ Email: email });
@@ -31,7 +37,7 @@
                 .split('=')[1];
             let decodedUrl = decodeURIComponent(encodedUrl);
             let domainName = decodedUrl.split('.')[1];
-            form.setValues({ most_Recent_Referral_URL: decodedUrl });
+            form.setValues({ most_Recent_Referral_URL: decodedUrl || '' });
             form.setValues({ most_Recent_Referral_Domain: domainName || '' });
         }
 

@@ -1,0 +1,49 @@
+.big-title {
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 65px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 25px;
+        line-height: 36px;
+    }
+}
+
+.sub-title {
+    font-size: 22px;
+    line-height: 30px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+.description-title {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 36px;
+    
+    @media screen and (max-width: 800px) {
+        font-size: 22px;
+        line-height: 29px;
+    }
+}
+.description-text {
+    font-size: 18px;
+    line-height: 25px;
+    
+    @media screen and (max-width: 800px) {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+.jumbo-text {
+    font-size: 100px;
+    font-weight: 900;
+    
+    @media screen and (max-width: 800px) {
+        font-size: 40px;
+    }
+}
