@@ -129,6 +129,32 @@
         </section>
         <div id="descriptionArea"></div>
         <section class="main-section" style="background-color: #070819">
+            <div class="logos-strip">
+                <div class="my-heritage">
+                    <img
+                        src="./images/slack-channel-w-my-heritage.svg"
+                        alt=""
+                    />
+                </div>
+                <div class="yotpo">
+                    <img src="./images/slack-channel-w-yotpo.svg" alt="" />
+                </div>
+                <div class="viber">
+                    <img src="./images/slack-channel-w-viber.png" alt="" />
+                </div>
+                <div class="getty">
+                    <img src="./images/slack-channel-w-getty.svg" alt="" />
+                </div>
+                <div class="wonderbly">
+                    <img
+                        src="./images/slack-channel-w-wonderbly.png"
+                        alt=""
+                    />
+                </div>
+                <div class="guesty">
+                    <img src="./images/slack-channel-w-guesty.svg" alt="" />
+                </div>
+            </div>
             <div class="description-area fff">
                 <div class="description-area--text general-text m4tr">
                     Long gone are the days when customer experience was put on
@@ -250,32 +276,6 @@
                             <br />
                             at MyHeritage
                         </div>
-                    </div>
-                </div>
-                <div class="logos-strip">
-                    <div class="my-heritage">
-                        <img
-                            src="./images/slack-channel-w-my-heritage.svg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="yotpo">
-                        <img src="./images/slack-channel-w-yotpo.svg" alt="" />
-                    </div>
-                    <div class="viber">
-                        <img src="./images/slack-channel-w-viber.png" alt="" />
-                    </div>
-                    <div class="getty">
-                        <img src="./images/slack-channel-w-getty.svg" alt="" />
-                    </div>
-                    <div class="wonderbly">
-                        <img
-                            src="./images/slack-channel-w-wonderbly.png"
-                            alt=""
-                        />
-                    </div>
-                    <div class="guesty">
-                        <img src="./images/slack-channel-w-guesty.svg" alt="" />
                     </div>
                 </div>
             </div>
@@ -438,6 +438,13 @@
                 if (scrollSection !== 4 && window.pageYOffset > 2700) {
                     scrollSection = 4;
                     navIndicator(4);
+                }
+                if(window.pageYOffset < 3350) {
+                    document.querySelector('.anchor-nav').style.top = '50%';
+                }
+
+                if(window.pageYOffset >= 3350) {
+                    document.querySelector('.anchor-nav').style.top = '40%';
                 }
             });
         </script>
