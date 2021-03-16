@@ -149,6 +149,11 @@
 
 .headline {
     margin-bottom: 200px;
+
+    @media (max-width: 700px) {
+        margin-bottom: 0;
+    }
+
 }
 
 .headline__logo {
@@ -328,7 +333,7 @@
 
     @media (max-width: 700px) {
         padding-top: 50px;
-        padding-bottom: 0;
+        padding-bottom: 60px;
     }
 }
 
