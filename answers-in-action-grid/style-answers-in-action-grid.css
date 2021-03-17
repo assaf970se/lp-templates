@@ -47,6 +47,7 @@ img {
 
 body {
   width: 100%;
+  height: 100%;
 }
 
 .logo {
@@ -123,13 +124,14 @@ body {
 }
 
 .main-section {
+  height: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 750px 1fr 400px 1fr;
-  grid-template-rows: 100px auto auto 370px;
-  grid-template-areas: ". logo . form ." ". title . form ." ". subtitle . form ." ". description . form .";
+  grid-template-rows: 1fr 100px auto auto 300px 1fr;
+  grid-template-areas: ". . . . ." ". logo . form ." ". title . form ." ". subtitle . form ." ". description . form ." ". . . . .";
 }
 @media (max-width: 600px) {
   .main-section {
@@ -152,6 +154,7 @@ body {
 .main-section .title-container {
   grid-area: title;
   max-width: 800px;
+  margin-bottom: 30px;
 }
 .main-section .subtitle-container {
   grid-area: subtitle;
@@ -245,5 +248,3 @@ body {
   padding-left: 5px;
   padding-right: 5px;
 }
-
-/*# sourceMappingURL=style-answers-in-action-grid.css.map */

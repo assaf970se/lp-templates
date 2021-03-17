@@ -2,17 +2,20 @@
 @import "./general.scss";
 
 .main-section {
+    height: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 750px 1fr 400px 1fr;
-    grid-template-rows: 100px auto auto 370px;
+    grid-template-rows: 1fr 100px auto auto 300px 1fr;
     grid-template-areas:
+        ". . . . ."
         ". logo . form ."
         ". title . form ."
         ". subtitle . form ."
-        ". description . form .";
+        ". description . form ."
+        ". . . . .";
 
     @media (max-width: 600px) {
         padding: 0px;
@@ -38,6 +41,7 @@
     .title-container {
         grid-area: title;
         max-width: 800px;
+        margin-bottom: 30px;
     }
 
     .subtitle-container {
