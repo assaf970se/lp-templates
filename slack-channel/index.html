@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="request-invite m4txb">
-                <a href="#"> Request An Invite </a>
+                <a id="cta-link" href="#"> Request An Invite </a>
             </div>
         </div>
 
@@ -400,6 +400,11 @@
         </section>
 
         <script>
+            const params = location.href.split('?')[1] || '';
+            document.querySelectorAll('#cta-link').forEach(el => {
+                el.setAttribute('href', `https://info.wixanswers.com/resolve-register?${params}`)
+            });
+
             let scrollSection = 1;
             function navTo(anchor) {
                 if (anchor === 1) window.scrollTo(0, 0);

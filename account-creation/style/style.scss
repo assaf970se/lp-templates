@@ -1,5 +1,5 @@
-@import "./reset.scss";
-@import "./general.scss";
+@import './reset.scss';
+@import './general.scss';
 
 .top-page {
     position: relative;
@@ -27,7 +27,7 @@
     }
 
     .header-section {
-        background: #f7fafe;
+        background: #f6faff;
         z-index: 10;
         width: 100%;
         padding-top: 60px;
@@ -59,13 +59,13 @@
         .title-container {
             max-width: 600px;
             color: #ffffff;
-            
+
             @media (max-width: 1070px) {
-                max-width: 400px; 
+                max-width: 400px;
             }
 
             @media (max-width: 800px) {
-                max-width: 300px; 
+                max-width: 300px;
             }
 
             @media (max-width: 600px) {
@@ -102,7 +102,7 @@
             }
 
             @media (max-width: 1070px) {
-                width: 320px; 
+                width: 320px;
             }
 
             @media (max-width: 600px) {
@@ -134,19 +134,19 @@
                     align-items: center;
                     margin-right: 20px;
                     margin-left: 20px;
-    
+
                     &:not(:last-child) {
                         margin-bottom: 20px;
                     }
-    
+
                     .asset {
                         width: 80px;
-    
+
                         &.yotpo {
                             padding-left: 25px;
                             padding-right: 25px;
                         }
-    
+
                         &.gettyimages {
                         }
                         &.fiverr {
@@ -168,6 +168,7 @@
     }
 
     .main-section {
+        background-image: linear-gradient(#f6faff, #fff);
         transform: translateY(-100px);
         z-index: 10;
         width: 100%;
@@ -195,10 +196,8 @@
             margin-bottom: 30px;
 
             @media (max-width: 1070px) {
-                max-width: 400px; 
+                max-width: 400px;
             }
-
-            
 
             img {
                 box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.11);
@@ -210,11 +209,11 @@
             max-width: 600px;
 
             @media (max-width: 1070px) {
-                max-width: 400px; 
+                max-width: 400px;
             }
 
             @media (max-width: 800px) {
-                max-width: 300px; 
+                max-width: 300px;
             }
 
             @media (max-width: 600px) {
@@ -242,7 +241,7 @@
 
                     &::before {
                         color: #116dff;
-                        content: "\2022";
+                        content: '\2022';
                         display: inline-block;
                         font-size: 35px;
                         left: -30px;
@@ -250,6 +249,158 @@
                         top: -2px;
                     }
                 }
+            }
+        }
+    }
+}
+
+.mk-signup-social-proof-container {
+    grid-area: mk-top-social;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    box-shadow: 0 10px 60px 0 #e9e7e7, 0 -10px 60px 0 #e9e7e7;
+    background-color: #ffffff;
+    z-index: 100;
+
+    @media (max-width: 800px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .mk-signup-social-proof-title {
+        font-family: made4-dxb;
+        font-size: 28px;
+        line-height: 30px;
+        letter-spacing: 0.22px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 65px;
+
+        @media (max-width: 800px) {
+            font-size: 18px;
+            line-height: 23px;
+            letter-spacing: 0.14px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .mk-signup-social-proof-badges {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+
+        @media (max-width: 800px) {
+            margin-bottom: 40px;
+        }
+
+        .mk-signup-social-proof-badge-img {
+            width: 90px;
+
+            @media (max-width: 800px) {
+                width: 50px;
+            }
+        }
+
+        .mk-signup-social-proof-badge-img-center {
+            width: 105px;
+            @media (max-width: 800px) {
+                width: 60px;
+            }
+        }
+
+        a:not(:last-child) {
+            margin-right: 35px;
+            @media (max-width: 800px) {
+                margin-right: 12px;
+            }
+        }
+    }
+
+    .mk-signup-social-proof-reviews {
+        margin: 0 auto;
+        max-width: 1300px;
+        display: flex;
+        justify-content: space-evenly;
+
+        @media (max-width: 800px) {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .mk-signup-social-proof-divider {
+            height: 170px;
+            border-left: 1px solid #979797;
+
+            @media (max-width: 800px) {
+                height: 1px;
+                border-left: none;
+                border-bottom: 1px solid #979797;
+                margin-bottom: 50px;
+                width: 90%;
+                max-width: 300px;
+            }
+        }
+
+        .mk-signup-social-proof-review {
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 25px;
+
+            @media (max-width: 800px) {
+                margin-bottom: 50px;
+                padding-top: unset;
+            }
+
+            .mk-signup-social-proof-rating {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                .mk-social-proof-rating-star {
+                    width: 24px;
+                    height: 24px;
+                    background-color: #116dff;
+                    clip-path: polygon(
+                        50% 0%,
+                        61% 35%,
+                        98% 35%,
+                        68% 57%,
+                        79% 91%,
+                        50% 70%,
+                        21% 91%,
+                        32% 57%,
+                        2% 35%,
+                        39% 35%
+                    );
+
+                    &:not(:last-child) {
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            .mk-signup-social-proof-rating-title {
+                max-width: 300px;
+                font-size: 15px;
+                font-weight: 200;
+                line-height: 20px;
+                letter-spacing: 0.16px;
+                text-align: center;
+                margin-bottom: 15px;
+                color: #20303c;
+            }
+
+            .mk-signup-social-proof-rating-quote {
+                font-family: made4-tb;
+                max-width: 350px;
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 700;
+                text-align: center;
+                color: #20303c;
             }
         }
     }
