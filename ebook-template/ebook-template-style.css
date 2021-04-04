@@ -204,6 +204,11 @@ body {
   bottom: -5px;
   width: 400px;
 }
+@media (max-width: 800px) {
+  .main-bg-asset {
+    width: 250px;
+  }
+}
 .main-bg-asset img {
   width: 100%;
 }
@@ -238,7 +243,7 @@ body {
 }
 @media (max-width: 800px) {
   .main-banner-asset {
-    width: 250px;
+    width: 200px;
     bottom: -100px;
     right: -30px;
   }

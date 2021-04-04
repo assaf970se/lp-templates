@@ -105,6 +105,10 @@ body {
     left: 0;
     bottom: -5px;
     width: 400px;
+    
+    @media (max-width: 800px) {
+        width: 250px;
+    }
 
     img {
         width: 100%;
@@ -141,7 +145,7 @@ body {
     z-index: 1;
     
     @media (max-width: 800px) {
-        width: 250px;
+        width: 200px;
         bottom: -100px;
         right: -30px;
         
