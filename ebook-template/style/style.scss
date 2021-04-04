@@ -66,7 +66,7 @@ body {
     color: var(--font-white);
     max-width: 660px;
     margin-bottom: 25px;
-    
+
     @media (max-width: 800px) {
         margin-bottom: 10px;
     }
@@ -78,13 +78,68 @@ body {
     color: var(--font-white);
     max-width: 810px;
     margin-bottom: 50px;
-    
+
     @media (max-width: 800px) {
         margin-bottom: 30px;
     }
 }
 
 .header-form {
+    #mktoForm_1037 {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #mktoForm_1037 .mktoFormRow {
+        margin-top: 0px;
+    }
+    #mktoForm_1037 .mktoLabel {
+        display: none !important;
+    }
+    #mktoForm_1037 label {
+        margin-top: 20px !important;
+        color: #3278c5 !important;
+    }
+    #mktoForm_1037 input,
+    #mktoForm_1037 select {
+        border-radius: 6px !important;
+        border: 1px solid #11418c !important;
+        color: #000000 !important;
+        background-color: #ffffff !important;
+        font-size: 14px !important;
+    }
+    #mktoForm_1037 input:not([type='checkbox']) {
+        padding: 10px 15px !important;
+        width: 300px !important;
+    }
+    #mktoForm_1037 select {
+        width: 250px !important;
+        height: 37px !important;
+    }
+    #mktoForm_1037 .mktoLogicalField label {
+        color: #ffffff !important;
+    }
+    #mktoForm_1037 input::placeholder {
+        color: #11418c !important;
+    }
+    #mktoForm_1037 .mktoButton {
+        width: 200px !important;
+        height: 40px !important;
+        border-radius: 30px !important;
+        color: #ffffff !important;
+        background: dodgerblue !important;
+        font-size: 16px !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    @media (max-width: 600px) {
+        #mktoForm_1037 input:not([type='checkbox']) {
+            padding: 20px 15px !important;
+            width: 250px !important;
+        }
+    }
 }
 
 .main {
@@ -97,7 +152,6 @@ body {
         padding-left: 30px;
         padding-top: 70px;
     }
-
 }
 
 .main-bg-asset {
@@ -105,7 +159,7 @@ body {
     left: 0;
     bottom: -5px;
     width: 400px;
-    
+
     @media (max-width: 800px) {
         width: 250px;
     }
@@ -134,7 +188,8 @@ body {
         padding: 40px 20px;
         margin-bottom: 150px;
     }
-    @media (max-width: 800px) {}
+    @media (max-width: 800px) {
+    }
 }
 
 .main-banner-asset {
@@ -143,14 +198,12 @@ body {
     right: -100px;
     bottom: -130px;
     z-index: 1;
-    
+
     @media (max-width: 800px) {
         width: 200px;
         bottom: -100px;
         right: -30px;
-        
     }
-
 }
 
 .main-banner-asset-mask {
@@ -204,7 +257,6 @@ body {
     @media (max-width: 800px) {
         width: 100%;
     }
-
 }
 
 .main-info-small-title {
@@ -225,7 +277,6 @@ body {
     @media (max-width: 800px) {
         flex-direction: column;
     }
-
 }
 
 .main-info-item {
