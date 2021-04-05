@@ -62,59 +62,59 @@ img {
   height: auto;
 }
 
-.big-title {
+.big-title, .big-title > *, .big-title > * > * {
   font-size: 55px;
   font-weight: 900;
   line-height: 65px;
 }
 @media screen and (max-width: 800px) {
-  .big-title {
-    font-size: 27px;
-    line-height: 36px;
+  .big-title, .big-title > *, .big-title > * > * {
+    font-size: 27px !important;
+    line-height: 36px !important;
   }
 }
 
-.sub-title {
+.sub-title, .sub-title > *, .sub-title > * > * {
   font-size: 22px;
   line-height: 30px;
 }
 @media screen and (max-width: 800px) {
-  .sub-title {
-    font-size: 15px;
-    line-height: 25px;
+  .sub-title, .sub-title > *, .sub-title > * > * {
+    font-size: 15px !important;
+    line-height: 25px !important;
   }
 }
 
-.description-title {
+.description-title, .description-title > *, .description-title > * > * {
   font-size: 26px;
   font-weight: 900;
   line-height: 36px;
 }
 @media screen and (max-width: 800px) {
-  .description-title {
-    font-size: 22px;
-    line-height: 29px;
+  .description-title, .description-title > *, .description-title > * > * {
+    font-size: 22px !important;
+    line-height: 29px !important;
   }
 }
 
-.description-text {
+.description-text, .description-text > *, .description-text > * > * {
   font-size: 18px;
   line-height: 25px;
 }
 @media screen and (max-width: 800px) {
-  .description-text {
-    font-size: 15px;
-    line-height: 22px;
+  .description-text, .description-text > *, .description-text > * > * {
+    font-size: 15px !important;
+    line-height: 22px !important;
   }
 }
 
-.jumbo-text {
+.jumbo-text, .jumbo-text > *, .jumbo-text > * > * {
   font-size: 100px;
   font-weight: 900;
 }
 @media screen and (max-width: 800px) {
-  .jumbo-text {
-    font-size: 40px;
+  .jumbo-text, .jumbo-text > *, .jumbo-text > * > * {
+    font-size: 40px !important;
   }
 }
 
@@ -141,7 +141,7 @@ body {
   .header {
     padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
   }
 }
 

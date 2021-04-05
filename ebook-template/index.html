@@ -5,16 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./ebook-template-style.css" />
         <title>eBook template</title>
-    </head>
-    <body>
-        <section
-            class="header"
-            style="
+        <style>
+            .header {
                 background: #002764 url('./images/ebook-header-bg.png')
                     no-repeat center bottom;
                 background-size: contain;
-            "
-        >
+            }
+            @media (max-width: 800px) {
+                .header {
+                background: #002764 url('./images/ebook-header-bg-mob.jpg')
+                    no-repeat center bottom;
+                background-size: contain;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="header">
             <div class="header-logo">
                 <img
                     src="../images/wix-answers-logo-white.svg"
@@ -96,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section class="footer" style="background-color: #002764;">
+        <section class="footer" style="background-color: #002764">
             <div class="footer-title big-title">Get the 2021 eBook</div>
             <div class="footer-form">
                 <form id="mktoForm_1037"></form>
