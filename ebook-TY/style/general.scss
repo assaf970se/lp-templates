@@ -1,0 +1,31 @@
+.big-title, .big-title > *, .big-title > * > * {
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 75px;
+    
+    @media screen and (max-width: 800px) {
+        font-size: 27px !important;
+        line-height: 36px !important;
+    }
+}
+
+.sub-title, .sub-title > *, .sub-title > * > * {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 700;
+
+    @media screen and (max-width: 800px) {
+        font-size: 15px !important;
+        line-height: 25px !important;
+    }
+}
+
+.cta-text, .cta-text > *, .cta-text > * > * {
+    font-size: 18px;
+    line-height: 25px;
+    
+    @media screen and (max-width: 800px) {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+}
