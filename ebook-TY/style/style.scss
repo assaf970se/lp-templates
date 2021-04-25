@@ -41,12 +41,24 @@ body {
     padding-bottom: 110px;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 700px) {
+        padding: 0 20px 30px 20px;
+        flex-direction: column;
+    }
 }
 
 .header-content {
     max-width: 600;
     margin-right: 120px;
     padding-top: 40px;
+
+    @media screen and (max-width: 700px) {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 70px;
+    }
 }
 
 .header-logo {
@@ -57,9 +69,10 @@ body {
         width: 100%;
     }
 
-    @media (max-width: 800px) {
+    @media screen and (max-width: 700px) {
+        text-align: center;
         width: 150px;
-        margin-bottom: 50px;
+        margin: 0 auto 50px auto;
     }
 }
 
@@ -70,8 +83,8 @@ body {
     max-width: 500px;
     margin-bottom: 35px;
 
-    @media (max-width: 800px) {
-        margin-bottom: 15px;
+    @media screen and (max-width: 700px) {
+        margin-bottom: 30px;
     }
 }
 
@@ -79,6 +92,10 @@ body {
     max-width: 520px;
 
     img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 700px) {
         width: 100%;
     }
 }

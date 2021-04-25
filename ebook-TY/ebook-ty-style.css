@@ -67,10 +67,10 @@ img {
   font-weight: 900;
   line-height: 75px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .big-title, .big-title > *, .big-title > * > * {
-    font-size: 27px !important;
-    line-height: 36px !important;
+    font-size: 30px !important;
+    line-height: 40px !important;
   }
 }
 
@@ -79,10 +79,11 @@ img {
   line-height: 35px;
   font-weight: 700;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .sub-title, .sub-title > *, .sub-title > * > * {
-    font-size: 15px !important;
+    font-size: 20px !important;
     line-height: 25px !important;
+    font-weight: 900 !important;
   }
 }
 
@@ -90,7 +91,7 @@ img {
   font-size: 18px;
   line-height: 25px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .cta-text, .cta-text > *, .cta-text > * > * {
     font-size: 15px !important;
     line-height: 22px !important;
@@ -119,11 +120,25 @@ body {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 0 20px 30px 20px;
+    flex-direction: column;
+  }
+}
 
 .header-content {
   max-width: 600;
   margin-right: 120px;
   padding-top: 40px;
+}
+@media screen and (max-width: 700px) {
+  .header-content {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 70px;
+  }
 }
 
 .header-logo {
@@ -133,10 +148,11 @@ body {
 .header-logo img {
   width: 100%;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .header-logo {
+    text-align: center;
     width: 150px;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
   }
 }
 
@@ -147,9 +163,9 @@ body {
   max-width: 500px;
   margin-bottom: 35px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .header-title {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 
@@ -158,6 +174,11 @@ body {
 }
 .header-img img {
   width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .header-img {
+    width: 100%;
+  }
 }
 
 .header-cta, .footer-cta {

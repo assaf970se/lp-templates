@@ -3,9 +3,9 @@
     font-weight: 900;
     line-height: 75px;
     
-    @media screen and (max-width: 800px) {
-        font-size: 27px !important;
-        line-height: 36px !important;
+    @media screen and (max-width: 700px) {
+        font-size: 30px !important;
+        line-height: 40px !important;
     }
 }
 
@@ -13,10 +13,11 @@
     font-size: 25px;
     line-height: 35px;
     font-weight: 700;
-
-    @media screen and (max-width: 800px) {
-        font-size: 15px !important;
+    
+    @media screen and (max-width: 700px) {
+        font-size: 20px !important;
         line-height: 25px !important;
+        font-weight: 900 !important;
     }
 }
 
@@ -24,7 +25,7 @@
     font-size: 18px;
     line-height: 25px;
     
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 700px) {
         font-size: 15px !important;
         line-height: 22px !important;
     }
