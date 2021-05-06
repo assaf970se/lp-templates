@@ -1,4 +1,17 @@
 (function () {
+    const lastRef = document.referrer;
+    if (
+        !lastRef ||
+        lastRef.includes('wixanswers.com') ||
+        lastRef.includes('wix.com') ||
+        lastRef.includes('marketo.com')
+    ) {
+        return;
+    } else {
+        const refCookieStr = `wamk_most_recent_ref=${lastRef}; domain=wixanswers.com; max-age=2592000; secure`;
+        document.cookie = refCookieStr;
+    }
+    
     // Please include the email domains you would like to block in this list
     var invalidDomains = [
         '@gmail',
@@ -26,11 +39,17 @@
         let email = params.get('email');
         if (email) form.setValues({ Email: email });
 
-        if (
-            document.cookie
+        
+        if (document.cookie.split(';').some((item) => item.includes('wamk_most_recent_ref'))) {
+            let encodedUrl = document.cookie
                 .split(';')
-                .some((item) => item.includes('_uc_last_referrer'))
-        ) {
+                .find((cookie) => cookie.includes('wamk_most_recent_ref'))
+                .split('=')[1];
+            let decodedUrl = decodeURIComponent(encodedUrl);
+            let domainName = decodedUrl.split('.')[1];
+            form.setValues({ most_Recent_Referral_URL: decodedUrl || '' });
+            form.setValues({ most_Recent_Referral_Domain: domainName || '' });
+        } else if (document.cookie.split(';').some((item) => item.includes('_uc_last_referrer'))) {
             let encodedUrl = document.cookie
                 .split(';')
                 .find((cookie) => cookie.includes('_uc_last_referrer'))

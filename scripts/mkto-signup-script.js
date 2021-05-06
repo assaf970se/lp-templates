@@ -1,4 +1,17 @@
 (function () {
+    const lastRef = document.referrer;
+    if (
+        !lastRef ||
+        lastRef.includes('wixanswers.com') ||
+        lastRef.includes('wix.com') ||
+        lastRef.includes('marketo.com')
+    ) {
+        return;
+    } else {
+        const refCookieStr = `wamk_most_recent_ref=${lastRef}; domain=wixanswers.com; max-age=2592000; secure`;
+        document.cookie = refCookieStr;
+    }
+    
     // Please include the email domains you would like to block in this list
     var invalidDomains = [];
 
@@ -13,32 +26,28 @@
         let email = params.get("email");
         if (email) form.setValues({ Email: email });
 
-        if (
-            document.cookie
-                .split(";")
-                .some((item) => item.includes("_uc_last_referrer"))
-        ) {
+        if (document.cookie.split(';').some((item) => item.includes('wamk_most_recent_ref'))) {
             let encodedUrl = document.cookie
-                .split(";")
-                .find((cookie) => cookie.includes("_uc_last_referrer"))
-                .split("=")[1];
+                .split(';')
+                .find((cookie) => cookie.includes('wamk_most_recent_ref'))
+                .split('=')[1];
             let decodedUrl = decodeURIComponent(encodedUrl);
-            let domainName = decodedUrl.split(".")[1];
+            let domainName = decodedUrl.split('.')[1];
+            form.setValues({ most_Recent_Referral_URL: decodedUrl || '' });
+            form.setValues({ most_Recent_Referral_Domain: domainName || '' });
+        } else if (document.cookie.split(';').some((item) => item.includes('_uc_last_referrer'))) {
+            let encodedUrl = document.cookie
+                .split(';')
+                .find((cookie) => cookie.includes('_uc_last_referrer'))
+                .split('=')[1];
+            let decodedUrl = decodeURIComponent(encodedUrl);
+            let domainName = decodedUrl.split('.')[1];
             form.setValues({ most_Recent_Referral_URL: decodedUrl || '' });
             form.setValues({ most_Recent_Referral_Domain: domainName || '' });
         }
 
-        form.onSuccess(function (values, followUpUrl) {
-            var formVals = form.getValues();
-            var fullname =
-                formVals.FirstName && formVals.LastName
-                    ? btoa(formVals.FirstName + " " + formVals.LastName)
-                    : "";
-            var email = formVals.Email ? btoa(formVals.Email) : "";
-            var organization = formVals.Company ? btoa(formVals.Company) : "";
-            var phonenumber = formVals.Phone ? btoa(formVals.Phone) : "";
-            // var redirectUrl = 'http://app.wixanswers.com/mk-signup?fn=' + fullname + '&em=' + email + '&or=' + organization + '&pn=' + phonenumber;
-            var redirectUrl = "http://app.wixanswers.com/mk-signup?em=" + email;
+        form.onSuccess(function (values, followUpUrl) {            
+            var redirectUrl = "http://app.wixanswers.com/mk-signup";
             location.href = redirectUrl;
 
             return false;

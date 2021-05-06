@@ -1,12 +1,29 @@
 (function () {
-    const ref = document.referrer;
-    if (!ref || ref.includes('wixanswers.com') || ref.includes('wix.com')) {
+    const lastRef = document.referrer;
+    if (
+        !lastRef ||
+        lastRef.includes('wixanswers.com') ||
+        lastRef.includes('wix.com') ||
+        lastRef.includes('marketo.com')
+    ) {
         return;
     } else {
-        try {
-            localStorage.setItem('wamk_most_recent_ref', ref);
-        } catch (err) {
-            console.log(err);
-        }
+        const refCookieStr = `wamk_most_recent_ref=${lastRef}; domain=wixanswers.com; max-age=2592000; secure`;
+        document.cookie = refCookieStr;
+    }
+})();
+
+(function () {
+    var lastRef = document.referrer;
+    if (
+        !lastRef ||
+        lastRef.includes('wixanswers.com') ||
+        lastRef.includes('wix.com') ||
+        lastRef.includes('marketo.com')
+    ) {
+        return;
+    } else {
+        var refCookieStr = 'wamk_most_recent_ref='+lastRef+'; domain=wixanswers.com; max-age=2592000; secure';
+        document.cookie = refCookieStr;
     }
 })();

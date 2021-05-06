@@ -143,6 +143,9 @@ body {
     padding-left: 20px;
     padding-bottom: 200px;
   }
+  .header.no-pb {
+    padding-bottom: 60px;
+  }
 }
 
 .header-logo {
@@ -252,6 +255,9 @@ body {
     padding-top: 70px;
     padding-bottom: 215px;
   }
+  .main.no-pb {
+    padding-bottom: 60px;
+  }
 }
 
 .main-bg-asset {
@@ -288,6 +294,9 @@ body {
     flex-direction: column;
     padding: 55px 20px;
     margin-bottom: 125px;
+  }
+  .main-banner.no-pb {
+    margin-bottom: 75px;
   }
 }
 
