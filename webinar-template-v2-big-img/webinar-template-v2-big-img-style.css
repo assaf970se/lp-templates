@@ -54,7 +54,7 @@ img {
 }
 @media screen and (max-width: 800px) {
   .big-title {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 36px;
   }
 }
@@ -167,7 +167,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 110px;
-  padding-bottom: 210px;
+  padding-bottom: 110px;
   padding-right: 25px;
   padding-left: 25px;
 }
@@ -189,7 +189,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .header-logo {
-    width: 155px;
+    width: 140px;
     margin-bottom: 50px;
   }
 }
@@ -342,7 +342,7 @@ body {
   }
 }
 .description-container .description-title {
-  max-width: 500px;
+  max-width: 700px;
   margin-bottom: 25px;
 }
 .description-container .description-text {
@@ -363,6 +363,12 @@ body {
   padding-bottom: 120px;
   padding-right: 20px;
   padding-left: 20px;
+}
+@media screen and (max-width: 800px) {
+  .footer-section {
+    padding-top: 65px;
+    padding-bottom: 100px;
+  }
 }
 
 .footer-title {

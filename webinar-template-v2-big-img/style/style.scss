@@ -50,7 +50,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 110px;
-    padding-bottom: 210px;
+    padding-bottom: 110px;
     padding-right: 25px;
     padding-left: 25px;
 
@@ -69,7 +69,7 @@ body {
     margin-bottom: 90px;
     width: 240px;
     @media screen and (max-width: 800px) {
-        width: 155px;
+        width: 140px;
         margin-bottom: 50px;
     }
 
@@ -217,7 +217,7 @@ body {
     }
 
     .description-title {
-        max-width: 500px;
+        max-width: 700px;
         margin-bottom: 25px;
     }
     .description-text {
@@ -242,6 +242,11 @@ body {
     padding-bottom: 120px;
     padding-right: 20px;
     padding-left: 20px;
+
+    @media screen and (max-width: 800px) {
+        padding-top: 65px;
+        padding-bottom: 100px;
+    }
 }
 
 .footer-title {
