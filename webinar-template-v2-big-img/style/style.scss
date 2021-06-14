@@ -142,6 +142,11 @@ body {
         text-align: center;
         font-size: 18px;
         font-weight: bold;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 800px) {
+            margin-bottom: 0;
+        }
     }
 
     @media screen and (max-width: 800px) {
