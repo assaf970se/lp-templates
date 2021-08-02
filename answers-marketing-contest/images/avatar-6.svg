@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 30 Copy 12</title>
+    <defs>
+        <path d="M12,24 C16.1124064,24 19.7416542,21.931352 21.9039247,18.7778748 C23.2262972,16.8493132 24,14.5150106 24,12 C24,5.372583 18.627417,0 12,0 C5.372583,0 0,5.372583 0,12 C0,18.627417 5.372583,24 12,24 Z" id="path-1"></path>
+        <path d="M8.4904918,0 C12.8099811,0 16.376096,3.2255795 16.9115325,7.39943457 L16.9809836,7.39963115 L16.9412101,7.66337065 C16.9675211,7.935524 16.9809836,8.21143574 16.9809836,8.4904918 L16.9809836,8.4904918 L16.814,8.49 L15.7453893,15.5386702 L0,15.5645902 L0,7.39963115 L0.0694511024,7.39943457 C0.60488759,3.2255795 4.17100247,0 8.4904918,0 Z" id="path-3"></path>
+        <circle id="path-5" cx="4.87606557" cy="4.87606557" r="4.87606557"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-22-Copy-5">
+            <g id="Group-11">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#DCEAFF" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(3.409836, 5.442623)">
+                        <g id="Oval" transform="translate(0.000000, 7.910820)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Combined-Shape" fill="#FF7197" xlink:href="#path-3"></use>
+                            <rect id="Rectangle" fill="#002764" mask="url(#mask-4)" x="-4.98428451" y="3.93553734" width="26.0577321" height="1"></rect>
+                            <rect id="Rectangle-Copy" fill="#002764" mask="url(#mask-4)" x="-4.98428451" y="2.07916518" width="26.0577321" height="1"></rect>
+                            <rect id="Rectangle-Copy-9" fill="#002764" mask="url(#mask-4)" x="-4.98428451" y="5.82599981" width="26.0577321" height="1"></rect>
+                            <rect id="Rectangle-Copy-10" fill="#002764" mask="url(#mask-4)" x="-4.98428451" y="7.71646228" width="26.0577321" height="1"></rect>
+                            <rect id="Rectangle-Copy-13" fill="#002764" mask="url(#mask-4)" x="-4.98428451" y="9.60692475" width="26.0577321" height="1"></rect>
+                            <circle fill="#FFFFFF" mask="url(#mask-4)" cx="8.31764383" cy="-0.781410678" r="6.110922"></circle>
+                        </g>
+                        <g id="Oval-Copy-4-+-Rectangle-+-Rectangle-Copy-23-+-Oval-Copy-5-Mask" transform="translate(3.614426, 0.000000)">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="Mask" fill="#3DDDCA" xlink:href="#path-5"></use>
+                            <ellipse id="Oval-Copy-4" fill="#002764" mask="url(#mask-6)" cx="-1.04824413" cy="-0.0112901199" rx="6.6550095" ry="6.65776093"></ellipse>
+                            <ellipse id="Oval-Copy-7" fill="#002764" mask="url(#mask-6)" cx="10.8341042" cy="-0.0112901199" rx="6.6550095" ry="6.65776093"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <circle id="Oval" fill="#002764" cx="11.9672222" cy="4.44262629" r="2.90750197"></circle>
+            <path d="M9.5622732,6.0770804 C10.0855298,6.84551212 10.9674463,7.35012826 11.9672222,7.35012826 C12.9718717,7.35012826 13.8575098,6.84058057 14.3797976,6.06582433" id="Path" stroke="#2288F9" stroke-width="0.545506779" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

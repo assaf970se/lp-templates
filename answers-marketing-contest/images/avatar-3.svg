@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 14 Copy 9</title>
+    <defs>
+        <path d="M12,24 C16.1124064,24 19.7416542,21.931352 21.9039247,18.7778748 C23.2262972,16.8493132 24,14.5150106 24,12 C24,5.372583 18.627417,0 12,0 C5.372583,0 0,5.372583 0,12 C0,18.627417 5.372583,24 12,24 Z" id="path-1"></path>
+        <path d="M16.9809836,8.4904918 C16.9809836,3.80132266 13.1796609,0 8.4904918,0 C3.80132266,0 0,3.80132266 0,8.4904918 L16.9809836,8.4904918 Z" id="path-3"></path>
+        <ellipse id="path-5" cx="4.33075678" cy="4.28303152" rx="4.33075678" ry="4.28303152"></ellipse>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-14-Copy">
+            <g id="Group-11">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#DCEAFF" xlink:href="#path-1"></use>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(3.409836, 4.172244)">
+                        <g id="Oval" stroke-width="1" fill="none" transform="translate(0.000000, 9.181198)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" fill="#FF7197" xlink:href="#path-3"></use>
+                            <ellipse fill="#002764" mask="url(#mask-4)" cx="6.76138709" cy="1.00929862" rx="1.67874557" ry="1.68838542"></ellipse>
+                            <ellipse id="Oval-Copy-9" fill="#002764" mask="url(#mask-4)" cx="10.1188782" cy="1.00929862" rx="1.67874557" ry="1.68838542"></ellipse>
+                        </g>
+                        <path d="M12.8514514,-1.29643081 L9.7410819,-1.29643081 C6.5933001,-1.29643081 4.04151877,1.25651457 4.04151877,4.40573228 C4.04151877,7.55495 6.5933001,10.1078954 9.7410819,10.1078954 L12.8529833,10.1078954 L12.8514514,-1.29643081 Z" id="Path-Copy-19" fill="#2288F9" transform="translate(8.447251, 4.405732) rotate(-270.000000) translate(-8.447251, -4.405732) "></path>
+                        <polygon id="Path-3" fill="#FF7197" points="16.9809836 16.5808293 15.7453893 24.7198684 0 24.7457883 0 16.5808293"></polygon>
+                        <g id="Oval-Copy-4-+-Rectangle-+-Rectangle-Copy-23-+-Oval-Copy-5-Mask" stroke-width="1" fill="none" transform="translate(4.096809, 1.887438)">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" xlink:href="#path-5"></use>
+                            <rect id="Rectangle" fill="#2288F9" mask="url(#mask-6)" x="-0.288717119" y="-0.580750036" width="9.38330635" height="3.92006274"></rect>
+                            <path d="M6.3557865,1.83058044 C6.33080778,1.84183868 6.21956869,2.37715734 6.02206921,3.43653643 L6.81206713,3.43653643 C6.53285875,2.35464087 6.38076521,1.81932221 6.3557865,1.83058044 Z" id="Path-4" fill="#FFFFFF" mask="url(#mask-6)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <ellipse id="Oval-Copy-13" fill="#002764" cx="11.8880454" cy="17.2812235" rx="1" ry="1"></ellipse>
+            <ellipse id="Oval-Copy-14" fill="#002764" cx="11.8880454" cy="19.1686611" rx="1" ry="1"></ellipse>
+            <ellipse id="Oval-Copy-15" fill="#002764" cx="11.8880454" cy="20.9109112" rx="1" ry="1"></ellipse>
+        </g>
+    </g>
+</svg>

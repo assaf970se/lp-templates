@@ -1,0 +1,38 @@
+// basic reset
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "made4-tr";
+    font-weight: normal;
+}
+ol,
+ul {
+    font-family: "made4-tr";
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}

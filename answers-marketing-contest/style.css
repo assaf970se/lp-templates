@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "made4-tr";
+  font-weight: normal;
+}
+
+ol,
+ul {
+  font-family: "made4-tr";
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: dodgerblue url("../images/sample-bg.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  position: relative;
+  width: 400px;
+}
+.img-container .base-img {
+  width: 100%;
+}
+
+.avatar {
+  width: 27px;
+}
+
+.avatar-1 {
+  position: absolute;
+  top: 109px;
+  left: 82px;
+  opacity: 0.1;
+}
+
+.avatar-2 {
+  position: absolute;
+  top: 174px;
+  left: 289px;
+  opacity: 0.1;
+}
+
+.avatar-3 {
+  position: absolute;
+  top: 241px;
+  left: 82px;
+  opacity: 0.1;
+}
+
+.avatar-4 {
+  position: absolute;
+  top: 305px;
+  left: 289px;
+  opacity: 0.1;
+}
+
+.avatar-5 {
+  position: absolute;
+  top: 371px;
+  left: 82px;
+  opacity: 0.1;
+}

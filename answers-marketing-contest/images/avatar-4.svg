@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 19</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <ellipse id="path-3" cx="5.74297189" cy="5.81586592" rx="5.74297189" ry="5.81586592"></ellipse>
+        <ellipse id="path-5" cx="5.74297189" cy="5.81586592" rx="5.74297189" ry="5.81586592"></ellipse>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#DCEAFF" xlink:href="#path-1"></use>
+            <g mask="url(#mask-2)">
+                <g transform="translate(2.000000, 4.000000)">
+                    <path d="M20,19.5624581 C20,13.9695105 15.5228475,9.43553073 10,9.43553073 C4.4771525,9.43553073 0,13.9695105 0,19.5624581 L20,19.5624581 Z" id="Path" fill="#FF7197"></path>
+                    <path d="M6.38554217,5.81586592 L6.38554217,13.6626197 C6.38554217,13.8886895 6.20227639,14.0719553 5.9762066,14.0719553 L4.66636368,14.0719553 C4.44029389,14.0719553 4.25702811,13.8886895 4.25702811,13.6626197 L4.25702811,5.81586592 L4.25702811,5.81586592" id="Path-2-Copy" fill="#2188F9"></path>
+                    <polygon id="Path-3" fill="#FF7197" points="20 18.2613478 18.5447318 27.9690843 0 28 0 18.2613478"></polygon>
+                    <g id="Oval-Copy-4-+-Rectangle-+-Rectangle-Copy-23-+-Oval-Copy-5-Mask" stroke-width="1" fill="none" transform="translate(4.257028, 0.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-3"></use>
+                        <ellipse id="Oval-Copy-4" fill="#2188F9" mask="url(#mask-4)" cx="9.81927711" cy="-0.793072626" rx="7.73092369" ry="7.82905028"></ellipse>
+                        <rect id="Rectangle" fill="#4DDEB2" mask="url(#mask-4)" x="8.95582329" y="5.81586592" width="3.29317269" height="5.81586592"></rect>
+                        <rect id="Rectangle-Copy-23" fill="#2188F9" mask="url(#mask-4)" x="-1.20481928" y="2.44022346" width="3.29317269" height="9.19150838"></rect>
+                        <ellipse id="Oval-Copy-5" fill="#2188F9" mask="url(#mask-4)" cx="-1.20481928" cy="1.22011173" rx="5.74297189" ry="5.81586592"></ellipse>
+                    </g>
+                    <g id="Oval-Copy-4-+-Rectangle-+-Rectangle-Copy-23-+-Oval-Copy-5-Mask" stroke-width="1" fill="none" transform="translate(4.257028, 0.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-5"></use>
+                        <ellipse id="Oval-Copy-4" fill="#2188F9" mask="url(#mask-6)" cx="9.81927711" cy="-0.793072626" rx="7.73092369" ry="7.82905028"></ellipse>
+                        <rect id="Rectangle" fill="#2188F9" mask="url(#mask-6)" x="8.75183481" y="5.81586592" width="3.29317269" height="5.81586592"></rect>
+                        <rect id="Rectangle-Copy-23" fill="#2188F9" mask="url(#mask-6)" x="-1.20481928" y="2.44022346" width="3.29317269" height="9.19150838"></rect>
+                        <ellipse id="Oval-Copy-5" fill="#2188F9" mask="url(#mask-6)" cx="-1.20481928" cy="1.22011173" rx="5.74297189" ry="5.81586592"></ellipse>
+                    </g>
+                    <path d="M15.7429719,5.33127867 L15.7429719,13.6626197 C15.7429719,13.8886895 15.5597061,14.0719553 15.3336363,14.0719553 L13.4014426,14.0719553 C13.1753728,14.0719553 12.992107,13.8886895 12.992107,13.6626197 L12.992107,5.81586592 L12.992107,5.81586592 L15.7429719,5.33127867 Z" id="Path-2" fill="#2188F9"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
