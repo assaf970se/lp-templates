@@ -104,7 +104,7 @@ body {
 
 .img-container {
   width: 400px;
-  height: 200px;
+  height: 300px;
 }
 .img-container .subway-container {
   width: 100%;
@@ -121,7 +121,7 @@ body {
   width: 100%;
 }
 .img-container .img-row-container {
-  transform: translateY(-25px);
+  transform: translateY(-120px);
   height: 50px;
   display: flex;
   justify-content: center;
