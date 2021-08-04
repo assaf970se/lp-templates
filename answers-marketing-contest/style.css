@@ -37,21 +37,100 @@ h6 {
   padding: 0;
 }
 
+@font-face {
+  font-family: "md4";
+  src: local("md4"), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Rg.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "md4";
+  src: local("md4"), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Bd.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "md4";
+  src: local("md4"), url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_XBd.ttf);
+  font-weight: 900;
+}
+:root {
+  --main-text-color: #ffffff;
+  --main-background-color: #002764;
+  --btn-background-color: #ffffff;
+  --btn-text-color: #002764;
+  --background-black: #000000;
+}
+
 body {
   min-height: 100vh;
-  background: dodgerblue url("../images/sample-bg.png") no-repeat;
-  background-size: cover;
   display: flex;
-  justify-content: center;
   align-items: center;
+  font-family: "md4", sans-serif;
+  background-color: var(--background-black);
+}
+
+.main-container {
+  background: var(--main-background-color) no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.text-container {
+  max-width: 500px;
+  color: var(--main-text-color);
+}
+.text-container .logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.text-container .title {
+  margin-bottom: 25px;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 900;
+}
+.text-container .btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--btn-background-color);
+  color: var(--btn-text-color);
+  border: none;
+  outline: none;
 }
 
 .img-container {
-  position: relative;
   width: 400px;
+  height: 200px;
 }
-.img-container .base-img {
+.img-container .subway-container {
   width: 100%;
+  height: 100%;
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+.img-container .subway-container::-webkit-scrollbar {
+  display: none;
+}
+.img-container .subway-container .base-img {
+  width: 100%;
+}
+.img-container .img-row-container {
+  transform: translateY(-25px);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.img-container .img-row-container .avatar {
+  margin-right: 5px;
+  margin-left: 5px;
+  opacity: 0;
 }
 
 .avatar {
