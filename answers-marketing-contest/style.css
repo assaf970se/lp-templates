@@ -75,11 +75,12 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .text-container {
   max-width: 500px;
+  margin-right: 50px;
   color: var(--main-text-color);
 }
 .text-container .logo {
@@ -105,6 +106,7 @@ body {
 .img-container {
   width: 400px;
   height: 300px;
+  margin-left: 50px;
 }
 .img-container .subway-container {
   width: 100%;
