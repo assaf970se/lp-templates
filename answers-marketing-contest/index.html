@@ -66,11 +66,14 @@
 
         let tl6 = gsap.timeline({delay: 1});
         tl6.to(".subway-container", { duration: 8, scrollTo: 430, ease: 'none' });
-
+        
+        
         let tl7 = gsap.timeline({delay: 9});
         tl7.to(".avatar-row", {stagger: 0.2, opacity: 1});
 
-
+        setTimeout(() => {
+            location.reload();
+        }, 12000)
 
     </script>
 </body>
