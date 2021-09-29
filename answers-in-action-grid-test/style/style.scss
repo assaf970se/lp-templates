@@ -1,0 +1,152 @@
+@import "./reset.scss";
+@import "./general.scss";
+
+.main-section {
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 750px 1fr auto 1fr;
+    grid-template-rows: 1fr 100px auto auto auto 1fr;
+    grid-template-areas:
+        ". . . . ."
+        ". logo . . ."
+        ". title . form ."
+        ". subtitle . form ."
+        ". description . form ."
+        ". . . . .";
+
+    @media (max-width: 600px) {
+        padding: 0px;
+        padding-top: 70px;
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-row-gap: 30px;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px auto auto auto auto;
+        grid-template-areas:
+            "logo"
+            "title"
+            "subtitle"
+            "form"
+            "description";
+    }
+
+    @media (max-width: 330px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title-container {
+        grid-area: title;
+        max-width: 800px;
+        margin-bottom: 30px;
+    }
+
+    .subtitle-container {
+        grid-area: subtitle;
+        max-width: 670px;
+        margin-bottom: 10px;
+    }
+
+    .description-container {
+        grid-area: description;
+        align-self: end;
+        
+        @media (max-width: 600px) {
+            align-self: center;
+            margin-bottom: 20px;
+        }
+
+        & .description-title {
+            margin-bottom: 25px;
+        }
+
+        .description-text {
+            & ul {
+                margin-bottom: 50px;
+            }
+
+            & ul li {
+                margin-bottom: 20px;
+                list-style: none;
+                position: relative;
+
+                &::before {
+                    color: #4dddb1;
+                    content: "\2022";
+                    display: inline-block;
+                    font-size: 30px;
+                    left: -1.1225em;
+                    position: absolute;
+                    top: -2px;
+                }
+            }
+        }
+    }
+
+    .form-container {
+        grid-area: form;
+        justify-self: center;
+        border-radius: 10px;
+        display: flex;
+        width: 350px;
+        background-color: #ffffff;
+        flex-direction: column;
+        box-shadow: 0 2px 13px 0 rgba(204, 204, 204, 0.5);
+
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .form-title {
+            color: #20303c;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .form-item {
+            margin-bottom: 50px;
+        }
+
+        .assets {
+            margin-bottom: 30px;
+            .assets-row {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-right: 20px;
+                margin-left: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                .asset {
+                    width: 80px;
+
+                    &.yotpo {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                    }
+                   
+                    &.fiverr {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    &.viber {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    &.guesty {
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

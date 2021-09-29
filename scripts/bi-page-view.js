@@ -42,3 +42,16 @@ trackClickEvent();
         document.cookie = refCookieStr;
     }
 })();
+
+//modified and combined with the Editor script 
+
+{/* <script> */}
+var img = document.createElement('img');
+var url = location.href;
+var referrer = document.referrer;
+var lastRefSrc = '';
+if (referrer || !referrer.includes('wixanswers.com') || !referrer.includes('wix.com') || !referrer.includes('marketo.com') || !referrer.includes('nld')) {
+    lastRefSrc = '&last_ref='+encodeURIComponent(referrer);
+}
+img.src='https://app.wixanswers.com/api/bi/page-view?pageUrl='+encodeURIComponent(url)+'&referralUrl='+encodeURIComponent(referrer)+lastRefSrc;
+// </script>

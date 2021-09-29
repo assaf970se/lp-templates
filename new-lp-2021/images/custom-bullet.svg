@@ -1,0 +1,12 @@
+<svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter color-interpolation-filters="auto" id="a">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.066667 0 0 0 0 0.427451 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g transform="translate(-338 -367)" filter="url(#a)" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g stroke="#E02020" stroke-width="2.3">
+            <path d="m340.57 375.284 2.833 3.103M349.739 372.375l-6.126 6.011"/>
+        </g>
+    </g>
+</svg>

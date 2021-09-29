@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'md4';
+    src: local('md4'),
+        url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Rg.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'md4';
+    src: local('md4'),
+        url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_Bd.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'md4';
+    src: local('md4'),
+        url(https://info.wixanswers.com/rs/314-AVR-999/images/WixMadeforDisplay_XBd.ttf);
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-blue: #002764;
+    --color-link: #2288f9;
+}
+
+body {
+    font-family: 'md4';
+    min-height: 100vh;
+}
+
+.logo {
+    width: 190px;
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 150px;
+    }
+}
+
+.big-title, .big-title > *, .big-title > * > * {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 46px;
+    letter-spacing: 0.45px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 27px !important;
+        line-height: 36px !important;
+    }
+}
+
+.description-title, .description-title > *, .description-title > * > * {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+    
+    @media screen and (max-width: 800px) {
+        font-size: 22px !important;
+        line-height: 29px !important;
+    }
+}
+.description-text, .description-text > *, .description-text > * > * {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+    
+    @media screen and (max-width: 800px) {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+}
+
+.form-title, .form-title > *, .form-title > * > * {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.form-input-text {
+    font-size: 13px;
+}
+
+.form-terms-text {
+    font-size: 10px;
+}
+
+.centered-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
