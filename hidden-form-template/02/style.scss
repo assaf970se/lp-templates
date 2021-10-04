@@ -1,0 +1,245 @@
+@import '../style/reset.scss';
+@import '../style/general.scss';
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    @media screen and (max-width: 1200px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+}
+
+.logo {
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 600px) {
+        margin: 0 auto 60px auto;
+    }
+}
+
+.title {
+    max-width: 550px;
+    color: var(--color-white);
+    margin-bottom: 35px;
+}
+
+.description {
+    max-width: 550px;
+    color: var(--color-white);
+    margin-bottom: 20px;
+
+    & ul {
+        padding-left: 25px;
+
+        @media (max-width: 600px) {
+        }
+    }
+
+    & ul li {
+        margin-bottom: 20px;
+        list-style: none;
+        position: relative;
+
+        &::before {
+            color: var(--color-white);
+            content: '•';
+            // background-image: url('../images/custom-bullet.svg');
+            background-repeat: no-repeat;
+            display: inline-block;
+            font-size: 25px;
+            left: -25px;
+            position: absolute;
+            top: -3px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 70px;
+    }
+}
+
+.form-container {
+    max-width: 600px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 0 9px 54px 0 rgba(0, 0, 0, 0.11);
+    padding: 30px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.form-title {
+    color: var(--color-blue);
+    margin-bottom: 30px;
+    text-align: center;
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+        max-width: unset;
+    }
+}
+
+.form {
+    display: grid;
+    grid-template-areas:
+    'first-name last-name'
+    'job-title phone'
+        'email company'
+        'terms terms' 
+        'submit submit';
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 40px 40px 40px 40px 40px;
+    gap: 7px 13px;
+    // justify-items: center;
+    // align-items: center;
+
+    // @media screen and (max-width: 1200px) {
+    //     grid-template-areas:
+    //         '. first-name last-name .'
+    //         '. job-title phone .'
+    //         '. email company .'
+    //         '. terms submit .';
+    //     grid-template-columns: 1fr 285px 285px 1fr;
+    //     grid-template-rows: 40px 40px 40px 40px;
+    // }
+
+    @media screen and (max-width: 600px) {
+        grid-template-areas:
+            'first-name'
+            'last-name'
+            'job-title'
+            'phone'
+            'email'
+            'company'
+            'terms'
+            'submit';
+        grid-template-columns: auto;
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
+    }
+
+    .first-name {
+        grid-area: first-name;
+    }
+    .last-name {
+        grid-area: last-name;
+    }
+    .job-title {
+        grid-area: job-title;
+    }
+    .phone {
+        grid-area: phone;
+    }
+    .email {
+        grid-area: email;
+    }
+    .company {
+        grid-area: company;
+    }
+}
+
+.form-input {
+    grid-area: input;
+    width: 250px;
+    height: 35px;
+    padding: 5px 10px;
+    border: solid 0.9px #e7e7e7;
+    border-radius: 5px;
+    // outline: none;
+
+    &::placeholder {
+        color: var(--color-blue);
+    }
+}
+
+.form-terms {
+    grid-area: terms;
+    width: 100%;
+    display: flex;
+}
+
+.form-terms-text {
+    padding-left: 5px;
+    color: var(--color-blue);
+}
+
+.submit-btn {
+    grid-area: submit;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    line-height: 38px;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    border: var(--color-blue);
+    border-radius: 25px;
+}
+
+
+.testimonials-section {
+    display: grid;
+    // justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 90px;
+    grid-template-areas: 'logo-1 logo-2 logo-3 logo-4 logo-5 logo-6';
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    .logo-1 {
+        grid-area: logo-1;
+    }
+    .logo-2 {
+        grid-area: logo-2;
+    }
+    .logo-3 {
+        grid-area: logo-3;
+    }
+    .logo-4 {
+        grid-area: logo-4;
+    }
+    .logo-5 {
+        grid-area: logo-5;
+    }
+    .logo-6 {
+        grid-area: logo-6;
+    }
+
+    @media screen and (max-width: 960px) {
+        grid-template-areas:
+            '. logo-1 logo-2 logo-3 .'
+            '. logo-4 logo-5 logo-6 .';
+        grid-template-columns: 1fr 200px 200px 200px 1fr;
+        grid-template-rows: 30px 30px;
+        row-gap: 40px;
+        column-gap: 0px;
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-areas:
+            '. logo-1 logo-2 .'
+            '. logo-3 logo-4 .'
+            '. logo-5 logo-6 .';
+        grid-template-columns: 1fr 150px 150px 1fr;
+        grid-template-rows: 30px 30px 30px;
+        row-gap: 40px;
+        column-gap: 0px;
+    }
+}
+
+// .form-section {
+//     background: var(--color-blue) url('../images/lp-2021-01-bottom-bg.webp')
+//         no-repeat center;
+//     padding-top: 80px;
+//     padding-bottom: 80px;
+//     color: var(--color-white);
+// }
+
