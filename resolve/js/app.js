@@ -1,16 +1,10 @@
 (function () {
-    async function getSpeakerData() {
-        const res = await fetch(
-            "https://www.customerexperiencefestival.com/_functions/speakers/ResolveTest"
-        );
-        const data = await res.json();
-        console.log(data);
-        return data.items;
-    }
+    const SPEAKERS_DB = 'ResolveTest';
+    const AGENDA_DB = 'ResolveAgendaTest';
 
-    async function getAgendaData() {
+    async function getResolveData(db) {
         const res = await fetch(
-            "https://www.customerexperiencefestival.com/_functions/agenda/ResolveAgendaTest"
+            `https://www.customerexperiencefestival.com/_functions/resolveData/${db}`
         );
         const data = await res.json();
         console.log(data);
@@ -98,7 +92,7 @@
     }
 
     async function render() {
-        results = await Promise.all([getSpeakerData(), getAgendaData()]);
+        results = await Promise.all([getResolveData(SPEAKERS_DB), getResolveData(AGENDA_DB)]);
         if (results[0].find((item) => item.event === "keynote"))
             renderKeynote();
         if (results[0].find((item) => item.event === "speakers"))
