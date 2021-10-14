@@ -157,39 +157,54 @@ body {
   padding-right: 20px;
 }
 
-.top-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 110px;
-  padding-bottom: 110px;
+body {
+  height: 100vh;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
+  body {
+    height: unset;
+  }
+}
+
+.top-section {
+  height: 65%;
+  display: grid;
+  grid-template-areas: ". . . . ." ". title-container . form-container ." ". . . . .";
+  grid-template-columns: 1fr 550px 150px 570px 1fr;
+  grid-template-rows: 1fr 370px 0.8fr;
+}
+@media screen and (max-width: 1350px) {
   .top-section {
-    padding-top: 50px;
+    grid-template-columns: auto 550px auto 570px auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .top-section {
+    height: unset;
+    display: flex;
+    padding: 50px 20px;
     padding-bottom: 50px;
     flex-direction: column;
+    align-items: center;
   }
+}
+
+.title-container {
+  grid-area: title-container;
 }
 
 .logo {
   margin-bottom: 60px;
 }
-@media screen and (max-width: 960px) {
-  .logo {
-    margin: 0 auto 60px auto;
-  }
-}
-
 .title {
   max-width: 550px;
-  color: var(--color-blue);
+  color: var(--color-white);
   margin-bottom: 35px;
 }
 
 .description {
   max-width: 550px;
-  color: var(--color-blue);
+  color: var(--color-white);
   margin-bottom: 20px;
 }
 .description ul {
@@ -201,9 +216,9 @@ body {
   position: relative;
 }
 .description ul li::before {
-  color: #116dff;
+  color: var(--color-white);
   content: "";
-  background-image: url("../images/custom-bullet.svg");
+  background-image: url("../images/custom-bullet-green.svg");
   background-repeat: no-repeat;
   display: inline-block;
   font-size: 15px;
@@ -213,81 +228,25 @@ body {
   width: 20px;
   height: 20px;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
   .description {
     margin-bottom: 70px;
   }
 }
 
-.main-image-container {
-  width: 470px;
-  align-self: flex-end;
-}
-@media screen and (max-width: 960px) {
-  .main-image-container {
-    width: 100%;
-    max-width: 550px;
-    align-self: unset;
-  }
-}
-
-.testimonials-section {
-  display: flex;
-  justify-content: space-between;
-  justify-items: auto;
-  align-items: center;
-  padding-bottom: 90px;
-  grid-template-areas: "logo-1 logo-2 logo-3 logo-4 logo-5 logo-6";
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-.testimonials-section .logo-1 {
-  grid-area: logo-1;
-}
-.testimonials-section .logo-2 {
-  grid-area: logo-2;
-}
-.testimonials-section .logo-3 {
-  grid-area: logo-3;
-}
-.testimonials-section .logo-4 {
-  grid-area: logo-4;
-}
-.testimonials-section .logo-5 {
-  grid-area: logo-5;
-}
-.testimonials-section .logo-6 {
-  grid-area: logo-6;
-}
-@media screen and (max-width: 960px) {
-  .testimonials-section {
-    display: grid;
-    grid-template-areas: ". logo-1 logo-2 logo-3 ." ". logo-4 logo-5 logo-6 .";
-    grid-template-columns: 1fr 200px 200px 200px 1fr;
-    grid-template-rows: 30px 30px;
-    row-gap: 40px;
-    column-gap: 0px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .testimonials-section {
-    grid-template-areas: ". logo-1 logo-2 ." ". logo-3 logo-4 ." ". logo-5 logo-6 .";
-    grid-template-columns: 1fr 150px 150px 1fr;
-    grid-template-rows: 30px 30px 30px;
-    row-gap: 40px;
-    column-gap: 0px;
-  }
-}
-
-.form-section {
-  background: var(--color-blue) url("../images/lp-2021-01-bottom-bg.png") no-repeat center;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  color: var(--color-white);
+.form-container {
+  grid-area: form-container;
+  max-width: 600px;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  box-shadow: 0 9px 54px 0 rgba(0, 0, 0, 0.11);
+  padding: 30px;
 }
 
 .form-title {
+  color: var(--color-blue);
   margin-bottom: 30px;
+  text-align: center;
 }
 @media screen and (max-width: 1200px) {
   .form-title {
@@ -298,25 +257,16 @@ body {
 
 .form {
   display: grid;
-  grid-template-areas: "first-name job-title email terms" "last-name phone company submit";
-  grid-template-columns: 285px 285px 285px 285px;
-  grid-template-rows: 40px 40px;
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-@media screen and (max-width: 1200px) {
-  .form {
-    grid-template-areas: ". first-name last-name ." ". job-title phone ." ". email company ." ". terms submit .";
-    grid-template-columns: 1fr 285px 285px 1fr;
-    grid-template-rows: 40px 40px 40px 40px;
-  }
+  grid-template-areas: "first-name last-name" "job-title phone" "email company" "terms terms" "submit submit";
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 40px 40px 40px 40px 40px;
+  gap: 10px 13px;
 }
 @media screen and (max-width: 600px) {
   .form {
-    grid-template-areas: "first-name" "last-name" "job-title" "phone" "email" "company" "terms" "submit";
-    grid-template-columns: auto;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .form .first-name {
@@ -340,31 +290,109 @@ body {
 
 .form-input {
   grid-area: input;
-  width: 285px;
-  height: 40px;
-  padding: 10px 15px;
+  width: 250px;
+  height: 35px;
+  padding: 5px 10px;
   border: solid 0.9px #e7e7e7;
   border-radius: 5px;
+}
+.form-input::placeholder {
+  color: var(--color-blue);
+}
+@media screen and (max-width: 600px) {
+  .form-input {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 40px;
+  }
 }
 
 .form-terms {
   grid-area: terms;
-  width: 290px;
+  width: 100%;
   display: flex;
+}
+@media screen and (max-width: 600px) {
+  .form-terms {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 45px;
+  }
 }
 
 .form-terms-text {
   padding-left: 5px;
+  color: var(--color-blue);
 }
 
 .submit-btn {
   grid-area: submit;
-  width: 285px;
+  width: 100%;
   height: 40px;
   font-size: 15px;
   line-height: 38px;
   color: var(--color-white);
-  background-color: var(--color-link);
-  border: var(--color-link);
+  background-color: var(--color-blue);
+  border: var(--color-blue);
   border-radius: 25px;
+}
+
+.bottom-section {
+  padding-top: 115px;
+  padding-bottom: 40px;
+}
+.bottom-section .form-title {
+  margin-bottom: 75px;
+}
+@media screen and (max-width: 600px) {
+  .bottom-section {
+    padding-top: 55px;
+  }
+}
+
+.testimonials-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials-section .logo-1 {
+  grid-area: logo-1;
+}
+.testimonials-section .logo-2 {
+  grid-area: logo-2;
+}
+.testimonials-section .logo-3 {
+  grid-area: logo-3;
+}
+.testimonials-section .logo-4 {
+  grid-area: logo-4;
+}
+.testimonials-section .logo-5 {
+  grid-area: logo-5;
+}
+.testimonials-section .logo-6 {
+  grid-area: logo-6;
+}
+@media screen and (max-width: 960px) {
+  .testimonials-section {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: ". logo-1 logo-2 logo-3 ." ". logo-4 logo-5 logo-6 .";
+    grid-template-columns: 1fr 200px 200px 200px 1fr;
+    grid-template-rows: 30px 30px;
+    row-gap: 40px;
+    column-gap: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .testimonials-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonials-section > div:not(:first-child) {
+    margin-bottom: 10px;
+  }
 }
