@@ -87,7 +87,6 @@
         form.onSuccess(function (values, followUpUrl) {
             let ctaRef = params.get('ctaRef');
             if (ctaRef) {
-                console.log('pushing window.dataLayer: ', window.dataLayer);
                 window.dataLayer.push({
                     'event':'cta-ref',
                     'eventCategory': 'Demo Request',
