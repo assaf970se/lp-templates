@@ -6,7 +6,7 @@
         lastRef.includes('wix.com') ||
         lastRef.includes('marketo.com')
     ) {
-        return;
+        console.log('wix');
     } else {
         const refCookieStr = `wamk_most_recent_ref=${lastRef}; domain=wixanswers.com; max-age=2592000; secure`;
         document.cookie = refCookieStr;
@@ -84,6 +84,18 @@
             }
             form.submitable(true);
         });
+        form.onSuccess(function (values, followUpUrl) {
+            let ctaRef = params.get('ctaRef');
+            if (ctaRef) {
+                console.log('pushing window.dataLayer: ', window.dataLayer);
+                window.dataLayer.push({
+                    'event':'cta-ref',
+                    'eventCategory': 'Demo Request',
+                    'eventAction': 'CTA Click',
+                    'eventLabel': ctaRef
+                })
+            }
+        })
     });
 
     function isEmailGood(email) {
