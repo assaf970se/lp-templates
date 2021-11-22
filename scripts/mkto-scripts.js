@@ -90,8 +90,8 @@
                 window.dataLayer.push({
                     'event':'cta-ref',
                     'eventCategory': 'Demo Request',
-                    'eventAction': 'CTA Click',
-                    'eventLabel': ctaRef
+                    'eventAction': ctaRef,
+                    'eventLabel': fullPageUrl
                 })
             }
         })
